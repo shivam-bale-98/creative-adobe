@@ -1,0 +1,320 @@
+@use "../abstracts/variables" as globVar;
+@use "../mixins/" as mix;
+
+footer.footer {
+  border-top: 1px solid rgba($color: globVar.$color-borders, $alpha: 0.1);
+  .get-in-touch {
+    width: 30%;
+    height: 100%;
+    text-decoration: none !important;
+    @include mix.breakpoint(991) {
+      width: 100%;
+    }
+    .h2 {
+      max-width: 20.7rem;
+      margin-inline-end: 3rem;
+      transition: 0.3s transform ease-out;
+      @include mix.breakpoint(1279) {
+        max-width: 16.5rem;
+      }
+
+      @include mix.breakpoint(767) {
+        font-size: 3rem;
+        max-width: 8.5rem;
+        margin-inline-end: 1rem;
+      }
+    }
+
+    .shape {
+      height: 3.4rem;
+      width: 5rem;
+      transition: 0.5s all ease-out;
+      bottom: 1rem;
+      @include mix.breakpoint(767) {
+        width: 4rem;
+        height: 2.8rem;
+        bottom: 0;
+      }
+      i {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+
+        @include mix.breakpoint(767) {
+          font-size: 12px;
+        }
+
+        &:before {
+          color: var(--color-white);
+        }
+      }
+      .bg {
+        background-color: var(--rustic-red);
+        clip-path: url(#btn_shape);
+        transition: 0.5s transform ease-out;
+      }
+
+      .bg-scale {
+        clip-path: url(#btn_shape);
+        transition: 0.2s transform ease-out;
+        background-color: var(--red-berry);
+        top: 50%;
+        transform: translate(-45%, -50%) scale(0);
+        left: 0;
+      }
+
+      
+    }
+
+    @include mix.min-breakpoint(1279) {
+      
+      &:hover {
+        h2 {
+          color: var(--red-berry);
+        }
+        .bg-scale {
+          transform: translate(0%, -50%) scale(1);
+        }
+      }
+    }
+  }
+
+  .links {
+    width: 70%;
+
+    @include mix.breakpoint(1279) {
+      width: 65%;
+    }
+
+    @include mix.breakpoint(991) {
+      width: 100%;
+      margin-top: 3rem;
+    }
+    @include mix.breakpoint(767) {
+      flex-wrap: wrap;
+    }
+    .cols {
+      @include mix.breakpoint(767) {
+        width: 50%;
+        margin-bottom: 4rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:nth-child(1) {
+          order: 2;
+        }
+
+        &:nth-child(2) {
+          order: 3;
+        }
+        &:nth-child(3) {
+          order: 1;
+          margin-bottom: 3.8rem;
+        }
+      }
+
+      h4 {
+        margin-bottom: 2rem;
+        font-weight: 400;
+        @include mix.breakpoint(767) {
+          font-size: 2.4rem;
+          line-height: 1.2;
+        }
+        a {
+          text-decoration: none !important;
+          color: inherit;
+          transition: color 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+          &:hover {
+            @include mix.min-breakpoint(1279) {
+              color: var(--red-berry);
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          margin-bottom: 2rem;
+
+          @include mix.breakpoint(767) {
+            margin-bottom: 1.2rem;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            font-size: 1.6rem;
+            line-height: 1;
+            font-weight: 400;
+            text-decoration: none !important;
+            transition: color 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+            &:hover {
+              @include mix.min-breakpoint(1279) {
+                color: var(--red-berry);
+              }
+            }
+          }
+        }
+      }
+
+      &.page-items {
+        ul {
+          li {
+            &:last-of-type {
+              // display: none;
+            }
+          }
+        } 
+      }
+    }
+  }
+
+  .social {
+    top: -1rem;
+    h5 {
+      font-size: 2.4rem;
+      line-height: 1.2;
+    }
+
+    ul {
+      li {
+        a {
+          height: 3.6rem;
+          width: 3.6rem;
+          background-color: #0a66c2;
+
+          transition: background-color 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+          &:hover {
+            @include mix.min-breakpoint(1279) {
+              background-color: var(--rustic-red);
+            }
+          }
+        }
+      }
+    }
+  }
+  .logo {
+    @include mix.breakpoint(767) {
+      display: none;
+    }
+  }
+  .bottom {
+    .line {
+      height: 1px;
+      width: 100%;
+      background-color: var(--rustic-red);
+      top: 0;
+      left: 0;
+    }
+    ul {
+      @include mix.breakpoint(991) {
+        // justify-content: space-around;
+        margin-inline-end: 4rem;
+        &:last-child{
+          margin-inline-end: 0;
+        }
+      }
+
+      @include mix.breakpoint(767) {
+        &:first-child{
+          margin-top: 0;
+        }
+      }
+
+    
+
+      &.made-with {
+        li {
+          @include mix.breakpoint(767) {
+            text-transform: none;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    li {
+      font-size: 1.6rem;
+      line-height: 1;
+      font-weight: 400;
+      transition: color 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+      @include mix.breakpoint(991) {
+        margin-top: 2rem;
+      }
+
+      @include mix.breakpoint(767) {
+        text-transform: capitalize;
+      }
+      a {
+        text-decoration: none !important;
+        color: inherit;
+      }
+
+      &:hover {
+        @include mix.min-breakpoint(1279) {
+          color: var(--red-berry);
+        }
+
+        i {
+          &:before {
+            animation: changeColor 1s infinite;
+          }
+        }
+      }
+
+      &.privacy-policy {
+        a {
+          margin-inline-end: 2rem;
+          &:last-child {
+            margin-inline-end: 0;
+          }
+        }
+      }
+
+      i {
+        font-size: 1.6rem;
+        // color: var(--red-berry);
+        &:before {
+          transition: 0.2s all ease;
+        }
+      }
+
+
+    }
+
+    
+  }
+}
+
+body {
+  &:not(.page-template-home-page) {
+    footer.footer {
+      // .logo {
+        .logo-home {
+          display: none;
+        }
+        .logo-others {
+          display: flex;
+        }
+      // }
+    }
+  }
+
+  &.page-template-home-page {
+    footer.footer {
+      // .logo {
+        .logo-home {
+          display: flex;
+        }
+        .logo-others {
+          display: none;
+        }
+      // }
+    }
+  }
+}
+
+
+@keyframes changeColor {
+  from {color: var(--rustic-red);}
+  to {color: var(--red-berry);}
+}

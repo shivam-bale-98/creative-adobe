@@ -1,0 +1,3879 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Formidable\n"
+"POT-Creation-Date: 2023-01-10 10:13+0100\n"
+"PO-Revision-Date: 2023-01-10 10:13+0100\n"
+"Last-Translator: \n"
+"Language-Team: wim@dewebmakers.nl\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-KeywordsList: t\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: blocks/formidable_form/controller.php:70
+msgid "Formidable Form"
+msgstr "Formidable Form"
+
+#: blocks/formidable_form/controller.php:75
+msgid "Add a Formidable Form on your page"
+msgstr "Voeg een Formidable Form toe op je pagina"
+
+#: blocks/formidable_form/controller.php:209
+msgid "Please select a form"
+msgstr "Selecteer een formulier"
+
+#: blocks/formidable_form/controller.php:214
+msgid "Form isn't valid or removed."
+msgstr "Formulier is ongeldig of verwijderd."
+
+#: blocks/formidable_form/controller.php:221
+msgid "Message on success is invalid or empty"
+msgstr "Succes bericht is ongeldig of verwijderd"
+
+#: blocks/formidable_form/controller.php:226
+msgid "Redirect Page on success is invalid or empty"
+msgstr "Redirect (pagina) is ongeldig of verwijderd"
+
+#: blocks/formidable_form/controller.php:260
+#: blocks/formidable_form/controller.php:428
+#: blocks/formidable_form/controller.php:434
+#: blocks/formidable_form/controller.php:484
+#: blocks/formidable_form/controller.php:490
+msgid "Formidable Form Block can't found"
+msgstr "Formidable Form Block kan niet worden gevonden"
+
+#: blocks/formidable_form/controller.php:268
+#: blocks/formidable_form/controller.php:442
+#: blocks/formidable_form/controller.php:498
+#: blocks/formidable_form/controller.php:541
+msgid "Formidable Form can't found"
+msgstr "Formidable Form kan niet worden gevonden"
+
+#: blocks/formidable_form/controller.php:276
+#: blocks/formidable_form/controller.php:450
+#: blocks/formidable_form/controller.php:506
+msgid "Formidable Form ID doesn't match set form"
+msgstr "FormulierID komt niet overeen met het formulier"
+
+#: blocks/formidable_form/controller.php:281
+msgid "Formidable Form is illegally submitted (honeypot)"
+msgstr "Formulier is ongeldig verzonden (honeypot)"
+
+#: blocks/formidable_form/controller.php:286
+msgid "Invalid token, please reload page and try again"
+msgstr "Token is ongeldig, herlaad en probeer opnieuw"
+
+#: blocks/formidable_form/controller.php:291
+msgid ""
+"Unable to complete action due to a banned IP. Please contact the "
+"administrator of this site for more information."
+msgstr ""
+"Kan de actie niet afronden vanwege een IP-block. Neem contact op met de "
+"websitebeheerder."
+
+#: blocks/formidable_form/controller.php:296
+msgid ""
+"Unable to complete action due to our spam policy. Please contact the "
+"administrator of this site for more information."
+msgstr ""
+"Kan de actie niet afronden vanwege de SPAM-policy. Neem contact op met de "
+"websitebeheerder."
+
+#: blocks/formidable_form/controller.php:383
+msgid "Created"
+msgstr "Aangemaakt"
+
+#: blocks/formidable_form/controller.php:391
+#: controllers/single_page/dashboard/formidable/results.php:380
+#, php-format
+msgid "Mail \"%s\" send to: %s"
+msgstr "Email \"%s\" is verzonden naar: %s"
+
+#: blocks/formidable_form/controller.php:395
+#: controllers/single_page/dashboard/formidable/results.php:386
+#: controllers/single_page/dashboard/formidable/results.php:387
+#, php-format
+msgid "Mail \"%s\" unsuccessful: %s"
+msgstr "Email \"%s\" niet verzonden naar: %s"
+
+#: blocks/formidable_form/controller.php:455
+#: blocks/formidable_form/controller.php:511
+msgid "Element can't found"
+msgstr "Element kan niet worden gevonden"
+
+#: blocks/formidable_form/form.php:15
+msgid "No forms created yet!"
+msgstr "Nog geen formulieren aangemaakt!"
+
+#: blocks/formidable_form/form.php:30 elements/dialog/data.php:21
+msgid "Form"
+msgstr "Formulier"
+
+#: blocks/formidable_form/form.php:36
+msgid "Handling"
+msgstr "Afhandeling"
+
+#: blocks/formidable_form/form.php:42
+msgid "Errors"
+msgstr "Foutmeldingen"
+
+#: blocks/formidable_form/form.php:47
+#: controllers/single_page/dashboard/formidable.php:92
+#: elements/form/layout.php:337 elements/form/layout/element.php:1181
+#: elements/form/layout/element.php:1208 elements/pane/dependency.php:420
+#: elements/pane/dependency.php:520
+msgid "Success"
+msgstr "Succes"
+
+#: blocks/formidable_form/form.php:53 elements/results/details.php:47
+msgid "Data"
+msgstr "Data"
+
+#: blocks/formidable_form/form.php:59 elements/results/search/search.php:18
+#: elements/results/search/search.php:28
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+#: blocks/formidable_form/form.php:68
+msgid "Form properties"
+msgstr "Eigenschappen"
+
+#: blocks/formidable_form/form.php:71
+msgid "Select the form you want to show"
+msgstr "Selecteer het formulier om weer te geven"
+
+#: blocks/formidable_form/form.php:72
+msgid "Please select"
+msgstr "Selecteer"
+
+#: blocks/formidable_form/form.php:75
+msgid "Advanced settings for this block"
+msgstr "Geavanceerde instellingen voor dit block"
+
+#: blocks/formidable_form/form.php:78 blocks/formidable_form/form.php:130
+#: blocks/formidable_form/form.php:161
+msgid "Additional class"
+msgstr "Extra class"
+
+#: blocks/formidable_form/form.php:80
+msgid "If you need to add specific classes to the block"
+msgstr "Voor extra CSS-classes op dit block"
+
+#: blocks/formidable_form/form.php:87
+msgid "When submitted"
+msgstr "Bij verzending"
+
+#: blocks/formidable_form/form.php:90
+msgid "Do you want to scroll to the top of the form?"
+msgstr "Wil je terug scrollen naar de bovenkant van het formulier?"
+
+#: blocks/formidable_form/form.php:91
+msgid "No, stay on the current position"
+msgstr "Nee, blijf om de huidige positie"
+
+#: blocks/formidable_form/form.php:91
+msgid "Yes, scroll to the top of the form"
+msgstr "Ja, scroll maar terug naar boven"
+
+#: blocks/formidable_form/form.php:97
+msgid "Offset"
+msgstr "Offset"
+
+#: blocks/formidable_form/form.php:102
+msgid "Scroll to top +/- additional pixels"
+msgstr "Scroll naar boven +/- extra pixels"
+
+#: blocks/formidable_form/form.php:107
+msgid "Speed"
+msgstr "Snelheid"
+
+#: blocks/formidable_form/form.php:112
+msgid "Scroll speed in miliseconds"
+msgstr "Scrollsnelheid in milliseconden"
+
+#: blocks/formidable_form/form.php:122
+msgid "Displaying errors"
+msgstr "Foutmeldingen weergeven"
+
+#: blocks/formidable_form/form.php:125
+msgid "Where do you want to show the errors?"
+msgstr "Waar moeten de foutmeldingen worden weergegeven?"
+
+#: blocks/formidable_form/form.php:126
+msgid "Beneath element"
+msgstr "Onder het betreffende element"
+
+#: blocks/formidable_form/form.php:126
+msgid "On top of form"
+msgstr "Bovenaan het formulier"
+
+#: blocks/formidable_form/form.php:132
+msgid "If you need to add specific classes to the error message(s)"
+msgstr "Voor extra CSS-classes op de foutmeldingen"
+
+#: blocks/formidable_form/form.php:140
+msgid "When successfully submitted"
+msgstr "Wanneer het formulier succesvol is verzonden"
+
+#: blocks/formidable_form/form.php:143
+msgid "On successful submission"
+msgstr "Bij succesvol verzonden"
+
+#: blocks/formidable_form/form.php:144
+msgid "Show message on page"
+msgstr "Bericht weergeven op pagina"
+
+#: blocks/formidable_form/form.php:144 src/Formidable/Forms/Form.php:450
+#: src/Formidable/Forms/Form.php:622
+msgid "Redirect to page"
+msgstr "Stuur door naar pagina"
+
+#: blocks/formidable_form/form.php:145
+msgid "What should happen after a successful submission of this form?"
+msgstr "Wat moet er gebeuren bij een succesvolle verzending?"
+
+#: blocks/formidable_form/form.php:151 elements/form/edit.php:125
+#: elements/form/edit.php:165 elements/form/layout/element.php:166
+#: elements/form/mail/edit.php:104 elements/form/mail/edit.php:330
+msgid "Message"
+msgstr "Bericht"
+
+#: blocks/formidable_form/form.php:156
+msgid "Do you want to hide the form after a successful submission?"
+msgstr "Formulier verbergen na een succesvolle verzending?"
+
+#: blocks/formidable_form/form.php:157
+msgid "No, just clear the form"
+msgstr "Nee, maak alleen het formulier leeg"
+
+#: blocks/formidable_form/form.php:157
+msgid "Yes, hide the form"
+msgstr "Ja, verberg het formulier"
+
+#: blocks/formidable_form/form.php:163
+msgid "If you need to add specific classes to the success message(s)"
+msgstr "Voor extra CSS-classes op het succesvol verzonden bericht"
+
+#: blocks/formidable_form/form.php:169 elements/form/edit.php:130
+#: elements/form/edit.php:172 elements/form/layout/element.php:865
+msgid "Select page"
+msgstr "Selecteer pagina"
+
+#: blocks/formidable_form/form.php:177
+msgid "Saving data"
+msgstr "Dataopslag"
+
+#: blocks/formidable_form/form.php:180
+msgid "Do you want to save empty data?"
+msgstr "Lege data opslaan?"
+
+#: blocks/formidable_form/form.php:181
+msgid "No, keep results clean!"
+msgstr "Nee, resultaten schoon houden!"
+
+#: blocks/formidable_form/form.php:181
+msgid "Yes, also save empty fields"
+msgstr "Ja, sla ook lege data op"
+
+#: blocks/formidable_form/form.php:182
+msgid ""
+"Field that aren't filled by the submitter will resolve in empty data. In "
+"some cases you might want to save if for later. By default empty data is not "
+"stored in the results."
+msgstr ""
+"Elementen die niet zijn gevuld door de verzenden zullen resulteren in lege "
+"data. In sommige gevallen kan lege data van belang zijn. Standaard wordt "
+"lege data niet opgeslagen."
+
+#: blocks/formidable_form/form.php:190
+msgid "Callback options (jquery / javascript)"
+msgstr "Callback opties (jquery / javascript)"
+
+#: blocks/formidable_form/form.php:193
+msgid "Callback on onload (jquery / javascript)"
+msgstr "Callback op onload (jquery  / javascript)"
+
+#: blocks/formidable_form/form.php:196
+msgid "You can use this to create a callback on onload"
+msgstr "Gebruik dit voor het uitvoeren van code bij laden van pagina"
+
+#: blocks/formidable_form/form.php:212
+msgid "Callback on errors (jquery / javascript)"
+msgstr "Callback bij fouten (jquery / javascript)"
+
+#: blocks/formidable_form/form.php:215
+msgid "You can use this to create a callback on errors"
+msgstr "Gebruik dit voor het uitvoeren van code wanneer er error(s) ontstaan"
+
+#: blocks/formidable_form/form.php:231
+msgid "Callback on success (jquery / javascript)"
+msgstr "Callback bij succes (jquery / javascript)"
+
+#: blocks/formidable_form/form.php:234
+msgid "You can use this to create a callback on success"
+msgstr "Gebruik dit voor het uitvoeren van code na een succesvolle verzending"
+
+#: blocks/formidable_form/view.php:9
+msgid "Formidable Form isn't viewable when page is in Edit Mode"
+msgstr "Formulier is niet zichtbaar op de pagina in Bewerk Modus"
+
+#: blocks/formidable_form/view.php:16
+msgid "Formidable Form isn't found or available"
+msgstr "Formulier is niet gevonden of niet beschikbaar"
+
+#: blocks/formidable_form/view.php:23
+msgid "Formidable Form is no longer available"
+msgstr "Formulier is niet gevonden of niet beschikbaar"
+
+#: blocks/formidable_form/view.php:134
+#: src/Formidable/Elements/Types/Submit.php:17
+msgid "Submit"
+msgstr "Verzenden"
+
+#: controller.php:25
+msgid "Formidable"
+msgstr "Formidable"
+
+#: controller.php:30
+msgid "Create awesome forms with a few clicks!"
+msgstr "Maak perfecte formulieren in een paar klikken!"
+
+#: controllers/element/results/search/advanced_search.php:122
+msgid "An error occurred while saving the search preset."
+msgstr ""
+"Er is heeft zich een fout voorgedaan bij het opslaan van de zoekopdracht."
+
+#: controllers/single_page/dashboard/formidable.php:102
+msgid "Warning"
+msgstr "Waarschuwing"
+
+#: controllers/single_page/dashboard/formidable.php:112
+#: elements/form/edit.php:282 elements/form/layout.php:331
+#: elements/form/layout/column.php:114 elements/form/layout/element.php:1121
+#: elements/form/layout/element.php:1240 elements/form/layout/row.php:186
+#: elements/form/mail/edit.php:448 elements/pane/dependency.php:414
+#: elements/pane/dependency.php:452 elements/template/edit.php:71
+msgid "Error"
+msgstr "Foutmelding"
+
+#: controllers/single_page/dashboard/formidable.php:138
+#: controllers/single_page/dashboard/formidable.php:172
+#: controllers/single_page/dashboard/formidable/forms.php:229
+#: controllers/single_page/dashboard/formidable/forms.php:254
+#: controllers/single_page/dashboard/formidable/forms.php:328
+#: controllers/single_page/dashboard/formidable/forms.php:381
+#: controllers/single_page/dashboard/formidable/results.php:270
+#: controllers/single_page/dashboard/formidable/results.php:324
+#: controllers/single_page/dashboard/formidable/templates.php:55
+#: controllers/single_page/dashboard/formidable/templates.php:68
+msgid "Invalid request"
+msgstr "Ongeldig verzoek"
+
+#: controllers/single_page/dashboard/formidable/forms.php:40
+msgid "Formidable Forms"
+msgstr "Formulieren"
+
+#: controllers/single_page/dashboard/formidable/forms.php:48
+msgid "Add new form"
+msgstr "Maak nieuw formulier"
+
+#: controllers/single_page/dashboard/formidable/forms.php:50
+#: controllers/single_page/dashboard/formidable/templates.php:35
+#, php-format
+msgid "Edit properties for \"%s\""
+msgstr "Bewerk eigenschappen voor \"%s\""
+
+#: controllers/single_page/dashboard/formidable/forms.php:63
+#, php-format
+msgid "Edit layout and elements for \"%s\""
+msgstr "Bewerk lay-out en elementen voor \"%s\""
+
+#: controllers/single_page/dashboard/formidable/forms.php:71
+#, php-format
+msgid "Edit mails for \"%s\""
+msgstr "Bewerk e-mails voor \"%s\""
+
+#: controllers/single_page/dashboard/formidable/forms.php:86
+#: controllers/single_page/dashboard/formidable/forms.php:112
+#: controllers/single_page/dashboard/formidable/forms.php:699
+#: controllers/single_page/dashboard/formidable/forms.php:923
+msgid "Invalid row, not found"
+msgstr "Ongeldige rij, niet gevonden"
+
+#: controllers/single_page/dashboard/formidable/forms.php:91
+msgid "Add new row"
+msgstr "Voeg nieuwe rij toe"
+
+#: controllers/single_page/dashboard/formidable/forms.php:93
+#, php-format
+msgid "Edit row \"%s\""
+msgstr "Bewerk rij \"%s\""
+
+#: controllers/single_page/dashboard/formidable/forms.php:122
+#: controllers/single_page/dashboard/formidable/forms.php:149
+#: controllers/single_page/dashboard/formidable/forms.php:159
+#: controllers/single_page/dashboard/formidable/forms.php:937
+#: controllers/single_page/dashboard/formidable/forms.php:1102
+msgid "Invalid column, not found"
+msgstr "Ongeldige kolom, niet gevonden"
+
+#: controllers/single_page/dashboard/formidable/forms.php:127
+msgid "Add new column"
+msgstr "Voeg nieuwe kolom toe"
+
+#: controllers/single_page/dashboard/formidable/forms.php:129
+#, php-format
+msgid "Edit column \"%s\""
+msgstr "Bewerk kolom \"%s\""
+
+#: controllers/single_page/dashboard/formidable/forms.php:164
+msgid "Add new element"
+msgstr "Voeg nieuw element toe"
+
+#: controllers/single_page/dashboard/formidable/forms.php:166
+#, php-format
+msgid "Edit element \"%s\""
+msgstr "Bewerk element \"%s\""
+
+#: controllers/single_page/dashboard/formidable/forms.php:189
+#: controllers/single_page/dashboard/formidable/forms.php:1691
+msgid "Invalid mail, not found"
+msgstr "Ongeldige e-mail, niet gevonden"
+
+#: controllers/single_page/dashboard/formidable/forms.php:194
+msgid "Add new mail"
+msgstr "Voeg nieuwe e-mail toe"
+
+#: controllers/single_page/dashboard/formidable/forms.php:196
+#, php-format
+msgid "Edit mail \"%s\""
+msgstr "Bewerk e-mail \"%s\""
+
+#: controllers/single_page/dashboard/formidable/forms.php:265
+#: controllers/single_page/dashboard/formidable/forms.php:323
+#: controllers/single_page/dashboard/formidable/forms.php:418
+#: controllers/single_page/dashboard/formidable/forms.php:486
+#: controllers/single_page/dashboard/formidable/forms.php:517
+#: controllers/single_page/dashboard/formidable/forms.php:709
+#: controllers/single_page/dashboard/formidable/forms.php:810
+#: controllers/single_page/dashboard/formidable/forms.php:884
+#: controllers/single_page/dashboard/formidable/forms.php:947
+#: controllers/single_page/dashboard/formidable/forms.php:1003
+#: controllers/single_page/dashboard/formidable/forms.php:1064
+#: controllers/single_page/dashboard/formidable/forms.php:1125
+#: controllers/single_page/dashboard/formidable/forms.php:1608
+#: controllers/single_page/dashboard/formidable/forms.php:1655
+#: controllers/single_page/dashboard/formidable/forms.php:1701
+#: controllers/single_page/dashboard/formidable/forms.php:1847
+#: controllers/single_page/dashboard/formidable/forms.php:1893
+#: controllers/single_page/dashboard/formidable/forms.php:1924
+msgid "Invalid token. Please reload the page and retry."
+msgstr "Token is ongeldig, herlaad en probeer opnieuw."
+
+#: controllers/single_page/dashboard/formidable/forms.php:289
+msgid "Dependency successfully loaded"
+msgstr "Afhankelijkheden succesvol opgeslagen"
+
+#: controllers/single_page/dashboard/formidable/forms.php:315
+msgid "Dependency successfully saved"
+msgstr "Afhankelijkheden succesvol opgeslagen"
+
+#: controllers/single_page/dashboard/formidable/forms.php:347
+#: elements/form/layout/element.php:216 elements/form/layout/element.php:222
+#: elements/pane/dependency.php:71
+msgid "Select value"
+msgstr "Selecteer waarde"
+
+#: controllers/single_page/dashboard/formidable/forms.php:363
+#: elements/form/layout/element.php:1016
+msgid "\"Other\"-option"
+msgstr "\"Anders namelijk\"-optie"
+
+#: controllers/single_page/dashboard/formidable/forms.php:397
+#: controllers/single_page/dashboard/formidable/results.php:214
+#: controllers/single_page/dashboard/formidable/results.php:413
+msgid "Invalid form, not found"
+msgstr "Ongeldig formulier, niet gevonden"
+
+#: controllers/single_page/dashboard/formidable/forms.php:425
+#: controllers/single_page/dashboard/formidable/forms.php:491
+msgid "Invalid form"
+msgstr "Ongeldig formulier"
+
+#: controllers/single_page/dashboard/formidable/forms.php:429
+#: controllers/single_page/dashboard/formidable/forms.php:525
+#: controllers/single_page/dashboard/formidable/forms.php:716
+#: controllers/single_page/dashboard/formidable/forms.php:822
+#: controllers/single_page/dashboard/formidable/forms.php:954
+#: controllers/single_page/dashboard/formidable/forms.php:1015
+#: controllers/single_page/dashboard/formidable/forms.php:1142
+#: controllers/single_page/dashboard/formidable/forms.php:1620
+#: controllers/single_page/dashboard/formidable/forms.php:1708
+#: controllers/single_page/dashboard/formidable/forms.php:1859
+#: controllers/single_page/dashboard/formidable/templates.php:89
+#: controllers/single_page/dashboard/formidable/templates.php:160
+msgid "Name is empty or invalid"
+msgstr "Naam is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:473
+msgid "Form successfully copied!"
+msgstr "Formulier succesvol gedupliceerd!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:502
+msgid "Form successfully deleted!"
+msgstr "Formulier succesvol verwijderd!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:531
+msgid "Limits (value) can't be zero or lower"
+msgstr "Limieten (waarde) kan geen 0 of lager zijn"
+
+#: controllers/single_page/dashboard/formidable/forms.php:534
+msgid "Limits (type) is empty or invalid"
+msgstr "Limieten (type) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:537
+msgid "Limits (on limit reached) is empty or invalid"
+msgstr "Limieten (bij bereiken van) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:542
+msgid "Limits (message) is empty or invalid"
+msgstr "Limieten (bericht) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:547
+msgid "Limits (page) is empty or invalid"
+msgstr "Limieten (pagina) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:561
+msgid "Schedule (from) or Schedule (to) should be selected"
+msgstr "Planning (van) en/of Planning (tot) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:565
+msgid "Schedule (from) can't be later than Schedule (to)"
+msgstr "Planning (van) kan niet gelijk of later zijn Planning (tot)"
+
+#: controllers/single_page/dashboard/formidable/forms.php:570
+msgid "Schedule (when outside schedule) is empty or invalid"
+msgstr "Planning (wanneer buiten data) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:575
+msgid "Schedule (message) is empty or invalid"
+msgstr "Planning (bericht) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:580
+msgid "Schedule (page) is empty or invalid"
+msgstr "Planning (pagina) leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:589
+msgid "Privacy (value) can't be zero or lower"
+msgstr "Privacy (waarde) kan geen 0 of lager zijn"
+
+#: controllers/single_page/dashboard/formidable/forms.php:592
+msgid "Privacy (type) is empty or invalid"
+msgstr "Privacy (type) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:650
+msgid "Form successfully added!"
+msgstr "Formulier succesvol toegevoegd!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:650
+msgid "Form successfully updated!"
+msgstr "Formulier succesvol aangepast!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:662
+#, php-format
+msgid "Row #%s"
+msgstr "Rij #%s"
+
+#: controllers/single_page/dashboard/formidable/forms.php:673
+#, php-format
+msgid "Column #%s"
+msgstr "Kolom #%s"
+
+#: controllers/single_page/dashboard/formidable/forms.php:752
+msgid "Additional CSS (value) is empty or invalid"
+msgstr "Additionele CSS (waarde) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:799
+#: controllers/single_page/dashboard/formidable/forms.php:992
+msgid "Row successfully saved!"
+msgstr "Rij succesvol opgeslagen!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:818
+#: controllers/single_page/dashboard/formidable/forms.php:889
+msgid "Invalid row"
+msgstr "Ongeldige rij"
+
+#: controllers/single_page/dashboard/formidable/forms.php:856
+#: controllers/single_page/dashboard/formidable/forms.php:861
+#: controllers/single_page/dashboard/formidable/forms.php:1043
+#, php-format
+msgid "%s (copy)"
+msgstr "%s (kopie)"
+
+#: controllers/single_page/dashboard/formidable/forms.php:871
+msgid "Row successfully copied!"
+msgstr "Rij succesvol gedupliceerd!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:893
+msgid "The row isn't empty. Check \"remove all\" to force removal"
+msgstr ""
+"De rij is niet leeg. Vink \"Verwijder alles\" om verwijderen te forceren"
+
+#: controllers/single_page/dashboard/formidable/forms.php:904
+msgid "Row successfully deleted!"
+msgstr "Rij succesvol verwijderd!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:958
+#: controllers/single_page/dashboard/formidable/forms.php:1132
+#: controllers/single_page/dashboard/formidable/forms.php:1137
+msgid "Type is empty or invalid"
+msgstr "Type is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:962
+msgid "Width is empty or invalid"
+msgstr "Breedte is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:967
+#: controllers/single_page/dashboard/formidable/forms.php:1325
+msgid "Additional  CSS (value) is empty or invalid"
+msgstr "Additionele CSS (waarde) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1011
+#: controllers/single_page/dashboard/formidable/forms.php:1069
+msgid "Invalid column"
+msgstr "Ongeldige kolom"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1051
+msgid "Column successfully copied!"
+msgstr "Kolom succesvol gedupliceerd!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1073
+msgid "The column isn't empty. Check \"remove all\" to force removal"
+msgstr ""
+"De kolom is niet leeg. Vink \"Verwijder alles\" om verwijderen te forceren"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1084
+msgid "Column successfully deleted!"
+msgstr "Kolom succesvol verwijderd!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1115
+msgid "Invalid element, not found"
+msgstr "Ongeldig element, niet gevonden"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1155
+msgid "Default (type) is empty or invalid"
+msgstr "Standaard (type) leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1160
+msgid "Default (value) is empty or invalid"
+msgstr "Standaard (waarde) leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1165
+msgid "Default (request) is empty or invalid"
+msgstr "Standaard (verzoek) leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1170
+msgid "Default (page) is empty or invalid"
+msgstr "Standaard (pagina) leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1175
+msgid "Default (member) is empty or invalid"
+msgstr "Standaard (gebruiker) leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1185
+msgid "Range / Limit (minimal) and (maximal) are empty or invalid"
+msgstr "Bereik / Limieten (minimaal) en (maximaa) zijn leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1188
+msgid "Range / Limit (minimal) can't be larger then Range / Limit (maximal)"
+msgstr ""
+"Bereik / Limieten (minimaal) kan niet hoger zijn dan Bereik / Limieten "
+"(maximaal)"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1192
+msgid "Range / Limit (type) is empty or invalid"
+msgstr "Bereik / Limieten (type) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1197
+msgid "Range / Limit (step) is empty or invalid"
+msgstr "Bereik / Limieten (stap) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1206
+msgid "Masking (format) is empty or invalid"
+msgstr "Formateren (formaat) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1214
+msgid "Advanced (format) is empty or invalid"
+msgstr "Geavanceerd (formaat) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1222
+msgid "Confirm (field) is empty or invalid"
+msgstr "Bevestigen (element) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1230
+msgid "Option (types) is empty or invalid"
+msgstr "Optie (type) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1235
+msgid "Option (values) are empty"
+msgstr "Optie (waarde)  is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1241
+#, php-format
+msgid "Option (row #%s) is empty or invalid"
+msgstr "Optie (rij #%s)  is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1249
+msgid "Pages (location) is empty or invalid"
+msgstr "Pagina's (locatie) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1254
+msgid "Pages (page) is empty or invalid"
+msgstr "Pagina's (pagina) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1259
+msgid "Pages (option name) is empty or invalid"
+msgstr "Pagina's (optienaam) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1262
+msgid "Pages (order) is empty or invalid"
+msgstr "Pagina's (volgorde) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1273
+msgid "Members (groups) are empty"
+msgstr "Gebruikers (groep) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1276
+msgid "Members (option name) is empty or invalid"
+msgstr "Gebruikers (optienaam) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1279
+msgid "Members (sorting) is empty or invalid"
+msgstr "Gebruikers (sortering) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1282
+msgid "Members (order) is empty or invalid"
+msgstr "Gebruikers (volgorde) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1291
+msgid "\"Other\"-option (type) is empty or invalid"
+msgstr "\"Anders namelijk\"-optie (type) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1294
+msgid "\"Other\"-option (value) is empty or invalid"
+msgstr "\"Anders namelijk\"-optie (waarde) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1303
+msgid "Placeholder (value) is empty or invalid"
+msgstr "Aanduiding (waarde) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1311
+msgid "Help (text) is empty or invalid"
+msgstr "Help (tekst) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1318
+msgid "Template (view) is empty or invalid"
+msgstr "Vormgeving (weergave) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1333
+msgid "Force extenstion(s) is empty or invalid"
+msgstr "Toegelaten bestandstype(n) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1340
+msgid "Force extenstion(s)"
+msgstr "Toegelaten bestandstype(n)"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1340
+#, php-format
+msgid ""
+"Extensions \"%s\" in \"%s\" aren't allowed globally (check Allowed File "
+"Types)"
+msgstr ""
+"Bestandstype(n) \"%s\" in \"%s\" zijn globaal niet toegelaten (ga naar "
+"\"Toegestane bestandstypen\" in \"Systeem & instellingen\")"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1350
+msgid "Filesize (value) is empty or invalid"
+msgstr "Bestandsgrootte (waarde) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1353
+#, php-format
+msgid "Filesize (value) is larger then the server allows (%s MB)"
+msgstr "Bestandsgrootte (waarde) is groter dan dat de server toelaat (%s MB)"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1361
+msgid "Folder (value) is empty or invalid"
+msgstr "Map (waarde) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1369
+msgid "Filesets (value) is empty or invalid"
+msgstr "Bestandsverzamelingen (waarde) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1382
+msgid "Independency is invalid (show and hide)"
+msgstr "Afhankelijkheid is ongeldig (weergeven en verbergen)"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1386
+msgid "Independency is invalid (enable and disable)"
+msgstr "Afhankelijkheid is ongeldig (ingeschakeld en uitgeschaked)"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1390
+msgid "Independency is invalid (show and disable)"
+msgstr "Afhankelijkheid is ongeldig (weergeven en uitschakelen)"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1394
+msgid "Independency is invalid (hide and enable)"
+msgstr "Afhankelijkheid is ongeldig (verbergen en ingeschakeld)"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1398
+msgid "Independency is invalid (value and clear)"
+msgstr "Afhankelijkheid is ongeldig (waarde en legen)"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1598
+msgid "Element successfully saved!"
+msgstr "Element succesvol opgeslagen!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1616
+#: controllers/single_page/dashboard/formidable/forms.php:1660
+msgid "Invalid element"
+msgstr "Ongeldig element"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1642
+msgid "Element successfully copied!"
+msgstr "Element succesvol gedupliceerd!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1670
+msgid "Element successfully deleted!"
+msgstr "Element succesvol verwijderd!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1712
+msgid "From (type) is empty or invalid"
+msgstr "Afzender (type) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1717
+msgid "From (email address) is empty or invalid"
+msgstr "Afzender (e-mailadres) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1720
+msgid "From (name) is empty or invalid"
+msgstr "Afzender (naam) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1725
+msgid "From (element) is empty or invalid"
+msgstr "Afzender (element) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1731
+msgid "ReplyTo (type) is empty or invalid"
+msgstr "Antwoord naar (type) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1736
+msgid "ReplyTo (email address) is empty or invalid"
+msgstr "Antwoord naar (e-mailadres) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1739
+msgid "ReplyTo (name) is empty or invalid"
+msgstr "Antwoord naar (name) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1744
+msgid "ReplyTo (element) is empty or invalid"
+msgstr "Antwoord naar (element) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1754
+msgid "To (email address) is empty or invalid"
+msgstr "Ontvanger (e-mailadres) is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1761
+msgid ""
+"To (Email Address or Element) is empty or invalid. Please add or select at "
+"least one."
+msgstr ""
+"Ontvanger (e-mailadres of element) is leeg en/of ongeldig. Selecteer er "
+"minimaal één of voeg er één toe."
+
+#: controllers/single_page/dashboard/formidable/forms.php:1765
+msgid "Subject is empty or invalid"
+msgstr "Onderwerp is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1768
+msgid "Message is empty or invalid"
+msgstr "Bericht is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1836
+msgid "Mail successfully saved!"
+msgstr "E-mail succesvol opgeslagen!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1855
+#: controllers/single_page/dashboard/formidable/forms.php:1898
+#: controllers/single_page/dashboard/formidable/results.php:357
+msgid "Invalid mail"
+msgstr "Ongeldige e-mail"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1880
+msgid "Mail successfully copied!"
+msgstr "E-mail succesvol gedupliceerd!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1908
+msgid "Mail successfully deleted!"
+msgstr "E-mail succesvol verwijderd!"
+
+#: controllers/single_page/dashboard/formidable/forms.php:1963
+msgid "Sorting is successfully saved!"
+msgstr "Sortering succesvol opgeslagen!"
+
+#: controllers/single_page/dashboard/formidable/results.php:163
+#: controllers/single_page/dashboard/formidable/results.php:175
+#: controllers/single_page/dashboard/formidable/results.php:189
+msgid "Formidable Results"
+msgstr "Formidable Resultaten"
+
+#: controllers/single_page/dashboard/formidable/results.php:223
+#, php-format
+msgid "View result \"#%s\""
+msgstr "Bekijk resultaat \"#%s\""
+
+#: controllers/single_page/dashboard/formidable/results.php:290
+#: controllers/single_page/dashboard/formidable/results.php:344
+msgid "Invalid result"
+msgstr "Ongeldig resultaat"
+
+#: controllers/single_page/dashboard/formidable/results.php:306
+msgid "Result(s) successfully deleted!"
+msgstr "Resultaten succesvol verwijderd!"
+
+#: controllers/single_page/dashboard/formidable/results.php:352
+msgid "No mails selected to resend!"
+msgstr "Geen e-mails geselecteerd!"
+
+#: controllers/single_page/dashboard/formidable/results.php:393
+msgid "Result(s) resend, but with errors! Check the logs."
+msgstr "Resultaten zijn verzonden, maar met foutmeldingen! Controleer de logs."
+
+#: controllers/single_page/dashboard/formidable/results.php:396
+msgid "Result(s) successfully resend!"
+msgstr "Resultaten succesvol verzonden!"
+
+#: controllers/single_page/dashboard/formidable/templates.php:25
+msgid "Formidable Templates"
+msgstr "Formidable Sjablonen"
+
+#: controllers/single_page/dashboard/formidable/templates.php:33
+msgid "Add new template"
+msgstr "Maak nieuw sjabloon"
+
+#: controllers/single_page/dashboard/formidable/templates.php:85
+#: controllers/single_page/dashboard/formidable/templates.php:128
+msgid "Invalid template"
+msgstr "Ongeldig sjabloon"
+
+#: controllers/single_page/dashboard/formidable/templates.php:110
+msgid "Template successfully copied!"
+msgstr "Sjabloon succesvol gedupliceerd!"
+
+#: controllers/single_page/dashboard/formidable/templates.php:138
+msgid "Template successfully deleted!"
+msgstr "Sjabloon succesvol verwijderd!"
+
+#: controllers/single_page/dashboard/formidable/templates.php:164
+msgid "Content is empty or invalid"
+msgstr "Bericht is leeg en/of ongeldig"
+
+#: controllers/single_page/dashboard/formidable/templates.php:188
+msgid "Template successfully added!"
+msgstr "Sjabloon succesvol toegevoegd!"
+
+#: controllers/single_page/dashboard/formidable/templates.php:188
+msgid "Template successfully updated!"
+msgstr "Sjabloon succesvol aangepast!"
+
+#: controllers/single_page/dashboard/formidable/templates.php:207
+msgid "Invalid template, not found"
+msgstr "Ongeldig sjabloon, niet gevonden"
+
+#: elements/dashboard/uninstall.php:10
+msgid "Remove all"
+msgstr "Verwijder alle"
+
+#: elements/dashboard/uninstall.php:14
+msgid ""
+"Yes, I want to remove all the data from Formidable (forms, templates and "
+"results)"
+msgstr ""
+"Ja, ik wil alle data (formulieren, sjablonen, resultaten) van Formidable "
+"verwijderen"
+
+#: elements/dialog/column/copy.php:15 elements/dialog/data.php:64
+#: elements/dialog/data.php:136 elements/dialog/data.php:210
+#: elements/dialog/data.php:284 elements/dialog/data.php:358
+#: elements/dialog/element/copy.php:15 elements/dialog/form/copy.php:15
+#: elements/dialog/mail/copy.php:15 elements/dialog/row/copy.php:15
+#: elements/dialog/row/form.php:19 elements/dialog/row/form.php:53
+#: elements/dialog/row/form.php:84 elements/dialog/template/copy.php:15
+#: elements/form/edit.php:77 elements/form/layout/column.php:40
+#: elements/form/layout/element.php:142 elements/form/layout/element.php:750
+#: elements/form/layout/element.php:1032 elements/form/layout/row.php:38
+#: elements/form/mail/edit.php:130 elements/form/mail/edit.php:162
+#: elements/form/mail/edit.php:201 elements/template/edit.php:24
+#: single_pages/dashboard/formidable/forms.php:72
+#: single_pages/dashboard/formidable/forms.php:174
+#: single_pages/dashboard/formidable/templates.php:27
+#: src/Formidable/Elements/Types/Name.php:43
+#: src/Formidable/Helpers/Converter.php:295
+#: views/dialogs/search/advanced_search.php:106
+#: views/dialogs/search/preset/edit.php:8
+msgid "Name"
+msgstr "Naam"
+
+#: elements/dialog/column/copy.php:19 elements/dialog/row/copy.php:28
+msgid "Duplicate elements"
+msgstr "Dupliceer elementen"
+
+#: elements/dialog/column/copy.php:23
+msgid "Also copy the elements in this column"
+msgstr "Dupliceer ook de elementen in deze kolom"
+
+#: elements/dialog/column/copy.php:29 elements/dialog/column/delete.php:23
+#: elements/dialog/element/copy.php:21 elements/dialog/element/delete.php:16
+#: elements/dialog/element/option/clear.php:15
+#: elements/dialog/element/option/multiple.php:31
+#: elements/dialog/form/copy.php:29 elements/dialog/form/delete.php:17
+#: elements/dialog/mail/copy.php:21 elements/dialog/mail/delete.php:16
+#: elements/dialog/result/delete.php:16 elements/dialog/result/resend.php:34
+#: elements/dialog/row/copy.php:38 elements/dialog/row/delete.php:23
+#: elements/dialog/row/form.php:133 elements/dialog/template/copy.php:21
+#: elements/dialog/template/delete.php:16
+#: single_pages/dashboard/formidable/forms.php:13
+#: single_pages/dashboard/formidable/forms.php:29
+#: single_pages/dashboard/formidable/forms.php:41
+#: single_pages/dashboard/formidable/forms.php:53
+#: single_pages/dashboard/formidable/forms.php:160
+#: single_pages/dashboard/formidable/templates.php:13
+#: views/dialogs/search/advanced_search.php:111
+#: views/dialogs/search/customize.php:9
+#: views/dialogs/search/preset/delete.php:10
+#: views/dialogs/search/preset/edit.php:13
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: elements/dialog/column/copy.php:30 elements/dialog/element/copy.php:22
+#: elements/dialog/form/copy.php:30 elements/dialog/mail/copy.php:22
+#: elements/dialog/row/copy.php:39 elements/dialog/template/copy.php:22
+#: elements/form/layout.php:64 elements/form/layout.php:88
+#: elements/form/layout.php:99 elements/form/layout.php:124
+#: elements/form/layout.php:133 elements/form/menu.php:46
+#: elements/form/menu.php:70 elements/pane/dependency.php:358
+#: elements/template/menu.php:30 elements/template/menu.php:38
+#: single_pages/dashboard/formidable/forms.php:116
+#: single_pages/dashboard/formidable/forms.php:125
+msgid "Copy"
+msgstr "Dupliceer"
+
+#: elements/dialog/column/delete.php:13
+msgid "Delete this column? This cannot be undone."
+msgstr "Deze kolom verwijderen? Dit kan niet ongedaan gemaakt worden."
+
+#: elements/dialog/column/delete.php:14 elements/dialog/row/delete.php:14
+msgid "Delete children"
+msgstr "Verwijder alle"
+
+#: elements/dialog/column/delete.php:18
+msgid "Force delete, even if there are still elements in this column."
+msgstr ""
+"Forceer verwijderen, ook wanneer er nog elementen in de kolom aanwezig zijn."
+
+#: elements/dialog/column/delete.php:24 elements/dialog/element/delete.php:17
+#: elements/dialog/form/delete.php:18 elements/dialog/mail/delete.php:17
+#: elements/dialog/result/delete.php:17 elements/dialog/row/delete.php:24
+#: elements/dialog/template/delete.php:17 elements/form/layout.php:65
+#: elements/form/layout.php:89 elements/form/layout.php:101
+#: elements/form/layout.php:125 elements/form/layout.php:135
+#: elements/form/layout/element.php:779 elements/form/layout/element.php:822
+#: elements/form/mail/edit.php:238 elements/form/mail/edit.php:264
+#: elements/form/mail/edit.php:370 elements/form/menu.php:47
+#: elements/form/menu.php:73 elements/pane/dependency.php:102
+#: elements/pane/dependency.php:137 elements/pane/dependency.php:160
+#: elements/pane/dependency.php:198 elements/pane/dependency.php:227
+#: elements/pane/dependency.php:272 elements/pane/dependency.php:295
+#: elements/pane/dependency.php:341 elements/results/menu.php:34
+#: elements/template/menu.php:31 elements/template/menu.php:41
+#: single_pages/dashboard/formidable/forms.php:118
+#: single_pages/dashboard/formidable/forms.php:128
+#: single_pages/dashboard/formidable/results.php:109
+#: single_pages/dashboard/formidable/results.php:117
+#: src/Formidable/Results/Search/Menu.php:43
+#: src/Formidable/Results/Search/Menu/MenuFactory.php:39
+#: views/dialogs/search/advanced_search.php:57
+#: views/dialogs/search/advanced_search.php:58
+msgid "Delete"
+msgstr "Verwijder"
+
+#: elements/dialog/data.php:26
+msgid "Result"
+msgstr "Resultaat"
+
+#: elements/dialog/data.php:31
+#: src/Formidable/Results/Search/Field/Manager.php:42
+msgid "Elements"
+msgstr "Elementen"
+
+#: elements/dialog/data.php:36 elements/results/details.php:79
+#: src/Formidable/Elements/Element.php:462
+#: src/Formidable/Results/Search/ColumnSet/Available.php:23
+msgid "Page"
+msgstr "Pagina"
+
+#: elements/dialog/data.php:41 elements/results/details.php:105
+#: src/Formidable/Results/Search/ColumnSet/Available.php:24
+msgid "User"
+msgstr "Gebruiker"
+
+#: elements/dialog/data.php:65 elements/dialog/data.php:137
+#: elements/dialog/data.php:211 elements/dialog/data.php:285
+#: elements/dialog/data.php:359 elements/dialog/row/form.php:32
+#: elements/form/edit.php:230 elements/form/layout/element.php:135
+#: elements/form/layout/element.php:198 elements/form/layout/element.php:325
+msgid "Type"
+msgstr "Type"
+
+#: elements/dialog/data.php:71 elements/dialog/data.php:82
+msgid "All elements"
+msgstr "Toon alles"
+
+#: elements/dialog/data.php:72 elements/dialog/data.php:144
+#: elements/dialog/data.php:218 elements/dialog/data.php:292
+#: elements/dialog/data.php:366
+msgid "(combined)"
+msgstr "(gecombineerd)"
+
+#: elements/dialog/data.php:76 elements/dialog/data.php:93
+#: elements/dialog/data.php:111 elements/dialog/data.php:148
+#: elements/dialog/data.php:165 elements/dialog/data.php:184
+#: elements/dialog/data.php:222 elements/dialog/data.php:239
+#: elements/dialog/data.php:258 elements/dialog/data.php:296
+#: elements/dialog/data.php:313 elements/dialog/data.php:332
+#: elements/dialog/data.php:370 elements/dialog/data.php:387
+#: elements/dialog/data.php:406
+msgid "Both"
+msgstr "Beide"
+
+#: elements/dialog/data.php:83 elements/dialog/data.php:155
+#: elements/dialog/data.php:229 elements/dialog/data.php:303
+#: elements/dialog/data.php:377
+msgid "(seperate tags)"
+msgstr "(individuele tags)"
+
+#: elements/dialog/data.php:87 elements/dialog/data.php:105
+#: elements/dialog/data.php:159 elements/dialog/data.php:178
+#: elements/dialog/data.php:233 elements/dialog/data.php:252
+#: elements/dialog/data.php:307 elements/dialog/data.php:326
+#: elements/dialog/data.php:381 elements/dialog/data.php:400
+msgid "Label"
+msgstr "Label"
+
+#: elements/dialog/data.php:90 elements/dialog/data.php:108
+#: elements/dialog/data.php:162 elements/dialog/data.php:181
+#: elements/dialog/data.php:236 elements/dialog/data.php:255
+#: elements/dialog/data.php:310 elements/dialog/data.php:329
+#: elements/dialog/data.php:384 elements/dialog/data.php:403
+#: elements/form/edit.php:109 elements/form/edit.php:226
+#: elements/form/layout/element.php:204 elements/form/layout/element.php:248
+#: elements/form/layout/element.php:747 src/Formidable/Elements/Element.php:460
+msgid "Value"
+msgstr "Waarde"
+
+#: elements/dialog/data.php:143 elements/dialog/data.php:154
+#: elements/dialog/data.php:217 elements/dialog/data.php:228
+#: elements/dialog/data.php:291 elements/dialog/data.php:302
+#: elements/dialog/data.php:365 elements/dialog/data.php:376
+msgid "All properties"
+msgstr "Alle eigenschappen"
+
+#: elements/dialog/element/delete.php:13
+msgid "Delete this element? This cannot be undone."
+msgstr "Dit element verwijderen? Dit kan niet ongedaan gemaakt worden."
+
+#: elements/dialog/element/option/clear.php:12
+msgid "Are you sure you want to clear all the options This cannot be undone."
+msgstr "Alle opties verwijderen? Dit kan niet ongedaan gemaakt worden."
+
+#: elements/dialog/element/option/clear.php:16
+msgid "Clear"
+msgstr "Leeg maken"
+
+#: elements/dialog/element/option/multiple.php:15 elements/form/layout.php:93
+#: elements/form/layout.php:129 elements/form/layout/element.php:96
+#: elements/form/layout/element.php:712 elements/form/layout/element.php:877
+#: elements/form/layout/element.php:954
+#: src/Formidable/Elements/Types/Options.php:46
+msgid "Options"
+msgstr "Opties"
+
+#: elements/dialog/element/option/multiple.php:17
+msgid "Add values in the textarea. New line for each new option."
+msgstr ""
+"Voeg waarde toe in het tekstveld. Elke nieuwe regel is een nieuwe optie."
+
+#: elements/dialog/element/option/multiple.php:17
+msgid "Use semicolon (;) to use value;name options."
+msgstr "Gebruik lijstscheidsteken (;) om waarde;naam in te voeren."
+
+#: elements/dialog/element/option/multiple.php:21
+msgid "Clear before adding"
+msgstr "Verwijder huidige opties"
+
+#: elements/dialog/element/option/multiple.php:25
+msgid "Remove all existing options before adding these new ones"
+msgstr "Verwijder huidige opties alvorens nieuwe toe te voegen"
+
+#: elements/dialog/element/option/multiple.php:32
+#: elements/dialog/row/form.php:134
+#: single_pages/dashboard/formidable/forms.php:14
+#: single_pages/dashboard/formidable/forms.php:30
+#: single_pages/dashboard/formidable/forms.php:42
+#: single_pages/dashboard/formidable/forms.php:54
+#: single_pages/dashboard/formidable/forms.php:161
+#: single_pages/dashboard/formidable/templates.php:14
+#: views/dialogs/search/customize.php:10
+msgid "Save"
+msgstr "Opslaan"
+
+#: elements/dialog/form/copy.php:19
+msgid "Duplicate results"
+msgstr "Dupliceer resultaten"
+
+#: elements/dialog/form/copy.php:23
+msgid "Also copy the results from this form"
+msgstr "Dupliceer ook de resultaten voor dit formulier"
+
+#: elements/dialog/form/delete.php:13
+msgid "Delete this form? This cannot be undone."
+msgstr "Dit formulier verwijderen? Dit kan niet ongedaan gemaakt worden."
+
+#: elements/dialog/form/delete.php:14
+msgid "Results for this form will also be deleted!"
+msgstr "Resultaten van dit formulier zullen ook worden verwijderd!"
+
+#: elements/dialog/mail/delete.php:13
+msgid "Delete this mail? This cannot be undone."
+msgstr "Deze e-mail verwijderen? Dit kan niet ongedaan gemaakt worden."
+
+#: elements/dialog/result/delete.php:13
+msgid "Delete this result(s)? This cannot be undone."
+msgstr "Deze resultaten verwijderen? Dit kan niet ongedaan gemaakt worden."
+
+#: elements/dialog/result/resend.php:18
+msgid "Are you sure you want to resend this result(s)?"
+msgstr "Weet je zeker dat je deze resultaten nogmaals wilt mailen?"
+
+#: elements/dialog/result/resend.php:21
+msgid "Which mail do you want to resend?"
+msgstr "Welke e-mail wil je nogmaals zenden?"
+
+#: elements/dialog/result/resend.php:26
+#, php-format
+msgid "%s to %s"
+msgstr "%s tot %s"
+
+#: elements/dialog/result/resend.php:35 elements/results/menu.php:33
+#: single_pages/dashboard/formidable/results.php:107
+#: single_pages/dashboard/formidable/results.php:116
+#: src/Formidable/Results/Search/Menu.php:30
+#: src/Formidable/Results/Search/Menu/MenuFactory.php:26
+msgid "Resend"
+msgstr "Mailen"
+
+#: elements/dialog/row/copy.php:19
+msgid "Duplicate colums"
+msgstr "Dupliceer kolommen"
+
+#: elements/dialog/row/copy.php:23
+msgid "Also copy the columns in this row"
+msgstr "Dupliceer ook de kolommen in deze rij"
+
+#: elements/dialog/row/copy.php:32
+msgid "Also copy the elements in this row"
+msgstr "Dupliceer ook de elementen in deze rij"
+
+#: elements/dialog/row/delete.php:13
+msgid "Delete this row? This cannot be undone."
+msgstr "Deze rij verwijderen? Dit kan niet ongedaan gemaakt worden."
+
+#: elements/dialog/row/delete.php:18
+msgid ""
+"Force delete, even if there are still columns and/or elements in this row."
+msgstr ""
+"Forceer verwijderen, ook wanneer er nog kolommen en/of elementen in de rij "
+"aanwezig zijn."
+
+#: elements/dialog/row/form.php:25 elements/dialog/row/form.php:59
+#: elements/dialog/row/form.php:90 elements/form/edit.php:83
+#: elements/form/layout/column.php:46 elements/form/layout/element.php:148
+#: elements/form/layout/row.php:44 elements/form/mail/edit.php:136
+#: elements/template/edit.php:30 src/Formidable/Helpers/Converter.php:301
+msgid "Handle"
+msgstr "Handle"
+
+#: elements/dialog/row/form.php:41
+msgid "Custom buttons"
+msgstr "Aangepaste knoppen"
+
+#: elements/dialog/row/form.php:49
+msgid "Previous-button"
+msgstr "Vorige-knop"
+
+#: elements/dialog/row/form.php:68 elements/dialog/row/form.php:99
+#: elements/dialog/row/form.php:119 elements/form/layout/column.php:73
+#: elements/form/layout/element.php:684 elements/form/layout/row.php:145
+msgid "Additional CSS-class(es)"
+msgstr "Extra CSS-class(es)"
+
+#: elements/dialog/row/form.php:74 elements/dialog/row/form.php:105
+#: elements/dialog/row/form.php:125 elements/form/layout/column.php:79
+#: elements/form/layout/element.php:690 elements/form/layout/row.php:151
+msgid "Class(es)"
+msgstr "Class(es)"
+
+#: elements/dialog/row/form.php:80
+msgid "Next-button"
+msgstr "Volgende-knop"
+
+#: elements/dialog/template/delete.php:13
+msgid "Delete this template? This cannot be undone."
+msgstr "Deze template verwijderen? Dit kan niet ongedaan gemaakt worden."
+
+#: elements/form/edit.php:41
+msgid "Back to forms"
+msgstr "Terug naar formulieren"
+
+#: elements/form/edit.php:46 elements/form/layout/column.php:24
+#: elements/form/layout/element.php:91 elements/form/layout/row.php:22
+#: elements/form/mail/edit.php:89 elements/results/details.php:23
+msgid "Basic"
+msgstr "Basis"
+
+#: elements/form/edit.php:51 elements/form/edit.php:100
+#: single_pages/dashboard/formidable/forms.php:191
+msgid "Limits"
+msgstr "Limieten"
+
+#: elements/form/edit.php:56
+msgid "Scheduling"
+msgstr "Planning"
+
+#: elements/form/edit.php:61 elements/form/edit.php:182
+msgid "Privacy"
+msgstr "Privacy"
+
+#: elements/form/edit.php:90
+msgid "Enabled"
+msgstr "Ingeschakeld"
+
+#: elements/form/edit.php:92
+msgid "Enable this form overall within C5 installation"
+msgstr "In/Uitschakelen van formulier voor gebruik binnen deze C5 installatie"
+
+#: elements/form/edit.php:102
+msgid "Limit the submissions based on a diversity of options"
+msgstr "Limiteer het aantal verzendingen op basis van diverse opties"
+
+#: elements/form/edit.php:113
+msgid "Based on"
+msgstr "Gebaseerd op"
+
+#: elements/form/edit.php:119
+msgid "On limit reached"
+msgstr "Wanneer limiet is bereikt"
+
+#: elements/form/edit.php:121
+msgid "What should happen when the limit is reached for this form?"
+msgstr "Wat moet er gebeuren wanneer de ingestelde limieten zijn bereikt?"
+
+#: elements/form/edit.php:141
+msgid "Schedule"
+msgstr "Planning"
+
+#: elements/form/edit.php:143
+msgid "Schedule the submissions based on a diversity of options"
+msgstr "Plan de beschikbaarheid van dit formulier op basis van diverse opties"
+
+#: elements/form/edit.php:149
+msgid "Date from"
+msgstr "Datum van"
+
+#: elements/form/edit.php:153
+msgid "Date to"
+msgstr "Datum tot"
+
+#: elements/form/edit.php:159
+msgid "When outside schedule"
+msgstr "Wanneer formulier buiten planning valt"
+
+#: elements/form/edit.php:161
+msgid ""
+"What should happen when the visitor is outside the schedule of this form?"
+msgstr ""
+"Wat moet er gebeuren wanneer een bezoeker buiten de planning het formulier "
+"bezoekt?"
+
+#: elements/form/edit.php:184
+msgid "Setup privacy settings for this form"
+msgstr "Stel privacy-instellingen in voor dit formulier"
+
+#: elements/form/edit.php:190 elements/form/edit.php:239
+msgid "Additional options"
+msgstr "Additionele opties"
+
+#: elements/form/edit.php:196
+msgid ""
+"Don't save the submitters IP-address. (Note: This could effect the limit-"
+"settings of your form!)"
+msgstr ""
+"Sla het IP-adres van de bezoeker niet op (Let op: Dit kan effect hebben op "
+"eventueel ingestelde limieten!)"
+
+#: elements/form/edit.php:203
+msgid "Don't save the submitters browser information"
+msgstr "Sla de browser informatie van de bezoeker niet op"
+
+#: elements/form/edit.php:210
+msgid "Don't log the submission in the reports / logs"
+msgstr "Genereer geen log van de verzending in de Rapporten / Logboek"
+
+#: elements/form/edit.php:217
+msgid "Remove submissions"
+msgstr "Verwijder resultaten"
+
+#: elements/form/edit.php:219
+msgid "Remove form submissions automatically after a certain period."
+msgstr "Verwijder resultaten automatisch na een bepaalde periode."
+
+#: elements/form/edit.php:234
+msgid "After which period should the results be removed? (e.g. 30 days)"
+msgstr "Na welke periode moeten de resultaten worden verwijderd (bv: 30 dagen)"
+
+#: elements/form/edit.php:245
+msgid "Remove submitted files from the file manager"
+msgstr "Verwijder geüploade bestanden uit de Bestanden"
+
+#: elements/form/layout.php:11
+msgid "Please create a form first"
+msgstr "Voeg een nieuw formulier toe"
+
+#: elements/form/layout.php:49
+msgid "(empty form)"
+msgstr "(leeg formulier)"
+
+#: elements/form/layout.php:62 elements/form/layout.php:159
+msgid "Add column"
+msgstr "Voeg kolom toe"
+
+#: elements/form/layout.php:63 elements/form/layout.php:87
+#: elements/form/layout.php:98 elements/form/layout.php:123
+#: elements/form/layout.php:132 single_pages/dashboard/formidable/forms.php:124
+#: views/dialogs/search/advanced_search.php:54
+#: views/dialogs/search/advanced_search.php:55
+msgid "Edit"
+msgstr "Wijzigen"
+
+#: elements/form/layout.php:74
+msgid "(empty row)"
+msgstr "(lege rij)"
+
+#: elements/form/layout.php:86 elements/form/layout.php:96
+#: elements/form/layout.php:146
+msgid "Add element"
+msgstr "Voeg element toe"
+
+#: elements/form/layout.php:110
+msgid "(empty column)"
+msgstr "(lege kolom)"
+
+#: elements/form/layout.php:174
+msgid "Add row"
+msgstr "Voeg rij toe"
+
+#: elements/form/layout.php:200
+msgid "Duplicate row"
+msgstr "Dupliceer rij"
+
+#: elements/form/layout.php:216
+msgid "Delete row"
+msgstr "Verwijder rij"
+
+#: elements/form/layout.php:233
+msgid "Duplicate column"
+msgstr "Dupliceer kolom"
+
+#: elements/form/layout.php:248
+msgid "Delete column"
+msgstr "Verwijder kolom"
+
+#: elements/form/layout.php:265
+msgid "Duplicate element"
+msgstr "Dupliceer element"
+
+#: elements/form/layout.php:280
+msgid "Delete element"
+msgstr "Verwijder element"
+
+#: elements/form/layout/column.php:19 elements/form/layout/element.php:86
+#: elements/form/layout/row.php:17
+msgid "Back to layout"
+msgstr "Terug naar lay-out"
+
+#: elements/form/layout/column.php:65
+msgid "Width"
+msgstr "Breedte"
+
+#: elements/form/layout/column.php:67
+#, php-format
+msgid ""
+"Rows are divided by 12 columns (default <a href=\"%s\" target=\"_blank"
+"\">Bootstrap</a>)."
+msgstr ""
+"Rijen worden opgedeeld in 12 kolommen (standaard <a href=\"%s\" target="
+"\"_blank\">Bootstrap</a>)."
+
+#: elements/form/layout/element.php:101
+msgid "Input"
+msgstr "Invoer / Veld"
+
+#: elements/form/layout/element.php:106
+msgid "Appearance"
+msgstr "Weergave"
+
+#: elements/form/layout/element.php:112 elements/form/mail/edit.php:114
+msgid "Dependencies"
+msgstr "Afhankelijkheden"
+
+#: elements/form/layout/element.php:119
+msgid "Error Reporting"
+msgstr "Fout afhandeling"
+
+#: elements/form/layout/element.php:155
+msgid "Required"
+msgstr "Verplicht"
+
+#: elements/form/layout/element.php:159
+msgid "Required on form"
+msgstr "Verplicht in formulier"
+
+#: elements/form/layout/element.php:173
+#: src/Formidable/Elements/Types/Code.php:17
+msgid "Code"
+msgstr "Code"
+
+#: elements/form/layout/element.php:190
+msgid "Default value"
+msgstr "Standaard waarde"
+
+#: elements/form/layout/element.php:191 elements/form/layout/element.php:243
+#: elements/form/layout/element.php:267 elements/form/layout/element.php:291
+#: elements/form/layout/element.php:361 elements/form/layout/element.php:474
+#: elements/form/layout/element.php:498 elements/form/layout/element.php:522
+#: elements/form/layout/element.php:546 elements/form/layout/element.php:570
+#: elements/form/layout/element.php:661 elements/form/layout/element.php:685
+#: elements/form/layout/element.php:1017
+#: src/Formidable/Elements/Element.php:543
+msgid "Disable"
+msgstr "Uitschakelen"
+
+#: elements/form/layout/element.php:191 elements/form/layout/element.php:243
+#: elements/form/layout/element.php:267 elements/form/layout/element.php:291
+#: elements/form/layout/element.php:361 elements/form/layout/element.php:474
+#: elements/form/layout/element.php:498 elements/form/layout/element.php:522
+#: elements/form/layout/element.php:546 elements/form/layout/element.php:570
+#: elements/form/layout/element.php:661 elements/form/layout/element.php:685
+#: elements/form/layout/element.php:1017
+#: src/Formidable/Elements/Element.php:542
+msgid "Enable"
+msgstr "Inschakelen"
+
+#: elements/form/layout/element.php:210
+msgid "Parameter"
+msgstr "Parameter"
+
+#: elements/form/layout/element.php:242
+msgid "Placeholder"
+msgstr "Aanduiding"
+
+#: elements/form/layout/element.php:266
+msgid "Mask input"
+msgstr "Formateer waarde"
+
+#: elements/form/layout/element.php:272 elements/form/layout/element.php:391
+#: elements/form/layout/element.php:527
+msgid "Format"
+msgstr "Formaat"
+
+#: elements/form/layout/element.php:290
+msgid "Range / Limit"
+msgstr "Bereik / Limieten"
+
+#: elements/form/layout/element.php:298
+msgid "Minimal"
+msgstr "Minimaal"
+
+#: elements/form/layout/element.php:310
+msgid "Maximal"
+msgstr "Maximaal"
+
+#: elements/form/layout/element.php:333
+msgid "Steps"
+msgstr "Stappen"
+
+#: elements/form/layout/element.php:360
+msgid "Confirm / Match"
+msgstr "Bevestig / Gelijk aan"
+
+#: elements/form/layout/element.php:366
+msgid "Field"
+msgstr "Element"
+
+#: elements/form/layout/element.php:372
+msgid "No other fields of the same type created"
+msgstr "Geen ander element van hetzelfde type aangemaakt"
+
+#: elements/form/layout/element.php:422
+msgid "Available countries"
+msgstr "Beschikbare landen"
+
+#: elements/form/layout/element.php:423
+msgid "All"
+msgstr "Allemaal"
+
+#: elements/form/layout/element.php:423
+msgid "Custom"
+msgstr "Aangepast"
+
+#: elements/form/layout/element.php:434
+msgid "Select the countries subscribers can choose from"
+msgstr "Selecteer de beschikbare landen"
+
+#: elements/form/layout/element.php:441
+msgid "Default country"
+msgstr "Standaard land"
+
+#: elements/form/layout/element.php:448
+msgid "Suggest the Country from the user IP address"
+msgstr "Selecteer het land op basis van het IP-adres van de bezoeker"
+
+#: elements/form/layout/element.php:452
+msgid "Options for state/province/county"
+msgstr "Opties voor staat/provincie/district"
+
+#: elements/form/layout/element.php:456
+msgid "Clear state/province/county field when country is changed"
+msgstr "Leeg staat/provincie/district element wanneer het land wijzigt"
+
+#: elements/form/layout/element.php:463
+msgid "Hide state/province/county field when country has no available options"
+msgstr ""
+"Verberg staat/provincie/district element wanneer er geen opties beschikbaar "
+"zijn"
+
+#: elements/form/layout/element.php:473
+msgid "Force extension(s)"
+msgstr "Toegelaten bestandstype(n)"
+
+#: elements/form/layout/element.php:479
+msgid "Extensions"
+msgstr "Bestandstype(n)"
+
+#: elements/form/layout/element.php:497
+msgid "Uploaded filesize"
+msgstr "Geüploade bestandsgrootte"
+
+#: elements/form/layout/element.php:504
+msgid "Max filesize"
+msgstr "Max bestandsgrootte"
+
+#: elements/form/layout/element.php:508
+msgid "MB"
+msgstr "MB"
+
+#: elements/form/layout/element.php:512
+#, php-format
+msgid "Set the maximum filesize for each uploaded file. (not larger then %s)"
+msgstr ""
+"Stel de maximale bestandsgrootte in voor individuele geüploade bestanden. "
+"(niet groter dan %s)"
+
+#: elements/form/layout/element.php:521
+msgid "Advanced settings"
+msgstr "Geavanceerde instellingen"
+
+#: elements/form/layout/element.php:545
+msgid "Upload files in folder"
+msgstr "Plaats bestanden in map"
+
+#: elements/form/layout/element.php:551
+msgid "Select folder"
+msgstr "Selecteer map"
+
+#: elements/form/layout/element.php:569
+msgid "Assign files to fileset"
+msgstr "Koppel bestanden aan bestandsverzameling"
+
+#: elements/form/layout/element.php:575
+msgid "Select fileset"
+msgstr "Selecteer bestandsverzameling"
+
+#: elements/form/layout/element.php:588
+msgid "No filesets created"
+msgstr "Geen bestandsverzamelingen aangemaakt"
+
+#: elements/form/layout/element.php:610
+msgid "Template (view)"
+msgstr "Sjabloon (weergave)"
+
+#: elements/form/layout/element.php:633
+msgid "Hide label"
+msgstr "Verberg label"
+
+#: elements/form/layout/element.php:637
+msgid "Hide label on form"
+msgstr "Verberg het label op het formulier"
+
+#: elements/form/layout/element.php:644
+msgid "Labels vs placeholder"
+msgstr "Label en/of aanduiding"
+
+#: elements/form/layout/element.php:648
+msgid "Prepend labels, instead of placeholders in the fields"
+msgstr "Voeg labels toe i.p.v. aanduidingen in de elementen"
+
+#: elements/form/layout/element.php:652
+msgid "In case you want to use labels instead of the default placeholder."
+msgstr "Wanneer je labels wilt in plaats van aanduidingen."
+
+#: elements/form/layout/element.php:660
+msgid "Help / Description"
+msgstr "Help / Omschrijving"
+
+#: elements/form/layout/element.php:666 src/Formidable/Elements/Element.php:516
+#: src/Formidable/Elements/Types/Text.php:12
+#: src/Formidable/Helpers/Converter.php:296
+#: src/Formidable/Helpers/Converter.php:302
+#: src/Formidable/Helpers/Converter.php:322
+#: src/Formidable/Helpers/Converter.php:328
+#: src/Formidable/Helpers/Converter.php:334
+#: src/Formidable/Helpers/Converter.php:340
+#: src/Formidable/Helpers/Converter.php:346
+#: src/Formidable/Helpers/Converter.php:352
+#: src/Formidable/Helpers/Converter.php:358
+#: src/Formidable/Helpers/Converter.php:378
+#: src/Formidable/Helpers/Converter.php:435
+msgid "Text"
+msgstr "Tekst"
+
+#: elements/form/layout/element.php:712
+msgid "Selectables"
+msgstr "Beschikbare opties"
+
+#: elements/form/layout/element.php:776 elements/form/layout/element.php:819
+msgid "Move"
+msgstr "Verplaats"
+
+#: elements/form/layout/element.php:792
+msgid "Add option"
+msgstr "Voeg optie toe"
+
+#: elements/form/layout/element.php:795
+msgid "Add multiple"
+msgstr "Voeg meerdere toe"
+
+#: elements/form/layout/element.php:798
+msgid "Clear all"
+msgstr "Verwijder allen"
+
+#: elements/form/layout/element.php:844
+msgid "Page Type"
+msgstr "Paginatype"
+
+#: elements/form/layout/element.php:861
+msgid "Location"
+msgstr "Locatie"
+
+#: elements/form/layout/element.php:862
+msgid "Everywhere"
+msgstr "Overal"
+
+#: elements/form/layout/element.php:862
+msgid "Beneath page"
+msgstr "Onder bepaalde pagina"
+
+#: elements/form/layout/element.php:872 elements/form/layout/element.php:888
+#: elements/form/layout/element.php:949 elements/form/layout/element.php:966
+msgid "Option Name"
+msgstr "Optienaam"
+
+#: elements/form/layout/element.php:874 elements/form/layout/element.php:951
+msgid "Will be shown as selectable value"
+msgstr "Dit zal worden weergegeven als selecteerbare waarde"
+
+#: elements/form/layout/element.php:880
+msgid "Display page aliasses"
+msgstr "Geef aliassen ook weer"
+
+#: elements/form/layout/element.php:884
+msgid "Show featured pages only"
+msgstr "Laat alleen aanbevolen pagina's zien"
+
+#: elements/form/layout/element.php:888
+#, php-format
+msgid "Only display pages where \"%s\" is not empty"
+msgstr "Alleen pagina's weergeven waar \"%s\" niet leeg is"
+
+#: elements/form/layout/element.php:893 elements/form/layout/element.php:983
+msgid "Sort order"
+msgstr "Sorteer op"
+
+#: elements/form/layout/element.php:894
+msgid "Sitemap order"
+msgstr "Sitemap volgorde"
+
+#: elements/form/layout/element.php:894
+msgid "Reverse sitemap order"
+msgstr "Omgekeerde sitemap volgorde"
+
+#: elements/form/layout/element.php:894
+msgid "Most recent first"
+msgstr "Meest recente eerst"
+
+#: elements/form/layout/element.php:894
+msgid "Earliest first"
+msgstr "Vroegste eerste"
+
+#: elements/form/layout/element.php:894
+msgid "Alphabetical order"
+msgstr "Alfabetische volgorde"
+
+#: elements/form/layout/element.php:894
+msgid "Reverse alphabetical order"
+msgstr "Omgekeerde alfabetische volgorde"
+
+#: elements/form/layout/element.php:894
+msgid "Most recently modified first"
+msgstr "Meest recent aangepast eerst"
+
+#: elements/form/layout/element.php:894
+msgid "Random"
+msgstr "Willekeurige"
+
+#: elements/form/layout/element.php:926
+msgid "Groups"
+msgstr "Groepen"
+
+#: elements/form/layout/element.php:958
+msgid "Show active members only"
+msgstr "Alleen actieve gebruikers weergeven"
+
+#: elements/form/layout/element.php:962
+msgid "Show valid members only"
+msgstr "Alleen gevalideerde gebruikers weergeven"
+
+#: elements/form/layout/element.php:966
+#, php-format
+msgid "Only display users where \"%s\" is not empty"
+msgstr "Alleen gebruikers weergeven waar \"%s\" niet leeg is"
+
+#: elements/form/layout/element.php:977
+msgid "Sort By"
+msgstr "Sorteer op"
+
+#: elements/form/layout/element.php:984
+msgid "Ascending"
+msgstr "Oplopend"
+
+#: elements/form/layout/element.php:1025
+msgid "Element Type"
+msgstr "Type element"
+
+#: elements/form/layout/element.php:1056
+msgid "Allow multiple"
+msgstr "Meerdere toegestaan"
+
+#: elements/form/layout/element.php:1060
+msgid "Allow multiple selected options"
+msgstr "Laat het selecteren van meerdere opties toe"
+
+#: elements/form/layout/element.php:1138
+msgid "Add multiple options at once"
+msgstr "Voeg meerdere opties in één keer toe"
+
+#: elements/form/layout/element.php:1182
+msgid "New options successfully added!"
+msgstr "Optie succesvol toegevoegd!"
+
+#: elements/form/layout/element.php:1195
+msgid "Remove all options"
+msgstr "Verwijdere alle opties"
+
+#: elements/form/layout/element.php:1209
+msgid "All options are successfully removed!"
+msgstr "Alle opties zijn succesvol verwijderd!"
+
+#: elements/form/mail/edit.php:84
+msgid "Back to mails"
+msgstr "Terug naar e-mails"
+
+#: elements/form/mail/edit.php:94 elements/form/mail/edit.php:149
+#: single_pages/dashboard/formidable/forms.php:74
+#: src/Formidable/Helpers/Mail.php:144
+msgid "From"
+msgstr "Afzender"
+
+#: elements/form/mail/edit.php:99
+#: single_pages/dashboard/formidable/forms.php:75
+#: src/Formidable/Helpers/Mail.php:143 src/Formidable/Helpers/Mail.php:155
+#: src/Formidable/Helpers/Mail.php:183
+msgid "To"
+msgstr "Ontvanger"
+
+#: elements/form/mail/edit.php:109
+msgid "Attachments"
+msgstr "Bijlagen"
+
+#: elements/form/mail/edit.php:151
+msgid "From which address should this mail be send from?"
+msgstr "Van welke e-mailadres moet deze e-mail verzonden worden?"
+
+#: elements/form/mail/edit.php:158 elements/form/mail/edit.php:197
+#: elements/form/mail/edit.php:234 elements/form/mail/edit.php:260
+#: src/Formidable/Elements/Element.php:451
+#: src/Formidable/Elements/Types/Email.php:14
+#: src/Formidable/Helpers/Converter.php:440
+#: src/Formidable/Helpers/Converter.php:441
+msgid "Email Address"
+msgstr "E-mailadres"
+
+#: elements/form/mail/edit.php:169 elements/form/mail/edit.php:208
+msgid "Element"
+msgstr "Element"
+
+#: elements/form/mail/edit.php:172
+msgid "Select the element the \"from\"-details will be loaded from"
+msgstr "Selecteer het element dat als \"afzender\" gebruikt wordt"
+
+#: elements/form/mail/edit.php:174
+msgid "No fields in form to use for the \"from\"-details"
+msgstr "Geen element aangemaakt dat als \"afzender\" gebruikt kan worden"
+
+#: elements/form/mail/edit.php:184
+msgid "Reply To"
+msgstr "Antwoord naar"
+
+#: elements/form/mail/edit.php:186
+msgid "Set the \"reply-to\"-details for the mail"
+msgstr "Stel de \"antwoord naar\" gegevens in"
+
+#: elements/form/mail/edit.php:211
+msgid "Select the element the \"reply-to\"-details will be loaded from"
+msgstr "Selecteer het element dat als \"antwoord naar\" gebruikt wordt"
+
+#: elements/form/mail/edit.php:213
+msgid "No fields in form to use for the \"reply-to\"-details"
+msgstr "Geen element aangemaakt dat als \"antwoord naar\" gebruikt kan worden"
+
+#: elements/form/mail/edit.php:229
+msgid "To (custom email addresses)"
+msgstr "Ontvanger (e-mailadressen)"
+
+#: elements/form/mail/edit.php:251
+msgid "Add Email Address"
+msgstr "Voeg e-mailadres toe"
+
+#: elements/form/mail/edit.php:276
+msgid "To (available elements in the form)"
+msgstr "Ontvanger (elementen uit formulier)"
+
+#: elements/form/mail/edit.php:278
+msgid "No elements in the form available to send mail to"
+msgstr "Geen element beschikbaar die als ontvanger kunnen dienen"
+
+#: elements/form/mail/edit.php:295
+msgid "Use CC"
+msgstr "Gebruik CC"
+
+#: elements/form/mail/edit.php:299
+msgid "Use CC instead of BCC when you send to multple Email Addresses"
+msgstr "Gebruik CC i.p.v. BCC wanneer er meerdere ontvangers zijn"
+
+#: elements/form/mail/edit.php:310
+#: single_pages/dashboard/formidable/forms.php:73
+#: src/Formidable/Helpers/Mail.php:148
+msgid "Subject"
+msgstr "Onderwerp"
+
+#: elements/form/mail/edit.php:313
+msgid "Add dynamic data"
+msgstr "Voeg dynamische data toe"
+
+#: elements/form/mail/edit.php:320
+msgid "Template"
+msgstr "Sjabloon"
+
+#: elements/form/mail/edit.php:322
+msgid "No templates created"
+msgstr "Geen sjablonen aangemaakt"
+
+#: elements/form/mail/edit.php:324
+msgid "Don't use a template"
+msgstr "Gebruik geen sjabloon"
+
+#: elements/form/mail/edit.php:325
+msgid "Select the template for this mail"
+msgstr "Selecteer het gewenste sjabloon voor de e-mail"
+
+#: elements/form/mail/edit.php:335
+msgid "Skip empty values"
+msgstr "Sla lege waarde over"
+
+#: elements/form/mail/edit.php:339
+msgid ""
+"Empty values in the dynamic data in the message will be removed before "
+"sending the message"
+msgstr ""
+"Lege waarden uit dynamische data zullen niet worden meegezonden in het "
+"bericht"
+
+#: elements/form/mail/edit.php:345
+msgid "Skip layout elements"
+msgstr "Sla lay-out elementen over"
+
+#: elements/form/mail/edit.php:349
+msgid ""
+"Layout elements in the dynamic data in the message will be removed before "
+"sending the message"
+msgstr ""
+"Elementen voor de lay-out uit dynamische data zullen niet worden meegezonden "
+"in het bericht"
+
+#: elements/form/mail/edit.php:361
+msgid "Attachment (files from filemanager)"
+msgstr "Bijlagen (uit de Bestanden)"
+
+#: elements/form/mail/edit.php:366
+msgid "Choose File"
+msgstr "Selecteer bestand"
+
+#: elements/form/mail/edit.php:383
+msgid "Add attachment"
+msgstr "Voeg bijlage toe"
+
+#: elements/form/mail/edit.php:393
+msgid "Attachment (available elements in the form)"
+msgstr "Bijlagen (elementen uit formulier)"
+
+#: elements/form/mail/edit.php:395
+msgid "No elements in the form available to use as attachment"
+msgstr "Geen element aangemaakt dat als bijlagen gebruikt kan worden"
+
+#: elements/form/mail/edit.php:467 src/Formidable/Helpers/Editor.php:27
+#: src/Formidable/Helpers/Editor.php:80
+msgid "Select \"Formidable Data\" - Tag"
+msgstr "Selecteer \"Formdiable Data\" - Tag"
+
+#: elements/form/menu.php:17 elements/form/menu.php:40
+msgid "Results"
+msgstr "Resultaten"
+
+#: elements/form/menu.php:38 elements/template/menu.php:26
+#: single_pages/dashboard/formidable/forms.php:112
+#: single_pages/dashboard/formidable/results.php:103
+msgid "Select action"
+msgstr "Selecteer actie"
+
+#: elements/form/menu.php:42 elements/form/menu.php:53
+#: elements/results/menu.php:26 elements/results/search/menu.php:90
+#: src/Formidable/Elements/Element.php:429
+#: src/Formidable/Elements/Element.php:448
+msgid "Properties"
+msgstr "Eigenschappen"
+
+#: elements/form/menu.php:43 elements/form/menu.php:55
+#: elements/results/menu.php:27 elements/results/search/menu.php:91
+msgid "Fields"
+msgstr "Elementen"
+
+#: elements/form/menu.php:44 elements/form/menu.php:63
+#: elements/results/menu.php:28 elements/results/search/menu.php:92
+msgid "Mails"
+msgstr "E-mails"
+
+#: elements/form/menu.php:82 elements/template/menu.php:50
+#: single_pages/dashboard/formidable/forms.php:77
+#: single_pages/dashboard/formidable/forms.php:223
+#: single_pages/dashboard/formidable/templates.php:55
+msgid "Add new"
+msgstr "Voeg nieuwe toe"
+
+#: elements/pane/dependency.php:26
+msgid "Send"
+msgstr "Verzenden"
+
+#: elements/pane/dependency.php:26
+msgid "Do not send"
+msgstr "Niet verzenden"
+
+#: elements/pane/dependency.php:79
+msgid "No (other) fields available for setting up dependencies"
+msgstr ""
+"Geen (andere) elementen beschikbaar voor het instellen van afhankelijkheden"
+
+#: elements/pane/dependency.php:85
+msgid "You have not created any dependency rules"
+msgstr "Momenteel zijn er geen afhankelijkheden aangemaakt"
+
+#: elements/pane/dependency.php:95 elements/pane/dependency.php:220
+msgid "or"
+msgstr "of"
+
+#: elements/pane/dependency.php:100 elements/pane/dependency.php:225
+#, php-format
+msgid "Rule #%s"
+msgstr "Regel #%s"
+
+#: elements/pane/dependency.php:113 elements/pane/dependency.php:182
+#: elements/pane/dependency.php:250 elements/pane/dependency.php:325
+msgid "and"
+msgstr "en"
+
+#: elements/pane/dependency.php:124 elements/pane/dependency.php:187
+#: elements/pane/dependency.php:260 elements/pane/dependency.php:330
+msgid "Value..."
+msgstr "Waarde..."
+
+#: elements/pane/dependency.php:128 elements/pane/dependency.php:264
+msgid "Class..."
+msgstr "Class..."
+
+#: elements/pane/dependency.php:134 elements/pane/dependency.php:157
+#: elements/pane/dependency.php:195 elements/pane/dependency.php:269
+#: elements/pane/dependency.php:292 elements/pane/dependency.php:338
+msgid "Add"
+msgstr "Toevoegen"
+
+#: elements/pane/dependency.php:150 elements/pane/dependency.php:285
+msgid "if"
+msgstr "als"
+
+#: elements/pane/dependency.php:151 elements/pane/dependency.php:286
+msgid "and if"
+msgstr "en als"
+
+#: elements/pane/dependency.php:173 elements/pane/dependency.php:316
+msgid "has"
+msgstr "heeft"
+
+#: elements/pane/dependency.php:174 elements/pane/dependency.php:317
+msgid "and has"
+msgstr "en heeft"
+
+#: elements/pane/dependency.php:175 elements/pane/dependency.php:318
+msgid "any option"
+msgstr "elke optie"
+
+#: elements/pane/dependency.php:175 elements/pane/dependency.php:318
+msgid "non option"
+msgstr "geen optie"
+
+#: elements/pane/dependency.php:176 elements/pane/dependency.php:319
+msgid "selected/checked"
+msgstr "geselecteerd"
+
+#: elements/pane/dependency.php:352
+msgid "Add rule"
+msgstr "Voeg regel toe"
+
+#: elements/pane/dependency.php:354
+msgid "Paste dependency rules"
+msgstr "Plak afhankelijkheden"
+
+#: elements/pane/dependency.php:355
+msgid "Paste"
+msgstr "Plak"
+
+#: elements/pane/dependency.php:357
+msgid "Copy dependency rules"
+msgstr "Dupliceer afhankelijkheden"
+
+#: elements/pane/dependency.php:483 elements/pane/dependency.php:493
+msgid "(option removed or not available)"
+msgstr "(optie verwijderd of niet beschikbaar)"
+
+#: elements/pane/dependency.php:501
+msgid "(element removed or not available)"
+msgstr "(element verwijderd of niet beschikbaar)"
+
+#: elements/results/details.php:17
+msgid "Back to results"
+msgstr "Terug naar resultaten"
+
+#: elements/results/details.php:28
+msgid "Logs"
+msgstr "Logs"
+
+#: elements/results/details.php:60
+msgid "There is no data available for this submission"
+msgstr "Er is geen data beschikbaar voor dit resultaat"
+
+#: elements/results/details.php:66 elements/template/menu.php:28
+#: elements/template/menu.php:37
+#: single_pages/dashboard/formidable/forms.php:114
+#: single_pages/dashboard/formidable/results.php:105
+#: single_pages/dashboard/formidable/results.php:115
+msgid "Details"
+msgstr "Details"
+
+#: elements/results/details.php:69
+#: src/Formidable/Results/Search/ColumnSet/Column/ResultIDColumn.php:22
+msgid "ID"
+msgstr "ID"
+
+#: elements/results/details.php:76
+msgid "Send on"
+msgstr "Verzonden op"
+
+#: elements/results/details.php:86
+msgid "Unknown page"
+msgstr "Onbekende pagina"
+
+#: elements/results/details.php:88
+#, php-format
+msgid "(PageID: %s)"
+msgstr "(Pagina ID: %s)"
+
+#: elements/results/details.php:115 elements/results/details.php:190
+msgid "Guest"
+msgstr "Gast"
+
+#: elements/results/details.php:118 elements/results/details.php:193
+msgid "Unknown user"
+msgstr "Onbekende gebruiker"
+
+#: elements/results/details.php:123 elements/results/details.php:198
+#, php-format
+msgid "(UserID: %s)"
+msgstr "(GebruikerID: %s)"
+
+#: elements/results/details.php:130 src/Formidable/Helpers/Converter.php:321
+#: src/Formidable/Results/Search/ColumnSet/Available.php:15
+msgid "IP"
+msgstr "IP"
+
+#: elements/results/details.php:137 src/Formidable/Helpers/Converter.php:333
+#: src/Formidable/Results/Search/ColumnSet/Available.php:19
+msgid "Device"
+msgstr "Apparaat"
+
+#: elements/results/details.php:139 src/Formidable/Helpers/Converter.php:345
+#: src/Formidable/Results/Search/ColumnSet/Available.php:17
+msgid "Operating System"
+msgstr "Besturingssysteem"
+
+#: elements/results/details.php:141 src/Formidable/Helpers/Converter.php:327
+#: src/Formidable/Results/Search/ColumnSet/Available.php:16
+msgid "Browser"
+msgstr "Verkenner"
+
+#: elements/results/details.php:143 src/Formidable/Helpers/Converter.php:339
+#: src/Formidable/Results/Search/ColumnSet/Available.php:18
+msgid "Resolution"
+msgstr "Resolutie"
+
+#: elements/results/details.php:150
+msgid "Localization"
+msgstr "Taal"
+
+#: elements/results/details.php:164 src/Formidable/Elements/Types/Date.php:23
+#: src/Formidable/Helpers/Converter.php:391
+#: src/Formidable/Helpers/Converter.php:397
+#: src/Formidable/Helpers/Converter.php:403
+msgid "Date"
+msgstr "Datum"
+
+#: elements/results/details.php:165
+msgid "Action"
+msgstr "Actie"
+
+#: elements/results/details.php:166
+msgid "By"
+msgstr "Door"
+
+#: elements/results/details.php:187
+msgid "System"
+msgstr "Systeem"
+
+#: elements/results/details.php:207
+msgid "No logs found."
+msgstr "Geen logs beschikbaar."
+
+#: elements/results/menu.php:19 elements/results/search/menu.php:83
+msgid "To form"
+msgstr "Naar formulier"
+
+#: elements/results/menu.php:24 elements/results/search/menu.php:88
+msgid "Go to form ..."
+msgstr "Ga naar formulier ..."
+
+#: elements/results/search/menu.php:25
+msgid "Select form"
+msgstr "Selecteer formulier"
+
+#: elements/results/search/menu.php:54
+msgid "Items per page"
+msgstr "Resultaten per pagina"
+
+#: elements/results/search/menu.php:96
+msgid "Export to CSV"
+msgstr "Exporteer naar CSV"
+
+#: elements/results/search/search.php:34
+#: views/dialogs/search/advanced_search.php:83
+msgid "Search"
+msgstr "Zoek"
+
+#: elements/template/edit.php:37 src/Formidable/Elements/Types/Content.php:17
+msgid "Content"
+msgstr "Inhoud"
+
+#: elements/template/edit.php:42
+msgid "Additional CSS"
+msgstr "Additionele CSS"
+
+#: elements/template/edit.php:45
+msgid "You can use this to add addtional css-styles."
+msgstr "Voeg extra css-stylen toe."
+
+#: js/plugins/moment.min.js:6
+msgid ""
+"value provided is not in a recognized RFC2822 or ISO format. moment "
+"construction falls back to js Date(), which is not reliable across all "
+"browsers and versions. Non RFC2822/ISO date formats are discouraged. Please "
+"refer to http://momentjs.com/guides/#/warnings/js-date/ for more info."
+msgstr ""
+
+#: js/plugins/moment.min.js:6
+msgid ""
+"moment().min is deprecated, use moment.max instead. http://momentjs.com/"
+"guides/#/warnings/min-max/"
+msgstr ""
+
+#: js/plugins/moment.min.js:6
+msgid ""
+"moment().max is deprecated, use moment.min instead. http://momentjs.com/"
+"guides/#/warnings/min-max/"
+msgstr ""
+
+#: js/plugins/moment.min.js:6
+msgid ""
+"moment().lang() is deprecated. Instead, use moment().localeData() to get the "
+"language configuration. Use moment().locale() to change languages."
+msgstr ""
+
+#: js/plugins/moment.min.js:6
+msgid "dates accessor is deprecated. Use date instead."
+msgstr ""
+
+#: js/plugins/moment.min.js:6
+msgid "months accessor is deprecated. Use month instead"
+msgstr ""
+
+#: js/plugins/moment.min.js:6
+msgid "years accessor is deprecated. Use year instead"
+msgstr ""
+
+#: js/plugins/moment.min.js:6
+msgid ""
+"moment().zone is deprecated, use moment().utcOffset instead. http://momentjs."
+"com/guides/#/warnings/zone/"
+msgstr ""
+
+#: js/plugins/moment.min.js:6
+msgid ""
+"isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-"
+"shifted/ for more information"
+msgstr ""
+
+#: js/plugins/moment.min.js:6
+msgid "moment.lang is deprecated. Use moment.locale instead."
+msgstr ""
+
+#: js/plugins/moment.min.js:6
+msgid "moment.langData is deprecated. Use moment.localeData instead."
+msgstr ""
+
+#: js/plugins/moment.min.js:6
+msgid ""
+"toIsoString() is deprecated. Please use toISOString() instead (notice the "
+"capitals)"
+msgstr ""
+
+#: single_pages/dashboard/formidable/forms.php:143
+msgid "You have not created any mailings yet."
+msgstr "Momenteel zijn er geen e-mails aangemaakt."
+
+#: single_pages/dashboard/formidable/forms.php:144
+msgid "Add mailing"
+msgstr "E-mail toevoegen"
+
+#: single_pages/dashboard/formidable/forms.php:175
+msgid "Last submission"
+msgstr "Laatste resultaat"
+
+#: single_pages/dashboard/formidable/forms.php:186
+msgid "Disabled"
+msgstr "Uitgeschakeld"
+
+#: single_pages/dashboard/formidable/forms.php:191
+msgid "Disabled by limits"
+msgstr "Uitgeschakeld door limieten"
+
+#: single_pages/dashboard/formidable/forms.php:196
+msgid "Disabled by schedule"
+msgstr "Uitgeschakeld door planning"
+
+#: single_pages/dashboard/formidable/forms.php:196
+msgid "Scheduled"
+msgstr "Planning"
+
+#: single_pages/dashboard/formidable/forms.php:201
+msgid "Privacy settings"
+msgstr "Privacyinstellingen"
+
+#: single_pages/dashboard/formidable/forms.php:208
+msgid "No submissions yet"
+msgstr "Nog geen inzendingen"
+
+#: single_pages/dashboard/formidable/forms.php:222
+msgid "You have not created any forms yet."
+msgstr "Momenteel zijn er geen formulieren aangemaakt."
+
+#: single_pages/dashboard/formidable/forms.php:249
+msgid "Duplicate form"
+msgstr "Dupliceer formulier"
+
+#: single_pages/dashboard/formidable/forms.php:264
+msgid "Delete form"
+msgstr "Verwijder formulier"
+
+#: single_pages/dashboard/formidable/forms.php:279
+msgid "Duplicate mail"
+msgstr "Dupliceer e-mail"
+
+#: single_pages/dashboard/formidable/forms.php:294
+msgid "Delete mail"
+msgstr "Verwijder e-mail"
+
+#: single_pages/dashboard/formidable/results.php:36
+msgid "Toggle Dropdown"
+msgstr ""
+
+#: single_pages/dashboard/formidable/results.php:136
+msgid "No results yet!"
+msgstr "Nog geen resultaten!"
+
+#: single_pages/dashboard/formidable/results.php:169
+msgid "Delete result(s)"
+msgstr "Verwijder resultaat(en)"
+
+#: single_pages/dashboard/formidable/results.php:190
+msgid "Resend result(s)"
+msgstr "Her-zenden inzendingen"
+
+#: single_pages/dashboard/formidable/templates.php:28
+msgid "Used"
+msgstr "Gebruikt"
+
+#: single_pages/dashboard/formidable/templates.php:54
+msgid "You have not created any templates yet."
+msgstr "Momenteel zijn er geen sjablonen aangemaakt."
+
+#: single_pages/dashboard/formidable/templates.php:77
+msgid "Duplicate template"
+msgstr "Dupliceer sjabloon"
+
+#: single_pages/dashboard/formidable/templates.php:92
+msgid "Delete template"
+msgstr "Verwijder sjabloon"
+
+#: src/Formidable/Elements/Element.php:280
+#: src/Formidable/Elements/Types/Date.php:110
+#: src/Formidable/Elements/Types/Date.php:160
+#: src/Formidable/Elements/Types/File.php:226
+#: src/Formidable/Elements/Types/File.php:266
+#: src/Formidable/Elements/Types/File.php:287
+#: src/Formidable/Elements/Types/Options.php:153
+#, php-format
+msgid "Field \"%s\" is empty or invalid"
+msgstr "Element \"%s\" is leeg en/of ongeldig"
+
+#: src/Formidable/Elements/Element.php:290
+#, php-format
+msgid "Field \"%s\" and \"%s\" should be the same"
+msgstr "Element \"%s\" en \"%s\" moeten gelijk zijn"
+
+#: src/Formidable/Elements/Element.php:305
+#, php-format
+msgid "Field \"%s\" should be between %s and %s words"
+msgstr "Element \"%s\" moet tussen de %s en %s woorden bevatten"
+
+#: src/Formidable/Elements/Element.php:311
+#, php-format
+msgid "Field \"%s\" should be between %s and %s characters"
+msgstr "Element \"%s\" moet tussen de %s en %s karakters bevatten"
+
+#: src/Formidable/Elements/Element.php:317
+#: src/Formidable/Elements/Types/Options.php:162
+#, php-format
+msgid "Field \"%s\" should have between %s and %s options selected/checked"
+msgstr "Element \"%s\" moet tussen de %s en %s opties geselecteerd hebben"
+
+#: src/Formidable/Elements/Element.php:430
+msgid "CollectionID"
+msgstr "PaginaID"
+
+#: src/Formidable/Elements/Element.php:431
+#: src/Formidable/Helpers/Converter.php:377
+msgid "Page Name"
+msgstr "Paginanaam"
+
+#: src/Formidable/Elements/Element.php:432
+msgid "Page Handle"
+msgstr "Pagina Handle"
+
+#: src/Formidable/Elements/Element.php:433
+#: src/Formidable/Elements/Element.php:452
+#: src/Formidable/Helpers/Converter.php:357
+#: src/Formidable/Helpers/Converter.php:390
+#: src/Formidable/Results/Search/ColumnSet/Column/DateAddedColumn.php:22
+#: src/Formidable/Results/Search/Field/Field/DateAddedField.php:31
+msgid "Date Added"
+msgstr "Datum toegevoegd"
+
+#: src/Formidable/Elements/Element.php:435
+#: src/Formidable/Elements/Element.php:454
+msgid "Attributes"
+msgstr "Attributen"
+
+#: src/Formidable/Elements/Element.php:449
+msgid "UserID"
+msgstr "GebruikerID"
+
+#: src/Formidable/Elements/Element.php:450
+#: src/Formidable/Helpers/Converter.php:434
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: src/Formidable/Elements/Element.php:461
+msgid "POST/GET"
+msgstr "POST/GET"
+
+#: src/Formidable/Elements/Element.php:463
+msgid "Member"
+msgstr "Gebruiker"
+
+#: src/Formidable/Elements/Element.php:468
+msgid "Value - Insert predefinded value"
+msgstr "Waarde - Voeg voorgedefinieerde waarde toe"
+
+#: src/Formidable/Elements/Element.php:469
+msgid "POST/GET - Insert value based the POST/GET (?query=...)"
+msgstr ""
+"POST/GET - Voeg waarde toe op basis van POST/GET variabele (?query=...)"
+
+#: src/Formidable/Elements/Element.php:470
+msgid "Page - Insert property / attribute based on the current Page"
+msgstr "Pagina - Voeg waarde toe op basis van de huidige pagina"
+
+#: src/Formidable/Elements/Element.php:471
+msgid "Member - Insert property / attribute based on the loggedin Member"
+msgstr "Gebruiker - Voeg waarde toe op basis van de ingelogde gebruiker"
+
+#: src/Formidable/Elements/Element.php:496
+msgid "Manual options"
+msgstr "Eigen opties"
+
+#: src/Formidable/Elements/Element.php:497
+msgid "Pages"
+msgstr "Pagina's"
+
+#: src/Formidable/Elements/Element.php:498
+msgid "Members"
+msgstr "Gebruikers"
+
+#: src/Formidable/Elements/Element.php:504
+#: src/Formidable/Elements/Element.php:511
+msgid "Options will be dynamically loaded, based on the parameters set."
+msgstr "Opties worden dynamisch geladen op basis van de ingestelde parameters."
+
+#: src/Formidable/Elements/Element.php:517
+#: src/Formidable/Elements/Types/Textarea.php:13
+msgid "Textarea"
+msgstr "Tekstvlak"
+
+#: src/Formidable/Elements/Element.php:520
+msgid ""
+"If \"none of the above\" is appliable, the submitter can manually add his "
+"own."
+msgstr "Wanneer \"geen van boven\" geldt, kan de verzender zelf iets invoeren."
+
+#: src/Formidable/Elements/Element.php:529
+msgid "Default"
+msgstr "Standaard"
+
+#: src/Formidable/Elements/Element.php:540
+msgid "Show (and enable)"
+msgstr "Weergeven (en inschakelen)"
+
+#: src/Formidable/Elements/Element.php:541
+msgid "Hide (and disable)"
+msgstr "Verbergen (en uitschakelen)"
+
+#: src/Formidable/Elements/Element.php:544
+msgid "Add class"
+msgstr "Voeg class toe"
+
+#: src/Formidable/Elements/Element.php:545
+msgid "Set value"
+msgstr "Stel waarde in"
+
+#: src/Formidable/Elements/Element.php:568
+msgid "is empty / not checked"
+msgstr "is leeg / niet geselecteerd"
+
+#: src/Formidable/Elements/Element.php:569
+msgid "is not empty / is checked"
+msgstr "is niet leeg / is geselecteerd"
+
+#: src/Formidable/Elements/Element.php:570
+msgid "equals"
+msgstr "gelijk aan"
+
+#: src/Formidable/Elements/Element.php:571
+msgid "does not equal"
+msgstr "niet gelijk aan"
+
+#: src/Formidable/Elements/Element.php:572
+msgid "contains"
+msgstr "bevat"
+
+#: src/Formidable/Elements/Element.php:573
+msgid "does not contain"
+msgstr "bevat niet"
+
+#: src/Formidable/Elements/Types/Accept.php:18
+msgid "Accept"
+msgstr "Akkoord"
+
+#: src/Formidable/Elements/Types/Accept.php:23
+msgid "Acceptance for Terms of conditions and/or GDPR"
+msgstr "Akkoord met voorwaarden en/of avg"
+
+#: src/Formidable/Elements/Types/Address.php:22
+#: src/Formidable/Elements/Types/Address.php:105
+#: src/Formidable/Elements/Types/Address.php:111
+msgid "Address 1"
+msgstr "Adres #1"
+
+#: src/Formidable/Elements/Types/Address.php:27
+#: src/Formidable/Elements/Types/Address.php:105
+#: src/Formidable/Elements/Types/Address.php:112
+msgid "Address 2"
+msgstr "Adres #2"
+
+#: src/Formidable/Elements/Types/Address.php:32
+#: src/Formidable/Elements/Types/Address.php:106
+#: src/Formidable/Elements/Types/Address.php:113
+msgid "Street"
+msgstr "Straat"
+
+#: src/Formidable/Elements/Types/Address.php:37
+#: src/Formidable/Elements/Types/Address.php:106
+#: src/Formidable/Elements/Types/Address.php:114
+#: src/Formidable/Elements/Types/Number.php:15
+msgid "Number"
+msgstr "Nummer"
+
+#: src/Formidable/Elements/Types/Address.php:42
+#: src/Formidable/Elements/Types/Address.php:106
+#: src/Formidable/Elements/Types/Address.php:115
+msgid "Suffix"
+msgstr "Toevoeging"
+
+#: src/Formidable/Elements/Types/Address.php:47
+#: src/Formidable/Elements/Types/Address.php:106
+#: src/Formidable/Elements/Types/Address.php:116
+msgid "Zipcode"
+msgstr "Postcode"
+
+#: src/Formidable/Elements/Types/Address.php:52
+#: src/Formidable/Elements/Types/Address.php:105
+#: src/Formidable/Elements/Types/Address.php:117
+msgid "Postal Code"
+msgstr "Postcode"
+
+#: src/Formidable/Elements/Types/Address.php:57
+#: src/Formidable/Elements/Types/Address.php:105
+#: src/Formidable/Elements/Types/Address.php:119
+msgid "State"
+msgstr "Staat"
+
+#: src/Formidable/Elements/Types/Address.php:62
+#: src/Formidable/Elements/Types/Address.php:105
+#: src/Formidable/Elements/Types/Address.php:106
+#: src/Formidable/Elements/Types/Address.php:118
+msgid "City"
+msgstr "Plaats"
+
+#: src/Formidable/Elements/Types/Address.php:67
+#: src/Formidable/Elements/Types/Address.php:105
+#: src/Formidable/Elements/Types/Address.php:106
+#: src/Formidable/Elements/Types/Address.php:122
+msgid "Country"
+msgstr "Land"
+
+#: src/Formidable/Elements/Types/Address.php:83
+msgid "Address"
+msgstr "Adres"
+
+#: src/Formidable/Elements/Types/Address.php:88
+msgid "Address field with Address 1 and 2, Postal Code etc. "
+msgstr "Adres velden met Adres 1 en 2, Postcode enz. "
+
+#: src/Formidable/Elements/Types/Address.php:105
+#: src/Formidable/Elements/Types/Address.php:106
+msgid "(new line)"
+msgstr "(nieuwe regel)"
+
+#: src/Formidable/Elements/Types/Address.php:107
+#: src/Formidable/Elements/Types/Date.php:58
+#: src/Formidable/Elements/Types/Name.php:68
+#: src/Formidable/Elements/Types/Password.php:48
+#: src/Formidable/Elements/Types/Phone.php:43
+msgid "Custom format..."
+msgstr "Eigen format..."
+
+#: src/Formidable/Elements/Types/Address.php:109
+msgid "{address1}{n}{address2}{n}..."
+msgstr "{address1}{n}{address2}{n}..."
+
+#: src/Formidable/Elements/Types/Address.php:120
+msgid "Province"
+msgstr "Provincie"
+
+#: src/Formidable/Elements/Types/Address.php:121
+msgid "County"
+msgstr "District / Graafschap"
+
+#: src/Formidable/Elements/Types/Address.php:123
+msgid "New line"
+msgstr "Nieuwe regel"
+
+#: src/Formidable/Elements/Types/Address.php:124
+#: src/Formidable/Elements/Types/Name.php:76
+msgid "You can also use specialchars like ,.!;: etc..."
+msgstr "Je kunt ook speciale karakters toevoegen zoals ,.!;: enz..."
+
+#: src/Formidable/Elements/Types/Address.php:159
+#: src/Formidable/Elements/Types/Name.php:106
+#, php-format
+msgid "Field \"%s (%s)\" is empty or invalid"
+msgstr "Element \"%s\" (%s) is leeg en/of ongeldig"
+
+#: src/Formidable/Elements/Types/Address.php:163
+#, php-format
+msgid "Field \"%s (%s)\" can't be zero"
+msgstr "Element \"%s\" (%s) mag geen 0 zijn"
+
+#: src/Formidable/Elements/Types/Captcha.php:20
+msgid "Captcha"
+msgstr "Verificatie"
+
+#: src/Formidable/Elements/Types/Captcha.php:25
+msgid "Verification by captcha"
+msgstr "Verificatie door captcha"
+
+#: src/Formidable/Elements/Types/Code.php:22
+msgid "HTML / Javascript / CSS for your form"
+msgstr "HTML / Javascript / CSS voor je formulier"
+
+#: src/Formidable/Elements/Types/Content.php:22
+msgid "Text and images"
+msgstr "Tekst en afbeeldingen"
+
+#: src/Formidable/Elements/Types/Date.php:28
+msgid "Date picker/selector/input"
+msgstr "Datum prikker/selector/veld"
+
+#: src/Formidable/Elements/Types/Date.php:46
+msgid "Datepicker (HTML5)"
+msgstr "Datumprikker (HTML5)"
+
+#: src/Formidable/Elements/Types/Date.php:47
+msgid "Selectboxes"
+msgstr "Selectievakken"
+
+#: src/Formidable/Elements/Types/Date.php:48
+msgid "Masked input (limited formating)"
+msgstr "Gemaskeerde invoer (beperkte formattering)"
+
+#: src/Formidable/Elements/Types/Date.php:53
+msgid "YYYY/MM/DD (e.g. 1985/01/05)"
+msgstr "YYYY/MM/DD (bijv. 1985/01/05)"
+
+#: src/Formidable/Elements/Types/Date.php:54
+msgid "MMMM D YYYY (e.g. January 5 1985)"
+msgstr "MMMM D YYYY (bijv. januari 5 1985)"
+
+#: src/Formidable/Elements/Types/Date.php:55
+msgid "DD-MM-YYYY (e.g. 05-01-1985)"
+msgstr "DD-MM-YYYY (bijv. 05-01-1985)"
+
+#: src/Formidable/Elements/Types/Date.php:56
+msgid "D MMMM YYYY (e.g. 5 January 1985)"
+msgstr "D MMMM YYYY (bijv. 5 januari 1985)"
+
+#: src/Formidable/Elements/Types/Date.php:57
+msgid "dddd D MMMM YYYY (e.g. Sunday 5 January 1985)"
+msgstr "dddd D MMMM YYYY (bijv. zondag 5 januari 1985)"
+
+#: src/Formidable/Elements/Types/Date.php:61
+msgid "D - Day of Month (1 2 .. 30 31)"
+msgstr "D - Dag van de maand (1 2 .. 30 31)"
+
+#: src/Formidable/Elements/Types/Date.php:62
+msgid "DD - Day of Month (01 02 ... 30 31)"
+msgstr "DS - Dag van de maand (01 02 .. 30 31)"
+
+#: src/Formidable/Elements/Types/Date.php:63
+msgid "ddd - Sun Mon ... Fri Sat"
+msgstr "ddd - Zon Maa ... Vri Zat"
+
+#: src/Formidable/Elements/Types/Date.php:64
+msgid "dddd - Sunday Monday ... Friday Saturday"
+msgstr "dddd - Zondag Maandag ... Vrijdag Zaterdag"
+
+#: src/Formidable/Elements/Types/Date.php:65
+msgid "M - 1 2 ... 11 12"
+msgstr "M - 1 2 ... 11 12"
+
+#: src/Formidable/Elements/Types/Date.php:66
+msgid "MM - 01 02 ... 11 12"
+msgstr "MM - 01 02 ... 11 12"
+
+#: src/Formidable/Elements/Types/Date.php:67
+msgid "MMM - Jan Feb ... Nov Dec"
+msgstr "MMM - Jan Feb ... Nov Dec"
+
+#: src/Formidable/Elements/Types/Date.php:68
+msgid "MMMM - January February ... November December"
+msgstr "MMMM - Januari Februari ... November December"
+
+#: src/Formidable/Elements/Types/Date.php:69
+msgid "YY - 70 71 ... 29 30"
+msgstr "YY - 70 71 ... 29 30"
+
+#: src/Formidable/Elements/Types/Date.php:70
+msgid "YYYY - 1970 1971 ... 2029 2030"
+msgstr "YYYY - 1970 1971 ... 2029 2030"
+
+#: src/Formidable/Elements/Types/Date.php:120
+#, php-format
+msgid "Field \"%s\" (year) is empty or invalid"
+msgstr "Element \"%s\" (jaar) is leeg en/of ongeldig"
+
+#: src/Formidable/Elements/Types/Date.php:125
+#, php-format
+msgid "Field \"%s\" (month) is empty or invalid"
+msgstr "Element \"%s\" (maand) is leeg en/of ongeldig"
+
+#: src/Formidable/Elements/Types/Date.php:130
+#, php-format
+msgid "Field \"%s\" (day) is empty or invalid"
+msgstr "Element \"%s\" (dag) is leeg en/of ongeldig"
+
+#: src/Formidable/Elements/Types/Date.php:150
+#, php-format
+msgid "Field \"%s\" is invalid"
+msgstr "Element \"%s\" is leeg en/of ongeldig"
+
+#: src/Formidable/Elements/Types/Email.php:19
+msgid "Email Address field"
+msgstr "E-mailadres element"
+
+#: src/Formidable/Elements/Types/Email.php:52
+#, php-format
+msgid "Field \"%s\" is an invalid Email Address"
+msgstr "Element \"%s\" is een ongeldig e-mailadres"
+
+#: src/Formidable/Elements/Types/Email.php:79
+#, php-format
+msgid "<a href=\"mailto:%s\">%s</a>"
+msgstr "<a href=\"mailto:%s\">%s</a>"
+
+#: src/Formidable/Elements/Types/File.php:25
+msgid "File(s)"
+msgstr "Bestand(en)"
+
+#: src/Formidable/Elements/Types/File.php:30
+msgid "Upload files"
+msgstr "Geüploade bestanden"
+
+#: src/Formidable/Elements/Types/File.php:44
+msgid "Dropzone"
+msgstr "Dropzone"
+
+#: src/Formidable/Elements/Types/File.php:45
+msgid "File (HTML)"
+msgstr "Bestand (HTML)"
+
+#: src/Formidable/Elements/Types/File.php:51
+msgid "files"
+msgstr "bestanden"
+
+#: src/Formidable/Elements/Types/File.php:106
+msgid "Add another file"
+msgstr "Voeg bestand toe"
+
+#: src/Formidable/Elements/Types/File.php:142
+msgid "Drag 'n Drop your files here!"
+msgstr "Sleur en pleur je bestanden hier!"
+
+#: src/Formidable/Elements/Types/File.php:221
+#: src/Formidable/Elements/Types/File.php:261
+#, php-format
+msgid "Field \"%s\" should have between %s and %s files uploaded"
+msgstr "Element \"%s\" moet tussen de %s en %s bestanden bevatten"
+
+#: src/Formidable/Elements/Types/File.php:235
+#: src/Formidable/Elements/Types/File.php:244
+#: src/Formidable/Elements/Types/File.php:291
+#: src/Formidable/Elements/Types/File.php:326
+#, php-format
+msgid "Field \"%s\" is invalid extension"
+msgstr "Element \"%s\" is een ongeldige extensie"
+
+#: src/Formidable/Elements/Types/File.php:238
+#: src/Formidable/Elements/Types/File.php:247
+#, php-format
+msgid "Field \"%s\" is too large (max. %sMB allowed)"
+msgstr "Element \"%s\" is te groot (max. %sMB toegestaan)"
+
+#: src/Formidable/Elements/Types/File.php:322
+msgid "File doesn't exists or invalid"
+msgstr "Bestand is leeg en/of ongeldig"
+
+#: src/Formidable/Elements/Types/File.php:330
+#, php-format
+msgid "Field \"%s\" doesn't exists."
+msgstr "Element \"%s\" bestaat niet."
+
+#: src/Formidable/Elements/Types/File.php:373
+#, php-format
+msgid "<div>%s (%s) (removed file)<div>"
+msgstr "<div>%s (%s) (verwijderd bestand)<div>"
+
+#: src/Formidable/Elements/Types/File.php:377
+#, php-format
+msgid "<div><a href=\"%s\">%s</a> (%s)<div>"
+msgstr "<div><a href=\"%s\">%s</a> (%s)<div>"
+
+#: src/Formidable/Elements/Types/Hidden.php:13
+msgid "Hidden"
+msgstr "Verborgen"
+
+#: src/Formidable/Elements/Types/Hidden.php:18
+msgid "Hidden field"
+msgstr "Verborgen element"
+
+#: src/Formidable/Elements/Types/Iban.php:20
+msgid "IBAN"
+msgstr "IBAN"
+
+#: src/Formidable/Elements/Types/Iban.php:25
+msgid "International Bank Account Number"
+msgstr "International Bank Account Number (bankrekening nummer)"
+
+#: src/Formidable/Elements/Types/Iban.php:59
+#, php-format
+msgid "Field \"%s\" is invalid IBAN"
+msgstr "Field \"%s\" in een ongeldig IBAN"
+
+#: src/Formidable/Elements/Types/Line.php:17
+msgid "Line"
+msgstr "Lijn"
+
+#: src/Formidable/Elements/Types/Line.php:22
+msgid "Horizontal rule"
+msgstr "Horizontale lijn"
+
+#: src/Formidable/Elements/Types/Name.php:17
+#: src/Formidable/Elements/Types/Name.php:65
+#: src/Formidable/Elements/Types/Name.php:66
+#: src/Formidable/Elements/Types/Name.php:72
+msgid "First Name"
+msgstr "Voornaam"
+
+#: src/Formidable/Elements/Types/Name.php:22
+#: src/Formidable/Elements/Types/Name.php:65
+#: src/Formidable/Elements/Types/Name.php:67
+#: src/Formidable/Elements/Types/Name.php:73
+msgid "Prefix"
+msgstr "Voorvoegsel"
+
+#: src/Formidable/Elements/Types/Name.php:27
+#: src/Formidable/Elements/Types/Name.php:65
+#: src/Formidable/Elements/Types/Name.php:66
+#: src/Formidable/Elements/Types/Name.php:67
+#: src/Formidable/Elements/Types/Name.php:74
+msgid "Last Name"
+msgstr "Achternaam"
+
+#: src/Formidable/Elements/Types/Name.php:48
+msgid "Name field with First Name / Last Name"
+msgstr "Naam element met voor- en achternaam"
+
+#: src/Formidable/Elements/Types/Name.php:70
+msgid "{firstname} {lastname}"
+msgstr "{firstname} {lastname}"
+
+#: src/Formidable/Elements/Types/Name.php:75
+msgid "Break / New line"
+msgstr "Nieuw regel (page break)"
+
+#: src/Formidable/Elements/Types/Number.php:20
+msgid "Only numbers allowed"
+msgstr "Alleen cijfers toegestaan"
+
+#: src/Formidable/Elements/Types/Number.php:53
+#: src/Formidable/Elements/Types/Number.php:64
+#: src/Formidable/Elements/Types/Range.php:57
+#: src/Formidable/Elements/Types/Range.php:68
+#, php-format
+msgid "Field \"%s\" is an invalid number"
+msgstr "Element \"%s\" in een ongeldig nummer/cijfer"
+
+#: src/Formidable/Elements/Types/Number.php:60
+#: src/Formidable/Elements/Types/Range.php:64
+#, php-format
+msgid "Field \"%s\" should be between %s and %s"
+msgstr "Element \"%s\" moet tussen de %s en %s zijn"
+
+#: src/Formidable/Elements/Types/Options.php:24
+msgid "Option List"
+msgstr "Optielijst"
+
+#: src/Formidable/Elements/Types/Options.php:29
+msgid "List of available options"
+msgstr "Lijst van beschikbare opties"
+
+#: src/Formidable/Elements/Types/Options.php:40
+msgid "Shown as first option (e.g. \"Please select!\")"
+msgstr "Wordt weergegeven als eerste optie (bijv. \"Maak je keuze!\")"
+
+#: src/Formidable/Elements/Types/Options.php:51
+msgid "Dropdown (select)"
+msgstr "Keuzevak (select)"
+
+#: src/Formidable/Elements/Types/Options.php:52
+msgid "Checkbox"
+msgstr "Vinkje (checkbox)"
+
+#: src/Formidable/Elements/Types/Options.php:53
+msgid "Radio (buttons)"
+msgstr "Radioknop (radiobutton)"
+
+#: src/Formidable/Elements/Types/Options.php:89
+#, php-format
+msgid "No options set or found for \"%s\""
+msgstr "Geen opties aangemaakt of gevonden voor \"%s\""
+
+#: src/Formidable/Elements/Types/Options.php:170
+#, php-format
+msgid "Field \"%s\" (\"%s\") is empty or invalid"
+msgstr "Element \"%s\" (\"%s\")  is leeg en/of ongeldig"
+
+#: src/Formidable/Elements/Types/Options.php:201
+#, php-format
+msgid "<div>%s (%s) (removed page)<div>"
+msgstr "<div>%s (%s) (verwijderde pagina)<div>"
+
+#: src/Formidable/Elements/Types/Options.php:204
+#, php-format
+msgid "<div><a href=\"%s\" target=\"_blank\">%s</a> (PageID: %s)<div>"
+msgstr "<div><a href=\"%s\" target=\"_blank\">%s</a> (PaginaID: %s)<div>"
+
+#: src/Formidable/Elements/Types/Options.php:221
+#, php-format
+msgid "<div>%s (%s) (removed member)<div>"
+msgstr "<div>%s (%s) (verwijderde gebruiker)<div>"
+
+#: src/Formidable/Elements/Types/Options.php:224
+#, php-format
+msgid "<div><a href=\"%s\" target=\"_blank\">%s / %s</a> (UserID: %s)<div>"
+msgstr ""
+"<div><a href=\"%s\" target=\"_blank\">%s / %s</a> (GebruikerID: %s)<div>"
+
+#: src/Formidable/Elements/Types/Options.php:505
+#: src/Formidable/Elements/Types/Options.php:588
+msgid "(empty)"
+msgstr "(leeg)"
+
+#: src/Formidable/Elements/Types/Password.php:14
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: src/Formidable/Elements/Types/Password.php:19
+msgid "Password field"
+msgstr "Wachtwoord element"
+
+#: src/Formidable/Elements/Types/Password.php:36
+#: src/Formidable/Elements/Types/Text.php:48
+#: src/Formidable/Elements/Types/Textarea.php:35
+msgid "Characters"
+msgstr "Karakters"
+
+#: src/Formidable/Elements/Types/Password.php:41
+msgid "At least one number and one lowercase, uppercase and special character"
+msgstr ""
+"Minimaal één cijfer en minimaal één kleine letter, hoofdletter en een "
+"speciaal karakter"
+
+#: src/Formidable/Elements/Types/Password.php:42
+msgid ""
+"At least one number and at least one lowercase and one uppercase character"
+msgstr "Minimaal één cijfer en minimaal één kleine letter en een hoofdletter"
+
+#: src/Formidable/Elements/Types/Password.php:43
+msgid "At least one lowercase, one uppercase and one special character"
+msgstr "Minimaal één kleine letter, hoofdletter en een speciaal karakter"
+
+#: src/Formidable/Elements/Types/Password.php:44
+msgid "At least one number and one lowercase character"
+msgstr "Minimaal één cijfer en minimaal één kleine letter"
+
+#: src/Formidable/Elements/Types/Password.php:45
+#: src/Formidable/Elements/Types/Password.php:52
+msgid "At least one number"
+msgstr "Minimaal één cijfer"
+
+#: src/Formidable/Elements/Types/Password.php:46
+#: src/Formidable/Elements/Types/Password.php:55
+msgid "At least one special character"
+msgstr "Minimaal één speciaal karakter"
+
+#: src/Formidable/Elements/Types/Password.php:47
+msgid "At least one lowercase and one uppercase character"
+msgstr "Minimaal één kleine letter en één hoofdletter"
+
+#: src/Formidable/Elements/Types/Password.php:50
+msgid ""
+"^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[:;<>,.?/~_+-=|\\]])."
+"{8,32}$"
+msgstr ""
+"^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[:;<>,.?/~_+-=|\\]])."
+"{8,32}$"
+
+#: src/Formidable/Elements/Types/Password.php:53
+msgid "At least one lowercase character"
+msgstr "Minimaal één kleine letter"
+
+#: src/Formidable/Elements/Types/Password.php:54
+msgid "At least one uppercase character"
+msgstr "Minimaal één hoofdletter"
+
+#: src/Formidable/Elements/Types/Password.php:56
+msgid "or use your own custom regex"
+msgstr "of gebruik een eigen regex"
+
+#: src/Formidable/Elements/Types/Password.php:86
+#, php-format
+msgid "Field \"%s\" should have at least one number (0-9)"
+msgstr "Element \"%s\" moet minimaal één cijfer bevatten (0-9)"
+
+#: src/Formidable/Elements/Types/Password.php:89
+#, php-format
+msgid "Field \"%s\" should have at least one lowercase character (a-z)"
+msgstr "Element \"%s\" moet minimaal één kleine letter bevatten (a-z)"
+
+#: src/Formidable/Elements/Types/Password.php:92
+#, php-format
+msgid "Field \"%s\" should have at least one uppercase character (A-Z)"
+msgstr "Element \"%s\" moet minimaal één hoofdletter bevatten (A-Z)"
+
+#: src/Formidable/Elements/Types/Password.php:95
+#, php-format
+msgid ""
+"Field \"%s\" should have at least one special character (*.!@$%%^&(){}[:;"
+"<>,.?\\/~_+-=|\\])"
+msgstr ""
+"Element \"%s\" moet minimaal één speciaal karakter bevatten (*.!@$%%^&(){}[:;"
+"<>,.?\\/~_+-=|\\])"
+
+#: src/Formidable/Elements/Types/Password.php:101
+#, php-format
+msgid "Field \"%s\" doesn't match \"%s\""
+msgstr "Element \"%s\" komt niet overeen met \"%s\""
+
+#: src/Formidable/Elements/Types/Phone.php:15
+#: src/Formidable/Elements/Types/Phone.php:53
+#: src/Formidable/Elements/Types/Text.php:38
+msgid "Phone"
+msgstr "Telefoon"
+
+#: src/Formidable/Elements/Types/Phone.php:20
+msgid "Phone Number"
+msgstr "Telefoonnummer"
+
+#: src/Formidable/Elements/Types/Phone.php:45
+msgid "+00(0)000 000000"
+msgstr "+00(0)000 000000"
+
+#: src/Formidable/Elements/Types/Phone.php:47
+#: src/Formidable/Elements/Types/Text.php:32
+msgid "Represents a numeric character"
+msgstr "Vertegenwoordigd een cijfer (verplicht)"
+
+#: src/Formidable/Elements/Types/Phone.php:48
+#: src/Formidable/Elements/Types/Text.php:33
+msgid "Represents a optional numeric character"
+msgstr "Vertegenwoordigd een cijfer (optioneel)"
+
+#: src/Formidable/Elements/Types/Phone.php:49
+#: src/Formidable/Elements/Types/Text.php:34
+msgid "Recursive item, only the previous pattern is allowed after the hashtag"
+msgstr ""
+"Recursief, alleen het voorliggende patroon is toegestaan na het hekje (#)"
+
+#: src/Formidable/Elements/Types/Phone.php:50
+#: src/Formidable/Elements/Types/Text.php:35
+msgid "Represents an alphanumeric character"
+msgstr "Vertegenwoordigd zowel een cijfer als een letter"
+
+#: src/Formidable/Elements/Types/Phone.php:51
+#: src/Formidable/Elements/Types/Text.php:36
+msgid "Represents an alpha character"
+msgstr "Vertegenwoordigd een letter"
+
+#: src/Formidable/Elements/Types/Phone.php:52
+#: src/Formidable/Elements/Types/Text.php:37
+msgid "Examples:"
+msgstr "Voorbeelden:"
+
+#: src/Formidable/Elements/Types/Phone.php:54
+#: src/Formidable/Elements/Types/Text.php:39
+msgid "Product Code"
+msgstr "Product code"
+
+#: src/Formidable/Elements/Types/Phone.php:55
+#: src/Formidable/Elements/Types/Text.php:40
+msgid ""
+"More information about masking: <a href=\"https://igorescobar.github.io/"
+"jQuery-Mask-Plugin\" target=\"_blank\">click here</a>"
+msgstr ""
+"Voor meer informatie over maskering: <a href=\"https://igorescobar.github.io/"
+"jQuery-Mask-Plugin\" target=\"_blank\">klik hier</a>"
+
+#: src/Formidable/Elements/Types/Phone.php:76
+#, php-format
+msgid "Field \"%s\" doesn't match format"
+msgstr "Element \"%s\" komt niet overeen met formaat"
+
+#: src/Formidable/Elements/Types/Phone.php:117
+#, php-format
+msgid "<a href=\"tel:%s\">%s</a>"
+msgstr "<a href=\"tel:%s\">%s</a>"
+
+#: src/Formidable/Elements/Types/Range.php:20
+msgid "Range"
+msgstr "Bereik"
+
+#: src/Formidable/Elements/Types/Range.php:25
+msgid "Range slider"
+msgstr "Bereik (schuifbalk)"
+
+#: src/Formidable/Elements/Types/Submit.php:22
+msgid "Submit-button"
+msgstr "Verzend-knop"
+
+#: src/Formidable/Elements/Types/Text.php:17
+msgid "Basic single line textfield"
+msgstr "Standaard enkele regel tekstveld"
+
+#: src/Formidable/Elements/Types/Text.php:47
+#: src/Formidable/Elements/Types/Textarea.php:34
+msgid "Words"
+msgstr "Woorden"
+
+#: src/Formidable/Elements/Types/Textarea.php:18
+msgid "Multi-line textfield"
+msgstr "Multilijn tekstveld"
+
+#: src/Formidable/Elements/Types/Url.php:15
+#: src/Formidable/Helpers/Converter.php:385
+#: src/Formidable/Helpers/Converter.php:448
+msgid "URL"
+msgstr "URL"
+
+#: src/Formidable/Elements/Types/Url.php:20
+msgid "Website (url)"
+msgstr "Website (url)"
+
+#: src/Formidable/Elements/Types/Url.php:52
+#, php-format
+msgid "Field \"%s\" is invalid URL"
+msgstr "Element \"%s\" is ongeldige URL"
+
+#: src/Formidable/Elements/Types/Url.php:79
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">%s</a>"
+msgstr "<a href=\"%s\" target=\"_blank\">%s</a>"
+
+#: src/Formidable/Formidable.php:47
+msgid "Basic elements"
+msgstr "Basis elementen"
+
+#: src/Formidable/Formidable.php:48
+msgid "Advanced elements"
+msgstr "Geavanceerde elementen"
+
+#: src/Formidable/Formidable.php:49
+msgid "Layout elements"
+msgstr "Uiterlijke elementen"
+
+#: src/Formidable/Formidable.php:50
+msgid "Handling elements"
+msgstr "Afhandelen van elementen"
+
+#: src/Formidable/Formidable.php:51
+msgid "Custom elements"
+msgstr "Aangepaste elementen"
+
+#: src/Formidable/Formidable.php:108
+msgid "No element-types found!"
+msgstr "Geen element-types gevonden!"
+
+#: src/Formidable/Formidable.php:137
+#, php-format
+msgid "Element with handle \"%s\" not found!"
+msgstr "Element met handle \"%s\" niet gevonden!"
+
+#: src/Formidable/Forms/Columns/Column.php:212
+#, php-format
+msgid "Column %s - %s%% (col-%s)"
+msgstr "Kolom %s - %s%% (col-%s)"
+
+#: src/Formidable/Forms/Columns/Column.php:248
+msgid "Column"
+msgstr "Kolom"
+
+#: src/Formidable/Forms/Columns/Column.php:251
+msgid "Fieldset"
+msgstr "Elementreeks"
+
+#: src/Formidable/Forms/Columns/Column.php:287
+#: src/Formidable/Forms/Rows/Row.php:300
+msgid "Enable CSS"
+msgstr "CSS inschakelen"
+
+#: src/Formidable/Forms/Columns/Column.php:290
+#: src/Formidable/Forms/Rows/Row.php:303
+msgid "Disable CSS"
+msgstr "CSS uitschakelen"
+
+#: src/Formidable/Forms/Elements/Element.php:164
+#: src/Formidable/Mails/Mail.php:335 src/Formidable/Mails/Mail.php:429
+#: src/Formidable/Mails/Mail.php:478 src/Formidable/Mails/Mail.php:492
+msgid "(unknown)"
+msgstr "(onbekend)"
+
+#: src/Formidable/Forms/Form.php:347
+msgid "Enable limits"
+msgstr "Limieten inschakelen"
+
+#: src/Formidable/Forms/Form.php:350
+msgid "Disable limits"
+msgstr "Limieten uitschakelen"
+
+#: src/Formidable/Forms/Form.php:388
+msgid "Total submissions"
+msgstr "Aantal inzendingen"
+
+#: src/Formidable/Forms/Form.php:391
+msgid "Per IP-address"
+msgstr "Per IP-adres"
+
+#: src/Formidable/Forms/Form.php:394
+msgid "Per registered user"
+msgstr "Per geregistreerde gebruiker"
+
+#: src/Formidable/Forms/Form.php:397
+msgid "Per page"
+msgstr "Per pagina"
+
+#: src/Formidable/Forms/Form.php:447 src/Formidable/Forms/Form.php:619
+msgid "Show message"
+msgstr "Bericht weergeven"
+
+#: src/Formidable/Forms/Form.php:557
+msgid "Enable scheduling"
+msgstr "Planning inschakelen"
+
+#: src/Formidable/Forms/Form.php:560
+msgid "Disable scheduling"
+msgstr "Planning uitschakelen"
+
+#: src/Formidable/Forms/Form.php:708
+msgid "Enable GDPR settings"
+msgstr "AVG-instellingen inschakelen"
+
+#: src/Formidable/Forms/Form.php:711
+msgid "Disable GDPR settings"
+msgstr "AVG-instellingen uitschakelen"
+
+#: src/Formidable/Forms/Form.php:772
+msgid "Enable auto remove"
+msgstr "Automatisch verwijderen inschakelen"
+
+#: src/Formidable/Forms/Form.php:775
+msgid "Disable auto remove"
+msgstr "Automatisch verwijderen uitschakelen"
+
+#: src/Formidable/Forms/Form.php:819
+msgid "Days"
+msgstr "Dagen"
+
+#: src/Formidable/Forms/Form.php:822
+msgid "Months"
+msgstr "Maanden"
+
+#: src/Formidable/Forms/Form.php:871
+msgid "Enable this form"
+msgstr "Formulier inschakelen"
+
+#: src/Formidable/Forms/Form.php:874
+msgid "Disable this form"
+msgstr "Formulier uitschakelen"
+
+#: src/Formidable/Forms/Rows/Row.php:261
+msgid "Row"
+msgstr "Rij"
+
+#: src/Formidable/Forms/Rows/Row.php:264
+msgid "Step"
+msgstr "Stap"
+
+#: src/Formidable/Forms/Rows/Row.php:372
+msgid "Enable custom buttons"
+msgstr "Eigen knoppen inschakelen"
+
+#: src/Formidable/Forms/Rows/Row.php:375
+msgid "Disable custom buttons"
+msgstr "Eigen knoppen uitschakelen"
+
+#: src/Formidable/Helpers/Converter.php:288
+msgid "Form ID"
+msgstr "Formulier ID"
+
+#: src/Formidable/Helpers/Converter.php:289
+#: src/Formidable/Helpers/Converter.php:315
+#: src/Formidable/Helpers/Converter.php:371
+#: src/Formidable/Helpers/Converter.php:428
+msgid "(unique ID)"
+msgstr "(uniek ID)"
+
+#: src/Formidable/Helpers/Converter.php:290
+#: src/Formidable/Helpers/Converter.php:316
+#: src/Formidable/Helpers/Converter.php:372
+#: src/Formidable/Helpers/Converter.php:429
+msgid "Integer"
+msgstr "Nummer"
+
+#: src/Formidable/Helpers/Converter.php:314
+msgid "Result ID"
+msgstr "Resultaat ID"
+
+#: src/Formidable/Helpers/Converter.php:351
+#: src/Formidable/Results/Search/ColumnSet/Available.php:20
+msgid "Locale"
+msgstr "Lokale (taal/land)"
+
+#: src/Formidable/Helpers/Converter.php:370
+msgid "Page ID"
+msgstr "Pagina ID"
+
+#: src/Formidable/Helpers/Converter.php:383
+msgid "Page URL"
+msgstr "Pagina URL"
+
+#: src/Formidable/Helpers/Converter.php:384
+#: src/Formidable/Helpers/Converter.php:447
+msgid "(link)"
+msgstr "(link)"
+
+#: src/Formidable/Helpers/Converter.php:396
+msgid "Last Modification Date"
+msgstr "Laatste aanpassing"
+
+#: src/Formidable/Helpers/Converter.php:402
+msgid "Publication Date"
+msgstr "Publicatie datum"
+
+#: src/Formidable/Helpers/Converter.php:427
+msgid "User ID"
+msgstr "Gebruiker ID"
+
+#: src/Formidable/Helpers/Converter.php:446
+msgid "Profile URL"
+msgstr "Profiel URL"
+
+#: src/Formidable/Helpers/Editor.php:40 src/Formidable/Helpers/Editor.php:92
+#: src/Formidable/Helpers/Editor.php:131
+msgid "Formidable Data"
+msgstr "Formidable Data"
+
+#: src/Formidable/Helpers/Editor.php:41 src/Formidable/Helpers/Editor.php:93
+msgid "Insert Formidable Data"
+msgstr "Voeg Formidable Data toe"
+
+#: src/Formidable/Helpers/Editor.php:132
+msgid "Insert Formidable Form-tag"
+msgstr "Voeg Formidable Form-tag toe"
+
+#: src/Formidable/Helpers/Mail.php:138
+msgid "Formidable Mail Exception. Unable to send mail: "
+msgstr "Formidable Mail Fout. Kan de mail niet verzenden: "
+
+#: src/Formidable/Helpers/Mail.php:142 src/Formidable/Helpers/Mail.php:173
+msgid "Template Used"
+msgstr "Sjabloon gebruikt"
+
+#: src/Formidable/Helpers/Mail.php:146
+msgid "Reply-To"
+msgstr "Antwoordadres"
+
+#: src/Formidable/Helpers/Mail.php:149
+msgid "Body"
+msgstr "Bericht"
+
+#: src/Formidable/Helpers/Mail.php:154 src/Formidable/Helpers/Mail.php:182
+msgid "Formidable Privacy Log setting prevents details to be logged."
+msgstr ""
+"Formidable AVG-instellingen zorgen ervoor dat details niet worden opgeslagen."
+
+#: src/Formidable/Helpers/Mail.php:165
+msgid "EMAILS ARE ENABLED. THIS EMAIL HAS BEEN SENT"
+msgstr "E-MAILS ZIJN INGESCHAKELD. DEZE MAIL IS VERZONDEN"
+
+#: src/Formidable/Helpers/Mail.php:167
+msgid "EMAILS ARE ENABLED. THIS EMAIL HAS NOT BEEN SENT"
+msgstr "E-MAILS ZIJN INGESCHAKELD. DEZE MAIL IS NIET VERZONDEN"
+
+#: src/Formidable/Helpers/Mail.php:170
+msgid "EMAILS ARE DISABLED. THIS EMAIL WAS LOGGED BUT NOT SENT"
+msgstr "E-MAILS ZIJN UITGESCHAKELD. DEZE MAIL IS NIET VERZONDEN"
+
+#: src/Formidable/Helpers/Mail.php:179
+#, php-format
+msgid "Mail Details: %s"
+msgstr "E-mail details: %s"
+
+#: src/Formidable/Mails/Mail.php:281
+msgid "Custom sender"
+msgstr "Verzender"
+
+#: src/Formidable/Mails/Mail.php:284 src/Formidable/Mails/Mail.php:378
+msgid "Use data from element on form"
+msgstr "Gebruik data uit element op formulier"
+
+#: src/Formidable/Mails/Mail.php:329 src/Formidable/Mails/Mail.php:423
+#, php-format
+msgid "%s <span class=\"small text-muted\">&lt;%s&gt;</span>"
+msgstr "%s <span class=\"small text-muted\">&lt;%s&gt;</span>"
+
+#: src/Formidable/Mails/Mail.php:372
+msgid "Use the \"From\"-details"
+msgstr "Gebruik the \"Van\"-details"
+
+#: src/Formidable/Mails/Mail.php:375
+msgid "Custom Reply To"
+msgstr "Aangepast antwoordadres"
+
+#: src/Formidable/Mails/Mail.php:466
+#, php-format
+msgid "<span class=\"small text-muted\">&lt;%s&gt;</span>"
+msgstr "<span class=\"small text-muted\">&lt;%s&gt;</span>"
+
+#: src/Formidable/Mails/Mail.php:472
+#, php-format
+msgid "%s <span class=\"small text-muted\">&lt;element&gt;</span>"
+msgstr "%s <span class=\"small text-muted\">&lt;element&gt;</span>"
+
+#: src/Formidable/Mails/Mail.php:657 src/Formidable/Mails/Mail.php:673
+msgid "Unmatching FormIDs for Result and Mail objects"
+msgstr "Formulier ID voor Resultaat- en Mailobject komen niet overeen"
+
+#: src/Formidable/Mails/Mail.php:670 src/Formidable/Mails/Mail.php:794
+msgid "No Result object set for Mail object"
+msgstr "Geen Resultaatobject voor dit Mailobject opgeslagen"
+
+#: src/Formidable/Mails/Mail.php:701
+msgid "No FROM set or empty for this mailing"
+msgstr "Van is leeg en/of ongeldig"
+
+#: src/Formidable/Mails/Mail.php:719
+msgid "No REPLYTO set or empty for this mailing"
+msgstr "Antwoordadres is leeg en/of ongeldig"
+
+#: src/Formidable/Mails/Mail.php:732
+msgid "No TO set or empty for this mailing"
+msgstr "Naar is leeg en/of ongeldig"
+
+#: src/Formidable/Mails/Mail.php:865
+msgid "Send no mail because of dependency"
+msgstr "Geen mail verzonden vanwege afhankelijkeden"
+
+#: src/Formidable/Results/ResultExport.php:168
+msgid "guest"
+msgstr "gast"
+
+#: src/Formidable/Results/Search/ColumnSet/Available.php:21
+msgid "FormID"
+msgstr "Formulier ID"
+
+#: src/Formidable/Results/Search/ColumnSet/Available.php:22
+msgid "Form Name"
+msgstr "Formuliernaam"
+
+#: src/Formidable/Results/Search/ColumnSet/Column/DateModifiedColumn.php:22
+msgid "Date Modified"
+msgstr "Aangepast op"
+
+#: src/Formidable/Results/Search/Field/Field/DateAddedField.php:37
+#: src/Formidable/Results/Search/Field/Field/DateModifiedField.php:37
+msgid "to"
+msgstr "naar"
+
+#: src/Formidable/Results/Search/Field/Field/DateModifiedField.php:31
+msgid "Last Modified"
+msgstr "Aangepast op"
+
+#: src/Formidable/Results/Search/Field/Manager.php:29
+msgid "Core Properties"
+msgstr "Basiseigenschappen"
+
+#: src/Formidable/Results/Search/Menu.php:23
+msgid "View"
+msgstr "Bekijken"
+
+#: src/Formidable/Tasks/CleanupController.php:17
+msgid "Cleanup Formidable"
+msgstr "Opschonen Formidable"
+
+#: src/Formidable/Tasks/CleanupController.php:22
+msgid "Removes temporary files and remove results based on GDPR"
+msgstr ""
+"Verwijderd tijdelijke bestanden en verwijderd inzendingen op basis van AVG-"
+"instellingen"
+
+#: src/Formidable/Tasks/CleanupController.php:27
+msgid "Temporary files successfully removed!"
+msgstr "Tijdelijke bestanden zijn succesvol verwijderd!"
+
+#: views/dialogs/search/advanced_search.php:9
+msgid "Filters"
+msgstr "Filters"
+
+#: views/dialogs/search/advanced_search.php:10
+msgid "Customize Results"
+msgstr "Resultaten aanpassen"
+
+#: views/dialogs/search/advanced_search.php:13
+msgid "Search Presets"
+msgstr "Opgeslagen zoekopdrachten"
+
+#: views/dialogs/search/advanced_search.php:25
+msgid "Add custom search fields based on your needs."
+msgstr "Voeg elementen toe."
+
+#: views/dialogs/search/advanced_search.php:34
+msgid ""
+"Customize the columns, column order, sort and number of results for your "
+"search."
+msgstr "Pas kolommen, kolom volgorde, sortering en aantal resultaten aan."
+
+#: views/dialogs/search/advanced_search.php:49
+msgid "(no name set)"
+msgstr "(geen naar opgegeven)"
+
+#: views/dialogs/search/advanced_search.php:54
+msgid "Edit Search Preset"
+msgstr "Pas zoekopdracht aan"
+
+#: views/dialogs/search/advanced_search.php:57
+msgid "Delete Search Preset"
+msgstr "Verwijder opgeslagen zoekopdracht"
+
+#: views/dialogs/search/advanced_search.php:69
+msgid "No search presets found."
+msgstr "Geen zoekopdrachten gevonden."
+
+#: views/dialogs/search/advanced_search.php:81
+msgid "Save Search"
+msgstr "Zoekopdracht opslaan"
+
+#: views/dialogs/search/advanced_search.php:112
+msgid "Save Preset"
+msgstr "Zoekopdracht opslaan"
+
+#: views/dialogs/search/preset/delete.php:7
+#, php-format
+msgid "Are you sure you want to remove the \"%s\" search preset?"
+msgstr "Weet je zeker dat je de zoekopdracht \"%s\" wilt verwijderen?"
+
+#: views/dialogs/search/preset/delete.php:11
+msgid "Remove"
+msgstr "Verwijder"
+
+#: views/dialogs/search/preset/edit.php:14
+msgid "Save Search Preset"
+msgstr "Zoekopdracht opslaan"
+
+#~ msgid "Stop for debug!"
+#~ msgstr "Stop voor debuggen!"
+
+#~ msgid "Show"
+#~ msgstr "Weergeven"
+
+#~ msgid "Hide"
+#~ msgstr "Verbergen"
+
+#~ msgid "Adress 2"
+#~ msgstr "Adres #2"
+
+#, php-format
+#~ msgid "Field \"%s\" has invalid extension"
+#~ msgstr "Element \"%s\" is ongeldige extensie"
+
+#~ msgid "At lease one number"
+#~ msgstr "Minimaal één kleine letter en één hoofdletter"
+
+#~ msgid "Callback on success"
+#~ msgstr "Callback bij succesvolle verzending"
+
+#~ msgid "Access Denied."
+#~ msgstr "Geen toegang."
+
+#~ msgid "Class (toggle)"
+#~ msgstr "Class (in/uit schakelen)"
+
+#~ msgid "Clear value"
+#~ msgstr "Verwijder waarde"
+
+#~ msgid "is enabled"
+#~ msgstr "is ingeschakeld"
+
+#~ msgid "is empty"
+#~ msgstr "is leeg"
+
+#~ msgid "If"
+#~ msgstr "Wanneer"
+
+#, fuzzy
+#~ msgid "address"
+#~ msgstr "Adres"
+
+#, fuzzy
+#~ msgid "Address field"
+#~ msgstr "Selecteer zoekveld."
+
+#, fuzzy
+#~ msgid "code"
+#~ msgstr "Code"
+
+#, fuzzy
+#~ msgid "content"
+#~ msgstr "Bericht (Limieten) is leeg en/of ongeldig"
+
+#, fuzzy
+#~ msgid "date"
+#~ msgstr "Datum"
+
+#, fuzzy
+#~ msgid "email"
+#~ msgstr "E-mailadres is verplicht."
+
+#, fuzzy
+#~ msgid "file"
+#~ msgstr ""
+#~ "Bestandstype(n) \"%s\" in \"%s\" zijn globaal niet toegelaten (ga naar "
+#~ "\"Toegestane bestandstypen\" in \"Systeem & instellingen\")"
+
+#, fuzzy, php-format
+#~ msgid "Field \"%s\" (%s) is invalid extension"
+#~ msgstr "Optie (rij #%s)  is leeg en/of ongeldig"
+
+#, fuzzy
+#~ msgid "line"
+#~ msgstr "Lijn"
+
+#, fuzzy
+#~ msgid "name"
+#~ msgstr "Naam"
+
+#, fuzzy
+#~ msgid "number"
+#~ msgstr "Nummer"
+
+#, fuzzy
+#~ msgid "options"
+#~ msgstr "Callback opties (jquery / javascript)"
+
+#, fuzzy
+#~ msgid "password"
+#~ msgstr "Wachtwoord"
+
+#, fuzzy, php-format
+#~ msgid "Field \"%s\" is invalid password"
+#~ msgstr "Bevestigen (element) is leeg en/of ongeldig"
+
+#, fuzzy
+#~ msgid "phone"
+#~ msgstr "Telefoon"
+
+#, fuzzy
+#~ msgid "range"
+#~ msgstr "Bereik / Limieten (type) is leeg en/of ongeldig"
+
+#, fuzzy
+#~ msgid "submit"
+#~ msgstr "Verzenden"
+
+#, fuzzy
+#~ msgid "text"
+#~ msgstr "Help (tekst) is leeg en/of ongeldig"
+
+#~ msgid "Form is no longer available"
+#~ msgstr "Formulier is niet langer beschikbaar"
+
+#~ msgid "Type of message (limit) is empty or invalid"
+#~ msgstr "Type bericht (Limieten) is leeg en/of ongeldig"
+
+#~ msgid "Content (limit) is empty or invalid"
+#~ msgstr "Bericht (Limieten) is leeg en/of ongeldig"
+
+#~ msgid "Button name (previous) is empty or invalid"
+#~ msgstr "Naam knop (Vorige) is leeg en/of ongeldig"
+
+#~ msgid "Button name (next) is empty or invalid"
+#~ msgstr "Naam knop (Volgende) is leeg en/of ongeldig"
+
+#~ msgid "CSS value (next) is empty or invalid"
+#~ msgstr "Waarde CSS (Volgende) is leeg en/of ongeldig"

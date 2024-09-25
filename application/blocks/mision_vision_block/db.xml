@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btMisionVisionBlock">
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="leftImage" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+        <field name="leftTitle" type="C" size="255"></field>
+        <field name="leftDesc" type="X"></field>
+        <field name="rightImage" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+        <field name="rightTitle" type="C" size="255"></field>
+        <field name="rightDesc" type="X"></field>
+        <field name="hideBlock" type="C" size="1">
+            <unsigned/>
+        </field>
+        <field name="bgColor" type="C" size="255"></field>
+        <field name="removePaddingTop" type="C" size="1">
+            <unsigned/>
+        </field>
+        <field name="removePaddingBottom" type="C" size="1">
+            <unsigned/>
+        </field>
+    </table>
+</schema>

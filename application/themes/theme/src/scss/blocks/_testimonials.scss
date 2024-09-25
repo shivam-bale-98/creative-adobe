@@ -1,0 +1,169 @@
+@use "../abstracts/variables" as globVar;
+@use "../mixins/" as mix;
+
+.testimonials {
+  .left {
+    // width: 70%;
+    max-width: clamp(47.5rem, mix.vw(480), 50rem);
+    @include mix.breakpoint(1279) {
+      max-width: 38rem;
+    }
+    @include mix.breakpoint(991) {
+      width: 100%;
+      max-width: 100%;
+
+      h2 {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .right {
+    max-width: 30%;
+
+    @include mix.breakpoint(991) {
+      max-width: 100%;
+      width: 100%;
+      justify-content: flex-start;
+      margin-top: 3rem;
+    }
+    
+    @include mix.breakpoint(767) {
+      margin-top: 2rem;
+    }
+  }
+
+  .swiper {
+    overflow: visible;
+    cursor: grab;
+    @include mix.min-breakpoint(991) {
+      width: clamp(83.5rem, mix.vw(835), mix.vw(835));
+    }
+    margin-inline-start: 0;
+    @include mix.breakpoint(991) {
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(4rem);
+    }
+    .swiper-wrapper {
+      .swiper-slide {
+        @include mix.min-breakpoint(991) {
+          width: clamp(32rem, mix.vw(320), mix.vw(320));
+          transition: 0.5s width linear;
+          will-change: width;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          .testimony-card {
+           @include mix.min-breakpoint(991) {
+            transform: translateX(8rem);
+            opacity: 0;
+           }
+          }
+        }
+        .testimony-card {
+          @include mix.min-breakpoint(991) {
+            min-height: 44.7rem;
+            height: 100%;
+          }
+
+          .img-wrap {
+            width: clamp(32rem, mix.vw(320), mix.vw(320));
+            background-color: var(--romance);
+
+            @include mix.breakpoint(991) {
+              width: 100%;
+              @include mix.aspect-ratio(320, 283);
+            }
+            img {
+              max-width: 80%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              &.white {
+                opacity: 0;
+              }
+            }
+          }
+          .content {
+            // display: none;
+            // opacity: 0;
+
+            background-color: #f6f6f6;
+            // transition: 0.6s transform, opacity ease-out;
+            @include mix.min-breakpoint(991) {
+              transform: scaleX(0);
+              transform-origin: left;
+              width: 100%;
+              will-change: transform;
+            }
+            @include mix.breakpoint(991) {
+              position: relative;
+              top: auto;
+              right: auto;
+              padding: 3rem 2rem;
+              width: 100%;
+              max-width: 100%;
+            }
+            p {
+              font-size: 1.6rem;
+              margin-top: 2rem;
+              max-width: clamp(40rem, mix.vw(400), mix.vw(400));
+            }
+
+            h4 {
+              letter-spacing: -2%;
+              margin-bottom: 2px;
+            }
+
+            h6 {
+              font-size: 1.6rem;
+              text-transform: none;
+              font-weight: 300;
+            }
+            .botton {
+              @include mix.breakpoint(991) {
+                margin-top: 3rem;
+              }
+            }
+
+            .box {
+              @include mix.min-breakpoint(991) {
+                opacity: 0;
+                transform: translateY(2rem);
+              }
+            }
+          }
+        }
+
+        &.swiper-slide-active {
+          @include mix.min-breakpoint(991) {
+            width: clamp(83.5rem, mix.vw(835), mix.vw(835));
+          }
+          .img-wrap {
+            background-color: var(--red-berry);
+
+            img {
+              &.red {
+                opacity: 0;
+              }
+              &.white {
+                opacity: 1;
+              }
+            }
+          }
+
+          .content {
+            @include mix.min-breakpoint(991) {
+              width: clamp(51.5rem, mix.vw(515), mix.vw(515));
+              // display: block;
+              // opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

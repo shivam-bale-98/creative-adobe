@@ -1,0 +1,115 @@
+@use "../abstracts/variables" as globVar;
+@use "../mixins/" as mix;
+
+.three-col-block {
+  .three-col-card {
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    @include mix.breakpoint(767) {
+      opacity: 0;
+    }
+    &:last-child{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        .line {
+          display: none;
+        }
+    }
+    .img-wrap {
+   
+      // @include mix.min-breakpoint(991) {
+        opacity: 0;
+        transform: translateX(-4rem);
+      // }
+
+      @include mix.aspect-ratio(178, 178);
+      width: 13.5%;
+
+      @include mix.breakpoint(991) {
+        width: 35%;
+        height: 100%;
+      }
+
+      @include mix.breakpoint(767) {
+        // min-width: 11.5rem;
+        opacity: 1;
+        transform: none;
+        @include mix.aspect-ratio(205, 158);
+        width: clamp(20.5rem, 50%, 50%);
+      }
+    }
+
+    .content {
+      width: 83%;
+      padding-inline-end: clamp(4rem, mix.vw(40), mix.vw(40));
+      @include mix.breakpoint(991) {
+        width: 60%;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-inline-end: 0;
+        opacity: 0;
+        transform: translateY(4rem);
+      }
+      @include mix.breakpoint(767) {
+        width: 100%;
+        margin-top: 2rem;
+        opacity: 1;
+        transform: none;
+      }
+      h4 {
+        max-width: clamp(34.3rem, mix.vw(343), mix.vw(343));
+        // max-width: 34.3rem;
+        @include mix.min-breakpoint(991) {
+            opacity: 0;
+        }
+       
+        @include mix.breakpoint(1279) {
+            max-width: 30rem;
+        }
+
+        @include mix.breakpoint(991) {
+            margin-bottom: 3rem;
+            font-size: 2.4rem;
+            line-height: 1.2;
+        }
+
+        @include mix.breakpoint(767) {
+            margin-bottom: 2rem;
+        }
+      }
+
+      p {
+        width: clamp(48rem, mix.vw(480), mix.vw(480));
+        // max-width: 50rem;
+        color: rgba($color: globVar.$color-borders, $alpha: 0.5);
+
+        @include mix.breakpoint(1279) {
+            width: 100%;
+            max-width: 44rem;
+        }
+
+        @include mix.breakpoint(767) {
+           font-size: 1.5rem;
+        }
+
+        @include mix.min-breakpoint(991) {
+            opacity: 0;
+        }
+      }
+
+     
+
+      
+    }
+
+    .line {
+        height: 1px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: rgba($color: globVar.$color-borders, $alpha: 0.2);
+
+        transform: scaleX(0);
+    }
+  }
+}

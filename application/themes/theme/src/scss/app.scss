@@ -1,0 +1,75 @@
+@forward "../../node_modules/swiper/swiper-bundle.min.css";
+@forward "../../node_modules/glightbox/dist/css/glightbox.min.css";
+
+
+@forward 'base';
+@forward 'blocks';
+@forward 'components';
+
+
+
+// Tailwind if needed
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Matter";
+    src: url("../../assets/fonts/Matter/Matter-Light.woff2"), url("../../assets/fonts/Matter/Matter-Light.woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Matter";
+    src: url("../../assets/fonts/Matter/Matter-Regular.woff2"), url("../../assets/fonts/Matter/Matter-Regular.woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Matter";
+    src: url("../../assets/fonts/Matter/Matter-Medium.woff2"), url("../../assets/fonts/Matter/Matter-Medium.woff");
+    font-weight: 500;
+}
+
+
+// safe list 
+
+
+
+// .gallery-main-slider .swiper-slide {
+//     transition: clip-path 1.9s cubic-bezier(0.22, 1, 0.36, 1);
+//     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+//     transition-delay: 1.9s;
+
+//     &.swiper-slide-active,
+//     &.swiper-slide-prev.swiper-slide-visible,
+//     &.swiper-slide-next.swiper-slide-visible {
+//         // transition: clip-path 5s cubic-bezier(0.84, 0, 0.16, 1);
+//         transition: clip-path 2.5s cubic-bezier(0.22, 1, 0.36, 1);
+//         clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+//         transition-delay: 0s;
+//     }
+
+//     &.swiper-slide-prev:not(.swiper-slide-visible) {
+//         clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+//         transition-delay: 0s;
+//     }
+
+//     &.swiper-slide-next:not(.swiper-slide-visible) {
+//         clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+//         transition-delay: 0s;
+//     }
+// }
+
+.visually-hidden {
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    /* browsers in the future */
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

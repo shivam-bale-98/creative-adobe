@@ -1,0 +1,247 @@
+@use "../abstracts/variables" as globVar;
+@use "../mixins/" as mix;
+
+.login-page {
+  // min-height: 100vh;
+  height: auto;
+  padding-top: 16rem;
+  padding-bottom: 8rem;
+  color: var(--romance);
+  &:after {
+    content: "";
+    z-index: 2;
+    background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    transform: rotate(180deg) translateY(2rem);
+    // opacity: 0;
+    transition: 0.5s all ease-out;
+    @include mix.breakpoint(767) {
+      display: none;
+    }
+  }
+  .img-wrap {
+    &:before {
+      content: "";
+      z-index: 2;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      height: 50%;
+      width: 100%;
+      transform: rotate(180deg) translateY(-2rem);
+    //   opacity: 0;
+      transition: 0.5s all ease-out;
+      @include mix.breakpoint(767) {
+        height: 100%;
+      }
+    }
+  }
+
+  .container {
+    flex-wrap: nowrap;
+  }
+  .login-page-content {
+    max-width: 60rem;
+  }
+
+  .checkbox {
+    margin-bottom: 2rem;
+    label {
+      font-size: 1.6rem;
+      font-weight: 400;
+      @apply flex;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--romance);
+    }
+
+    input {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid rgba(globVar.$color-red-berry, 1);
+    }
+  }
+  .form-group {
+    @apply mb-16;
+    @apply flex;
+    @apply flex-col;
+    @apply relative;
+
+    &.active {
+      input,
+      textarea {
+        background-color: rgba(globVar.$color-white, 0.1);
+        border: 1px solid rgba(globVar.$color-white, 1);
+      }
+    }
+
+    label {
+      @apply relative;
+      font-size: 1.6rem;
+      line-height: 1.2rem;
+      margin-bottom: 2rem;
+      color: var(--romance);
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      border: 0;
+      padding: 1.9rem 2rem 1.8rem;
+      margin: 0;
+      border-radius: 1rem;
+      color: var(--romance);
+      border: 1px solid rgba($color: globVar.$color-white, $alpha: 1);
+      font-size: 1.8rem;
+      line-height: 2.3rem;
+      font-weight: 300;
+      background-color: rgba(globVar.$color-white, 0.1);
+      transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: border 0.3s ease;
+      box-sizing: border-box;
+
+      &:hover {
+        border-color: var(--rustic-red);
+        background-color: rgba(globVar.$color-white, .2);
+      }
+
+      &:active {
+        border: 1px solid rgba(globVar.$color-white, 1);
+      }
+
+      &.error {
+        border: 1px solid rgba(globVar.$color-red-berry, 1);
+      }
+
+      &.is-invalid {
+        border: 1px solid rgba(globVar.$color-red-berry, 1);
+      }
+
+      &::placeholder {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        font-weight: 300;
+        font-style: normal;
+        color: var(--rustic-red);
+      }
+    }
+
+    textarea {
+      max-height: 164px;
+      max-width: calc(100% - 0px);
+      min-height: 120px;
+      min-width: calc(100% - 0px);
+
+      @include mix.breakpoint(991) {
+        min-height: 60px;
+      }
+    }
+
+    .buttons {
+      padding-top: 15px;
+
+      input {
+        width: auto;
+        background: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        opacity: 1;
+        width: 50%;
+        text-align: center;
+        letter-spacing: 2px;
+        color: globVar.$color-black-50;
+        font-size: globVar.$body-font-size-small;
+        border: 1px solid globVar.$color-black;
+
+        &:hover {
+          background: globVar.$color-black-50;
+          color: globVar.$color-white;
+        }
+      }
+    }
+
+    .btn {
+      font-size: 2rem;
+      padding: 1.8rem 2rem;
+      border-radius: 1rem;
+      transition: 0.3s all ease-out;
+      &.btn-primary {
+        background-color: var(--red-berry);
+        color: var(--romance);
+        margin-bottom: 2rem;
+        // border: 1px solid transparent;
+        &:hover {
+          background-color: var(--rustic-red);
+        }
+      }
+
+      &.pull-right {
+        border: 1px solid var(--romance);
+        background-color: var(--romance);
+        max-width: 20rem;
+        text-align: center;
+        color: var(--rustic-red);
+
+        &:hover {
+          background-color: var(--rustic-red);
+          color: var(--romance);
+        }
+      }
+    }
+
+    &.phone-label {
+      label {
+        left: 136px;
+      }
+    }
+
+    &.attach-cv-label {
+      label {
+        position: unset;
+      }
+    }
+
+    .form-check {
+      &.custom-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .form-check-input {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 2px solid rgba(globVar.$color-black, 0.1);
+      }
+
+      .custom-control-label {
+        position: unset;
+
+        p {
+          margin-bottom: 0;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 32px;
+          color: globVar.$color-black;
+        }
+      }
+    }
+  }
+}

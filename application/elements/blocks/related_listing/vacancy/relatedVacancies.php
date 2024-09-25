@@ -1,0 +1,1 @@
+<?php View::element("vacancy/view", ["pages" => $pages]); ?>

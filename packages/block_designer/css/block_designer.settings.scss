@@ -1,0 +1,16 @@
+.ccm-ui {
+  .block-designer-container {
+    ul.item-select-list.block-types-order {
+      > li {
+        a {
+          color: #fff;
+
+          &:hover {
+            background: #000;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btOurPeople">
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="title" type="C" size="255"></field>
+         <field name="bgColor" type="C" size="255"></field>
+        <field name="paddingTop" type="C" size="255"></field>
+        <field name="paddingBottom" type="C" size="255"></field>
+        <field name="hideBlock" type="C" size="1">
+            <unsigned/>
+        </field>
+    </table>
+</schema>

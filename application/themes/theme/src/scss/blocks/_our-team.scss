@@ -1,0 +1,119 @@
+@use "../abstracts/variables" as globVar;
+@use "../mixins/" as mix;
+
+.our-team {
+  .title {
+    h2 {
+      max-width: 50%;
+
+      @include mix.breakpoint(991) {
+        max-width: 100%;
+      }
+    }
+  }
+  .team-list.swiper {
+    @include mix.breakpoint(991) {
+        overflow: visible;
+      }
+    .swiper-wrapper {
+      @include mix.min-breakpoint(991) {
+        flex-wrap: wrap;
+        gap: 6rem 2rem;
+      }
+      
+      .swiper-slide {
+        @include mix.breakpoint(991) {
+          &:nth-child(1), &:nth-child(2) {
+            opacity: 0;
+            transform: translateX(6rem);
+          }
+        }
+        @include mix.min-breakpoint(991) {
+          opacity: 0;
+          transform: translateY(6rem);
+          width: calc(33.33% - 1.5rem);
+        }
+
+        .img-wrap {
+            padding-bottom: 0;
+          @include mix.aspect-ratio(427, 491);
+
+          @include mix.breakpoint(991) {
+            @include mix.aspect-ratio(266, 306);
+          }
+        }
+
+        .content {
+          h6 {
+            font-size: 1.6rem;
+            line-height: 1;
+            font-weight: 400;
+          }
+        }
+
+        &:last-child{
+            cursor: pointer;
+            .img-wrap{
+                background-color: var(--red-berry);
+                transition: 0.3s all ease-out;
+            }
+
+            .content{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: var(--color-white);
+                transition: 0.2s all ease-out;
+                .plus {
+                    height: 4rem;
+                    width: 4rem;
+                    transition: 0.4s all ease-out;
+                    &:after, &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: var(--color-white);
+                        transition: 0.2s all ease-out;
+                    }
+                    &:after {
+                        height: 100%;
+                        width: 1px;
+                    }
+
+                    &:before{
+                        height: 1px;
+                        width: 100%;
+                    }
+                }
+            }
+
+            @include mix.min-breakpoint(1279) {
+                &:hover {
+                    .img-wrap{
+                      background-color: var(--romance);
+                    }
+
+                    .content{
+                        color: var(--rustic-red);
+                        .plus {
+                            transform: rotate(90deg);
+                            &::after, &::before{
+                                background-color: var(--rustic-red);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      }
+    }
+
+    .swiper-buttons {
+        @include mix.min-breakpoint(991) {
+            display: none;
+        }
+    }
+  }
+}

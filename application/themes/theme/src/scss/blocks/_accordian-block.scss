@@ -1,0 +1,201 @@
+@use "../abstracts/variables" as globVar;
+@use "../mixins/" as mix;
+
+.acc {
+    // border-bottom: 1px solid rgba($color: #000, $alpha: 0.4);
+    // padding-bottom: 25px;
+    // margin-bottom: 25px;
+    background-color: #fff;
+    // padding: 3.5rem 4rem;
+    border-radius: 3rem;
+    // margin-bottom: 2rem;
+    transition: 0.4s background-color ease-out;
+
+    @include mix.min-breakpoint(991) {
+        opacity: 0;
+        transform: translateX(4rem);
+    }
+
+    @include mix.breakpoint(767) {
+        // padding: 2.5rem 2rem;
+        border-radius: 2rem;
+    }
+
+    .acc-head {
+        // padding-top: 4rem;
+        // padding-bottom: 2rem;
+        position: relative;
+        cursor: pointer;
+
+        .p1 {
+            font-size: 3rem;
+            line-height: 3rem;
+            color: #1a0a0c;
+            // padding-inline-end: 50px;
+            // opacity: 0.5;
+            transition: 0.3s all ease-out;
+            width: calc(100% - 6rem);
+
+            @include mix.breakpoint(640) {
+                font-size: 2rem;
+                line-height: 2.5rem;
+                width: calc(100% - 3rem);
+            }
+        }
+
+        &.active {
+            p {
+                color: #fff;
+            }
+        }
+
+        .button {
+            position: absolute;
+            top: -24px;
+            right: -30px;
+            border-radius: 1.6rem;
+            height: 7.8rem;
+            width: 7.8rem;
+            // opacity: 0.4;
+            transition: 0.3s all ease-out;
+            background-color: #f2f1ef;
+
+            @include mix.breakpoint(640) {
+                height: 4.2rem;
+                width: 4.2rem;
+                top: -8px;
+                right: -7px;
+                border-radius: 1rem;
+            }
+
+            &:after {
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 30px;
+                width: 2px;
+
+                background-color: #000;
+                transition: 0.3s all ease-out;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 2px;
+                width: 30px;
+                background-color: #1a0a0c;
+                transition: 0.3s all ease-out;
+            }
+        }
+    }
+
+    .acc-content {
+        // max-width: 430px;
+        padding-inline-end: 20%;
+        display: none;
+        padding-top: 2rem;
+
+        @include mix.breakpoint(767) {
+            padding-inline-end: 0;
+        }
+    }
+
+    .acc-head {
+        &.active {
+            .p1 {
+                opacity: 1;
+            }
+
+            .button {
+                background-color: #fff;
+                opacity: 1;
+
+                &:after {
+                    opacity: 0;
+                }
+
+                &::before {
+                    background-color: #1a0a0c;
+                }
+            }
+        }
+    }
+}
+
+.accordion-block {
+    .title {
+        h2 {
+            br {
+                @include mix.breakpoint(767) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .acc-container {
+        max-width: clamp(74rem, mix.vw(740), mix.vw(740));
+        @include mix.breakpoint(991) {
+            opacity: 0;
+            transform: translateY(4rem);
+        }
+    }
+
+    &.accordion-block--red {
+        .acc {
+            background-color: rgba($color: globVar.$color-white, $alpha: 0.1);
+
+            .acc-head {
+                .button {
+                    background-color: rgba($color: #f2f1ef, $alpha: 0.1);
+
+                    &:after,
+                    &:before {
+                        background-color: var(--romance);
+                    }
+                }
+
+                .p1 {
+                    color: var(--color-white);
+                }
+            }
+
+            &.active {
+                background-color: var(--red-berry);
+
+                .acc-head {
+                    .button {
+                        background-color: var(--color-white);
+
+                        &:before {
+                            background-color: var(--rustic-red);
+                        }
+                    }
+
+                    .p1 {
+                        color: var(--color-white);
+                    }
+                }
+            }
+
+            &:not(.active) {
+                @include mix.min-breakpoint(1279) {
+                    &:focus-visible {
+                        background-color: rgba($color: globVar.$color-white, $alpha: 0.3);
+                        outline: solid var(--red-berry) 1px;  
+                    }
+                    &:hover {
+                        background-color: rgba($color: globVar.$color-white, $alpha: 0.3);
+                    }
+                }
+            }
+        }
+    }
+
+
+}

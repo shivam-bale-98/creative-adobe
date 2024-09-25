@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btListingBlock">
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="title" type="C" size="255"></field>
+        <field name="bgColor" type="C" size="255"></field>
+        <field name="paddingTop" type="C" size="255"></field>
+        <field name="paddingBottom" type="C" size="255"></field>
+        <field name="searchPlaceHolderText" type="C" size="255"></field>
+        <field name="loadMoreText" type="C" size="255"></field>
+        <field name="button" type="C" size="12"></field>
+        <field name="button_Title" type="C"></field>
+        <field name="button_Page" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+        <field name="button_URL" type="C"></field>
+        <field name="enableSearch" type="C" size="1">
+            <unsigned/>
+        </field>
+        <field name="enableSort" type="C" size="1">
+            <unsigned/>
+        </field>
+        <field name="enablePagination" type="C" size="1">
+            <unsigned/>
+        </field>
+        <field name="paginationStyle" type="C"></field>
+        <field name="itemCount" type="C" size="255"></field>
+        <field name="blockIdentifier" type="C" size="255"></field>
+        <field name="sortOrder" type="C"></field>
+    </table>
+    <table name="btListingBlockFiltersEntries">
+        <field name="id" type="I">
+            <key/>
+            <unsigned/>
+            <autoincrement/>
+        </field>
+        <field name="bID" type="I">
+            <unsigned/>
+        </field>
+        <field name="sortOrder" type="I"></field>
+        <field name="filterTitle" type="C" size="255"></field>
+        <field name="filterAttribute" type="C"></field>
+        <field name="allowMultiple" type="C" size="1">
+            <unsigned/>
+        </field>
+    </table>
+    <table name="btListingBlockPageTypes_MultipleSelectEntries">
+        <field name="msID" type="I">
+            <key/>
+            <unsigned/>
+            <autoincrement/>
+        </field>
+        <field name="bvID" type="I"></field>
+        <field name="value" type="C"></field>
+        <field name="sortOrder" type="I"></field>
+    </table>
+    <table name="btListingBlockSortOptions_MultipleSelectEntries">
+        <field name="msID" type="I">
+            <key/>
+            <unsigned/>
+            <autoincrement/>
+        </field>
+        <field name="bvID" type="I"></field>
+        <field name="value" type="C"></field>
+        <field name="sortOrder" type="I"></field>
+    </table>
+</schema>

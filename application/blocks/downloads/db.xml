@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btDownloads">
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="title" type="C" size="255"></field>
+        <field name="bgColor" type="C" size="255"></field>
+        <field name="paddingTop" type="C" size="255"></field>
+        <field name="paddingBottom" type="C" size="255"></field>
+        <field name="filesets" type="C"></field>
+    </table>
+</schema>

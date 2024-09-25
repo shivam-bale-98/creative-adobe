@@ -1,0 +1,21 @@
+.ccm-ui ul.block-types-sortable {
+    margin-bottom: 15px;
+}
+
+.ccm-ui ul.block-sets-sortable li .h3:hover,
+.ccm-ui ul.block-types-sortable a:hover {
+    cursor: move;
+    color: #105192;
+}
+
+.ccm-ui ul.block-sets-sortable {
+    padding-left: 0;
+}
+
+.ccm-ui ul.block-sets-sortable li {
+    list-style: none;
+}
+
+.ccm-ui ul.block-sets-sortable li .h3 .fa {
+    font-size: 80%;
+}

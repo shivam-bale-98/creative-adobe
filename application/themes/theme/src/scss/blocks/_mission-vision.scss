@@ -1,0 +1,132 @@
+@use "../abstracts/variables" as globVar;
+@use "../mixins/" as mix;
+
+.mission-vision {
+  @include mix.breakpoint(991) {
+    padding: 8rem 0;
+  }
+  @include mix.breakpoint(991) {
+    padding: 4rem 0;
+  }
+  //   max-height: 90rem;
+  @include mix.min-breakpoint(991) {
+    height: 100vh;
+  }
+  .img-wrap {
+    @include mix.breakpoint(991) {
+      aspect-ratio: 1;
+      width: 50%;
+      margin: auto;
+      height: auto;
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(4rem);
+    }
+    @include mix.breakpoint(767) {
+      width: 14rem;
+      margin-bottom: 2rem;
+    }
+    @include mix.min-breakpoint(991) {
+      position: absolute;
+      border-radius: 6rem;
+      top: 0;
+      left: 0;
+      transition: 0.8s all cubic-bezier(0.26, 0.6, 0.63, 0.99);
+      will-change: height, width, transform;
+    }
+    .overlay {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      position: absolute;
+      height: 70%;
+      width: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0) 100%
+      );
+
+      @include mix.breakpoint(991) {
+        display: none;
+      }
+    }
+  }
+
+  .content {
+    text-align: center;
+    width: 55%;
+    margin: auto;
+    @include mix.min-breakpoint(991) {
+      position: absolute;
+      left: 50%;
+      top: calc(50% + 22rem);
+      width: clamp(40.5rem, mix.vw(405), mix.vw(405));
+      transform: translate(-50%, -50%);
+     
+
+      transition: color 0.3s ease-out, transform 0.6s ease-out,
+      top 0.6s ease-out;
+
+      
+    }
+    @include mix.breakpoint(991) {
+      width: 45rem;
+    }
+    @include mix.breakpoint(767) {
+      width: calc(100% - 4rem);
+    }
+    p {
+      @include mix.breakpoint(991) {
+        color: rgba($color: globVar.$color-borders, $alpha: 0.5);
+      }
+      @include mix.min-breakpoint(991) {
+        opacity: 0;
+        transition: 0.3s all ease-out;
+      }
+    }
+  }
+  .left {
+    @include mix.breakpoint(991) {
+      margin-bottom: 6rem;
+    }
+    @include mix.breakpoint(767) {
+      margin-bottom: 4rem;
+    }
+  }
+  .left,
+  .right {
+    @include mix.breakpoint(991) {
+      width: 100%;
+    }
+    &.active {
+      @include mix.min-breakpoint(991) {
+        .img-wrap {
+          transform: translateY(0) scaleX(1) scaleY(1) !important;
+          border-radius: 2rem;
+        }
+
+        .content {
+          color: var(--color-white);
+          top: 50%;
+          transform: translate(-50%, -50%);
+          p {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+
+  .right {
+     @include mix.min-breakpoint(991) {
+      transform: scale(0.8);
+     }
+  }
+}

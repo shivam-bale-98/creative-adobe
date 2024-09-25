@@ -1,0 +1,18 @@
+TODO-list for Formidable (version 9)
+This list is a list of things we want for Formidable.
+This list hasn't any priority set.
+
+- Dependencies on columns / rows
+- Dependencies based on other data (page, user);
+
+- Handling page / user values after submission
+
+- Signature element
+- Time element
+- Rating element
+
+- Exporting results in other formats (XLS / XML)
+
+- Repeatable items
+
+- Editable results

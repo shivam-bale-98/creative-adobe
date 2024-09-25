@@ -1,0 +1,354 @@
+@use "../abstracts/variables" as globVar;
+@use "../mixins/" as mix;
+
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: globVar.$body-font;
+  color: globVar.$body-font-color;
+  font-weight: normal;
+  background-color: var(--romance);
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  .modal-open {
+    margin-right: 0;
+  }
+
+  &.site-loaded {
+    overflow-y: visible;
+
+  }
+
+  &.active {
+    overflow: hidden;
+    // border-right: 1rem solid transparent;
+    // width: calc(100% - 1rem);
+    // header.header {
+    //   @include mix.min-breakpoint(1279) {
+    //     width: calc(100% - 1rem);
+    //   }
+    // }
+  }
+
+  &.glightbox-open {
+    overflow: hidden;
+  }
+
+  &:not(.edit-mode) {
+    .fade-text {
+      opacity: 0;
+      will-change: opacity;
+    }
+
+    .title-reveal {
+      h2 {
+        opacity: 0;
+
+        .ts-word {
+          div {
+            opacity: 0;
+            will-change: opacity;
+          }
+        }
+      }
+    }
+
+    .fadeBottom {
+      // opacity: 0;
+      will-change: opacity, transform;
+    }
+
+    .follower-change {
+      cursor: none;
+    }
+
+    .scale-ele {
+      will-change: opacity, transform;
+      opacity: 0.5;
+      transform: scale(1.2);
+    }
+
+    .location-list-card {
+      opacity: 0;
+      transform: translateY(mix.rem(80));
+    }
+
+    .hide-block {
+      display: none !important;
+    }
+  }
+}
+
+body.win-os {
+  &.active {
+    width: calc(100% - 1rem);
+
+    header.header {
+      @include mix.min-breakpoint(1279) {
+        width: calc(100% - 1rem);
+      }
+    }
+  }
+}
+
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+  /* This needs to be calculated dynamically via js  - height of the footer */
+
+  .container {
+    height: 100%;
+  }
+
+  /* form fields */
+  input,
+  textarea,
+  select {
+    // font-family: globVar.$body-font;
+    color: globVar.$body-font-color;
+    font-weight: normal;
+    font-size: globVar.$body-font-size;
+    line-height: 24px;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  select {
+    cursor: pointer;
+    padding: 9px 6px 9px;
+    border: 0;
+    border-radius: 0;
+    font-size: globVar.$body-font-size;
+    -webkit-appearance: none;
+    height: 36px;
+    -moz-appearance: none;
+    background: none;
+    text-indent: 0.01px;
+    color: globVar.$body-font-color;
+    font-family: globVar.$body-font;
+    text-overflow: "";
+  }
+}
+
+a {
+  color: globVar.$body-font-color;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+
+  &:focus-visible {
+    outline: var(--red-berry) solid 1px;
+  }
+}
+
+ul {
+  padding-left: 0;
+
+  li {
+    line-height: 26px;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  border: none 0;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+  outline: transparent none;
+}
+
+select:focus {
+  outline: none;
+}
+
+section {
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &.pt-0 {
+    padding-top: 0 !important;
+  }
+  &.pb-0 {
+    padding-bottom: 0 !important;
+  }
+}
+
+.errors,
+.success {
+  background: #ffffff;
+  display: block;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.errors {
+  color: #f04f71;
+}
+
+.success {
+  color: #51bf9b;
+}
+
+/* text selection color */
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+
+/* scrollbar color only for windows OS */
+.win-os ::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+  cursor: pointer;
+
+  @include mix.breakpoint(768) {
+    width: 4px;
+  }
+}
+
+.win-os ::-webkit-scrollbar-track {
+  background-color: #ccc;
+}
+
+.win-os ::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: #ececec;
+
+  @include mix.breakpoint(768) {
+    width: 4px;
+  }
+}
+
+/* placeholder */
+input,
+textarea {
+  &::-webkit-input-placeholder {
+    color: #fff;
+  }
+
+  &:-moz-placeholder {
+    color: #fff;
+  }
+
+  &::-moz-placeholder {
+    color: #fff;
+  }
+
+  &:-ms-input-placeholder {
+    color: #fff;
+  }
+
+  /* hide placeholder on focus of input */
+  &:focus::-webkit-input-placeholder {
+    color: transparent !important;
+  }
+
+  &:focus:-moz-placeholder {
+    color: transparent !important;
+  }
+
+  /* FF 4-18 */
+  &:focus::-moz-placeholder {
+    color: transparent !important;
+  }
+
+  /* FF 19+ */
+  &:focus:-ms-input-placeholder {
+    color: transparent !important;
+  }
+
+  /* IE 10+ */
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+.ios-device * {
+  background-attachment: scroll;
+}
+
+/* wow default css to avoid flickering */
+.wow {
+  visibility: hidden;
+
+  @include mix.breakpoint(1024) {
+    visibility: visible;
+  }
+
+}
+
+
+//lenis scroll 
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+.lenis::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.08);
+  background-color: rgba($color: globVar.$color-borders, $alpha: 0.1);
+}
+
+.lenis::-webkit-scrollbar {
+  width: 1rem;
+  
+  background-color: rgba($color: globVar.$color-borders, $alpha: 0.1);
+}
+
+.lenis::-webkit-scrollbar-thumb {
+  background-color:  var(--red-berry);
+  border-radius: 2rem;
+}

@@ -1,0 +1,160 @@
+1.1.4.2
+Added saved search in results
+Fixed converting submitted date on import/conversion
+Fixed converting element-data-tag on import/conversion
+Fixed removing other filter when filterByElement on ResultList
+Fixed wrong filesize in File-element (thank you 6tematik)
+Fixed uploading files with File-element (as file-input) (thank you 6tematik)
+Fixed not saving scheduling-date in form (thank you roland)
+Fixed loading recaptchaV3 twice
+
+1.1.4.1
+Fixed converting pages/members in Options-element
+Fixed not sending mail to empty CC / BCC (thank you vuish)
+
+1.1.4
+Reinstall formidable pages after unfortunate removal
+Fixed conversion error in mailing
+Added a import/converter from Formidable Full to Formidable (v9)
+Fixed not showing dependencies when editing
+Removed default column definition in forms and templates (thank you 6tematik)
+Fixed form-control class on Options-element as dropdown
+Removed empty column in Captcha-element
+Fix for 1.1.3 (removed)
+
+1.1.3
+Fix for 1.1.2 (removed)
+
+1.1.1
+Added multisite features (thank you 6tematik)
+Fixed loading pane/dependency when editing mail
+Fixed no columns in results (thank you studio108)
+
+1.1.0.3
+Fixed error in dependencies form after removing element
+Fixed validating custom format in Phone-element (thank you addis_enterprises)
+Added validation masking in Text-element
+
+1.1.0.2
+Fixed dependency rule on Content-element (thank you mmsd)
+Fixed dependency rule on Horizontal Line-element
+Removed debug-information
+
+1.1.0.1
+Fixed dependency rule on File-element (thank you mmsd)
+Fixed validation errors on certain dependency rules
+
+1.1.0
+Added dependecies on elements and mails
+Added Dutch(NL)-translation
+Fixed token validation on several ajax-calls
+Fixed ConcreteAlert.alert to ConcreteAlert.error
+Fixed sending multiple mails if one breaks
+Fixed conversion of userdata
+Fixed conversion of formdata
+Fixed replyto any element not sending mail
+Fixed handling other forms (not formidable) when on same page
+Fixed validation on Password-element
+Fixed t() error in Password-element
+Fixed validation on URL-element
+Some minor layout / design updates
+
+1.0.6.9
+Fixed validation issues File-element
+
+1.0.6.8
+Fix the fix in 1.0.6.7 (removed)
+Fix the fix in 1.0.6.6 (removed)
+Fix the fix in 1.0.6.5 (removed)
+Fixed error in mail
+
+1.0.6.4
+Fixed validation error in File-element
+Fixed validation error in Phone-element
+Fixed error send mail (\zend\mail\message)
+Fixed error IBAN-element (\zend\validator\iba)
+Fixed error on non-required empty Options-element
+Some minor layout / design updates
+
+1.0.6.3
+Fixed "refresh"-error for reCaptchaV3
+
+1.0.6.2
+-- Reviewed by JohnTheFish (thank you John!) --
+Fixed error on upgrading to 1.0.6.1
+Fixed "other"-option on checkbox and radio
+Some minor layout / design updates
+
+1.0.6.1
+-- Reviewed by JohnTheFish (thank you John!) --
+Fixed BrowserDetection error
+Fixed calling View:: without proper namespace
+Replaced Core::make
+Replaced $_FILES
+Replaced $_SERVER
+Replaced Database::get
+Replaced db->execute()
+
+1.0.6
+Doctrine entities rewriting
+Fixed custom format in Phone-element
+Fixed uninstall error
+
+1.0.5
+Fixed duplicate handles on elements when duplicating row and columns
+Fixed saving block settings
+Fixed not showing specific data in mails
+Fixed resending mails twice through dashboard
+Fixed advanced search "array_key"-error
+Fixed "is valid"-class on invalid answers
+Fixed saving "select name" in Options-element for pages and members
+Fixed no placeholder in Options-element for pages and members
+Fixed no elements in confirm/match option for elements
+Fixed "foreign key"-error on removing templates
+Added check for duplication results when form is duplicated
+Added auto-generate handle for name (url-slug alike)
+Some minor layout / design updates
+
+1.0.4
+Fixed for PHP8 and higher
+Fixed Captcha-element when recaptchaV3 is used
+Fixed loading default value (request, page, user)
+Fixed clearing styles and messages on form reset
+Fixed hiding "required"-star when "no label" is checked in view
+Fixed "other"-option for Options-element
+Added max filesize to File-element
+Added Accept-element
+Added CSS-styles to templates
+
+1.0.3
+Fixed preloader issue in Firefox and Safari
+Fixed placeholder names for Address- and Name-element
+Fixed using wrong handle in elements in other languages
+Allowing custom fields in \Application\Src\Formidable\Elements\Types\CustomField.php
+
+1.0.2
+Fixed error on submitting Name-element
+Fixed validation on Phone-element
+Fixed "go to results"-links in Dashboard
+Fixed multiple uploads in File-element
+Added cleanup task for temporary files
+Fixed GDPR methods and added to tasks
+Fixed limits on view
+Fixed scheduling on view
+Some minor layout / design updates
+
+1.0.1
+Fixed error message on Phone-element
+Fixed countable error in saving mail
+Fixed saving From / ReplyTo values in mail
+Fixed showing success-message on submitting form
+Fixed wrong fields in results when switching to other form
+Fixed error on submitting Options-element
+Fixed error on submitting Address-element
+Fixed display results of Address-element
+Fixed display results of Date-element
+Added default first row and column on creation new form
+Some minor layout / design updates
+
+1.0.0
+Initial version

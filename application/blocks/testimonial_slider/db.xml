@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btTestimonialSlider">
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="bgColor" type="C" size="255"></field>
+        <field name="hideBlock" type="C" size="1">
+            <unsigned/>
+        </field>
+        <field name="subTitle" type="C" size="255"></field>
+        <field name="title" type="X2"></field>
+        <field name="removePaddingTop" type="C" size="1">
+            <unsigned/>
+        </field>
+        <field name="removePaddingBottom" type="C" size="1">
+            <unsigned/>
+        </field>
+    </table>
+    <table name="btTestimonialSliderTestimonialsEntries">
+        <field name="id" type="I">
+            <key/>
+            <unsigned/>
+            <autoincrement/>
+        </field>
+        <field name="bID" type="I">
+            <unsigned/>
+        </field>
+        <field name="sortOrder" type="I"></field>
+        <field name="redLogo" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+        <field name="whiteLogo" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+        <field name="description_1" type="X2"></field>
+        <field name="authorName" type="C" size="255"></field>
+        <field name="authorDesignation" type="C" size="255"></field>
+    </table>
+</schema>

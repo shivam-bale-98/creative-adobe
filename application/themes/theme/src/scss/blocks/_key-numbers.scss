@@ -1,0 +1,237 @@
+@use "../abstracts/variables" as globVar;
+@use "../mixins/" as mix;
+
+.key-numbers {
+  background-color: var(--color-white);
+  overflow: hidden;
+  .key-numbers--wrappper {
+    @include mix.breakpoint(767) {
+      display: none;
+    }
+  }
+  .left {
+    border: 1px solid rgba($color: globVar.$color-borders, $alpha: 0.2);
+    // border-right:  0.5px solid rgba($color: globVar.$color-borders, $alpha: 0.2);
+    border-color: rgba($color: globVar.$color-borders, $alpha: 0.2)
+      rgba($color: globVar.$color-borders, $alpha: 0.2)
+      rgba($color: globVar.$color-borders, $alpha: 0.2) transparent;
+    border-radius: 0 5rem 0 0;
+    left: 1px;
+    width: calc(50% + 1px);
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 5.4rem;
+      height: 100%;
+      width: 1px;
+      right: -1px;
+      background-color: var(--romance);
+
+      //   @include mix.breakpoint(767) {
+      //     right: -1px;
+      // }
+    }
+
+    .swiper {
+      padding-inline-start: 8rem;
+      padding-inline-end: 6rem;
+      padding-block: 10rem;
+      @include mix.breakpoint(1279) {
+        padding-inline-start: 6rem;
+        padding-inline-end: 4rem;
+      }
+
+      @include mix.breakpoint(991) {
+        padding-block: 10rem;
+      }
+      
+      @include mix.breakpoint(767) {
+        padding-inline-start: 3.2rem;
+        padding-inline-end: 4rem;
+        padding-block: 3.5rem;
+      }
+    }
+  }
+  .right {
+    
+    border: 1px solid rgba($color: globVar.$color-borders, $alpha: 0.2);
+    // border-top: 1px solid rgba($color: globVar.$color-borders, $alpha: 0.2);
+    // border-left:  0.5px solid rgba($color: globVar.$color-borders, $alpha: 0.2);
+    border-color: rgba($color: globVar.$color-borders, $alpha: 0.2) transparent
+      rgba($color: globVar.$color-borders, $alpha: 0.2)
+      rgba($color: globVar.$color-borders, $alpha: 0.2);
+    border-radius: 5rem 0 0 0;
+
+    .swiper {
+      padding-inline-start: 10rem;
+      padding-inline-end: 6rem;
+      padding-block: 10rem;
+  
+      @include mix.breakpoint(1279) {
+        padding-inline-start: 8rem;
+        padding-inline-end: 4rem;
+       
+      }
+      @include mix.breakpoint(991) {
+        padding-block: 10rem;
+      }
+  
+      @include mix.breakpoint(767) {
+        padding-inline-start: 3.2rem;
+        padding-inline-end: 4rem;
+        padding-block: 3.5rem;
+      }
+    }
+  }
+
+  &.border-bottom {
+    .left {
+      border-color: transparent
+        rgba($color: globVar.$color-borders, $alpha: 0.1)
+        rgba($color: globVar.$color-borders, $alpha: 0.1) transparent;
+
+      border-radius: 0 0 5rem 0;
+    }
+
+    .right {
+      border-color: transparent transparent
+        rgba($color: globVar.$color-borders, $alpha: 0.1)
+        rgba($color: globVar.$color-borders, $alpha: 0.1);
+      border-radius: 0 0 0 5rem;
+    }
+  }
+
+  .swiper {
+    overflow: visible;
+  }
+
+  .number-card {
+    h2,
+    h4 {
+      
+
+      @include mix.min-breakpoint(767) {
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+      } 
+    }
+
+    h2 {
+    
+      @include mix.min-breakpoint(767) {
+        transform: translateX(-2rem);
+      }
+    }
+
+    h4 {
+      
+
+      @include mix.min-breakpoint(767) {
+        transform: translateY(2rem);
+      }
+
+      @include mix.breakpoint(767) {
+        font-size: 1.6rem;
+        line-height: 1;
+      }
+    }
+  }
+
+  .swiper-slide-active {
+    .number-card {
+      h2,
+      h4 {
+        opacity: 1;
+        @include mix.transition(all 0.8s ease 0.4s);
+      }
+
+      h2 {
+        transform: translateX(0);
+      }
+      h4 {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-horizontal.swiper-pagination-bullets {
+    left: auto;
+    position: absolute;
+    transform: none;
+    right: -4rem;
+    bottom: -4.2rem;
+    display: flex;
+    align-items: center;
+    width: auto !important;
+    overflow: visible;
+    .swiper-pagination-bullet {
+      height: 1rem;
+      width: 1rem;
+      background-color: rgba($color: globVar.$color-borders, $alpha: 0.2);
+      transform: none;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      height: 2.2rem;
+      width: 2.2rem;
+      background-color: rgba($color: globVar.$color-borders, $alpha: 1);
+    }
+  }
+
+  .key-numbers--mobile {
+    display: none;
+
+    @include mix.breakpoint(767) {
+      display: block;
+    }
+
+    .swiper {
+      .swiper-slide {
+        width: 19.6rem;
+        height: auto;
+        .number-card {
+          height: 100%;
+          padding: 3rem 3rem 6rem;
+          text-align: center;
+          border: 1px solid transparent;
+          border-color: rgba($color: globVar.$color-borders, $alpha: 0.2) rgba($color: globVar.$color-borders, $alpha: 0.2) transparent rgba($color: globVar.$color-borders, $alpha: 0.2);
+          border-radius: 5rem 5rem 0 0;
+
+          .line-top {
+            height: 1px;
+            width: 100%;
+            border-radius: 5rem;
+            top:0;
+            left: 0;
+            background-color: rgba($color: globVar.$color-borders, $alpha: 0.2);
+          }
+
+          .line-left {
+            height: calc(100% - 4.2rem);
+            width: 1px;
+            // border-radius: 5rem;
+            bottom:0;
+            left: 0;
+            background-color: rgba($color: globVar.$color-borders, $alpha: 0.2);
+          }
+        }
+
+        &:not(&:first-child) {
+          .number-card{
+            .line-left{
+              left: -1px;
+            }
+          }
+        }
+      }
+
+      .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-horizontal.swiper-pagination-bullets {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 2rem;
+        z-index: 3;
+      }
+    }
+  }
+}

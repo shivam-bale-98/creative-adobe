@@ -1,0 +1,44 @@
+/* scss variables */
+:root {
+    --color-white: hsla(0, 0%, 100%, 1);
+    --color-black: hsla(0, 0%, 0%, 1);
+    --red-berry: rgba(237, 28, 36, 1);
+    --red-berry-50: rgba(128, 21, 26, 0.5);
+    --rustic-red: rgba(26, 10, 12, 1);
+    --rustic-red-50: rgba(26, 10, 12, 0.5);
+    --rustic-red-20: rgba(26, 10, 12, 0.2);
+    --romance: rgba(242, 241, 239, 1);
+    --gunmetal: rgba(34, 47, 51, 1);
+
+}
+
+$body-font: 'Montserrat', sans-serif;
+$body-weight-light: 300;
+
+$body-font-size: 20px;
+$body-font-size-large: 18px;
+$body-font-size-medium: 17px;
+$body-font-size-small: 16px;
+$body-font-size-xs: 14px;
+
+
+$body-font-color: #363636;
+
+// Colors
+$color-red-berry: #80151A;
+$color-white: #ffffff;
+$color-borders : #1A0A0C;
+$color-white-50: rgba(255, 255, 255, 0.5);
+$color-black: #000000;
+$color-black-light: #e0e0e0;
+$color-black-50: rgba(0, 0, 0, 0.5);
+$color-gray: #5D5D5D;
+$color-gray-light: #f7f7f7;
+$color-red: #ff0000;
+
+// Transitions
+$transitionEffect: cubic-bezier(.6, .04, .12, .96);
+
+// Header
+$header-height: 75px;
+$header-breakpoint: 1024;

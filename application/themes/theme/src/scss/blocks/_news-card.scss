@@ -1,0 +1,134 @@
+@use "../abstracts/variables" as globVar;
+@use "../mixins" as mix;
+
+.news-listing-card {
+
+
+
+
+
+    @include mix.breakpoint(991) {
+        // width: 50%;
+        padding: 1rem;
+    }
+
+    @include mix.breakpoint(767) {
+        // width: 100%;
+        padding: 0;
+
+        &:last-child {
+            padding-bottom: 0 !important;
+        }
+    }
+
+
+
+
+    .img-wrap {
+        @include mix.aspect-ratio(565, 400);
+
+        @include mix.breakpoint(991) {
+            @include mix.aspect-ratio(335, 237);
+        }
+    }
+
+    // h4 {
+    //     // max-width: 48.3rem;
+    //     // z-index: 2;
+    //     // position: relative;
+
+    //     @include mix.breakpoint(767) {
+    //         font-size: 3rem;
+    //         line-height: 3rem;
+    //     }
+    // }
+
+    // p {
+    //     max-width: clamp(mix.rem(366), mix.vw(366), mix.vw(366));
+    //     z-index: 2;
+    //     // opacity: 0;
+    //     position: relative;
+
+    //     @include mix.breakpoint(991) {
+    //         opacity: 1;
+    //     }
+
+    //     @include mix.breakpoint(767) {
+    //         max-width: 100%;
+
+    //     }
+    // }
+
+
+    // &:nth-child(6) {
+    //     margin-top: 2%;
+
+    //     @include mix.breakpoint(991) {
+    //         margin-top: 0;
+    //     }
+    // }
+
+    // &:nth-child(4n + 3) {
+    //     margin-top: 6%;
+
+    //     @include mix.breakpoint(991) {
+    //         margin-top: 0;
+    //     }
+    // }
+
+    // &:last-child {
+    //     padding-bottom: 0 !important;
+    // }
+
+    &:nth-child(4n - 2),
+    &:nth-child(4n - 1) {
+        // width: 39%;
+        // padding-bottom: 11%;
+
+        // @include mix.breakpoint(991) {
+        //     width: 50%;
+        //     padding: mix.rem(10);
+        //     padding-bottom: 0;
+
+        // }
+
+        // @include mix.breakpoint(767) {
+        //     padding: 0;
+
+        //     &:last-child {
+        //         padding-bottom: 0 !important;
+        //     }
+
+        //     width: 100%;
+        // }
+
+        // &:nth-child(4n-1):last-child {
+        //     padding-bottom: 0;
+        // }
+
+        .img-wrap {
+            @include mix.aspect-ratio(510, 300);
+
+            @include mix.breakpoint(991) {
+                @include mix.aspect-ratio(335, 237);
+            }
+        }
+
+        // h4 {
+        //     max-width: clamp(mix.rem(540), 71%, mix.rem(650));
+
+        //     @include mix.breakpoint(767) {
+        //         max-width: 100%;
+        //     }
+
+        // }
+
+    }
+
+}
+
+.related-blogs {
+    .swiper {
+        overflow: visible;
+    }
+}

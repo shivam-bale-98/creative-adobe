@@ -1,0 +1,276 @@
+@use "../mixins/" as mix;
+
+.channeline-btn {
+  // Btn Settings
+  --_btn_radius: 10rem;
+  --_btn-border: 0;
+  --_btn_blockpadding: 2rem;
+  --_btn_inlinepadding: 2.4rem;
+  --_btn_inlinestartpadding: 2.4rem;
+  --_btn_inlineendpadding: 10rem;
+  --_btn_transitiontime: 0.35s;
+  --_btn_transitiontype: ease-in-out;
+  --_btn-shadow: none;
+  --_btn-texttransform: none;
+  --_btn-fontsize: 2rem;
+  --_btn-lineheight: 1;
+  --_btn-weight: 400;
+  --_btn-min-width: 20.6rem;
+
+  // Cosmetics
+  @include mix.breakpoint(767) {
+    --_btn-fontsize: 1.6rem;
+    --_btn_inlinestartpadding: 2rem;
+    --_btn_inlineendpadding: 8.5rem;
+    --_btn_blockpadding: 1.8rem;
+    --_btn-min-width: auto;
+  }
+
+  // text-align: center;
+  min-width: var(--_btn-min-width);
+  display: inline-block;
+  cursor: pointer;
+  font-size: var(--_btn-fontsize);
+  line-height: var(--_btn-lineheight);
+  font-weight: var(--_btn-weight);
+  border-radius: var(--_btn_radius);
+  box-shadow: var(--_btn-shadow);
+  padding-block: var(--_btn_blockpadding);
+  padding-inline: var(--_btn_inlinestartpadding);
+  text-transform: var(--_btn-texttransform);
+  text-align: center;
+  transition: 0.3s all ease-out;
+
+  // Hover,focus,active states
+  @include mix.states {
+    --_btn-outline: 1px solid var(--themePrimary);
+    --_btn-color: var(--themePrimary);
+    --_btn-background: var(--white);
+  }
+  .text {
+    font-size: inherit;
+    text-transform: inherit;
+    color: inherit;
+  }
+
+  // Variations
+
+  &--arrow {
+    // Arrow
+    padding-inline-start: var(--_btn_inlinestartpadding);
+    padding-inline-end: var(--_btn_inlineendpadding);
+    overflow: hidden;
+    transition: 0.3s color, 0.3s border-color ease-out 0.2s;
+    .shape {
+      top: 50%;
+      right: 2.4rem;
+      transform: translateY(-50%);
+      height: 3.4rem;
+      width: 5rem;
+      overflow: visible;
+      transition: 0.5s all ease-out;
+
+      @include mix.breakpoint(767) {
+        width: 4rem;
+        height: 2.8rem;
+        right: 2rem;
+      }
+      i {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+
+        @include mix.breakpoint(767) {
+          font-size: 12px;
+        }
+      }
+      .bg {
+        clip-path: url(#btn_shape);
+        transition: 0.5s transform ease-out;
+      }
+    }
+
+    @include mix.min-breakpoint(1279) {
+      &.hovered, &:focus-visible {
+        .shape {
+          .bg {
+            transform: scaleX(12) scaleY(3) translateX(-11%);
+          }
+        }
+      }
+    }
+
+    // @include mix.min-breakpoint(2000) {
+    //   &:hover {
+    //     .shape {
+    //       .bg {
+    //         transform: scaleX(18) scaleY(10) translateX(-11%);
+    //       }
+    //     }
+    //   }
+    // }
+  }
+
+  &--border {
+    border: 1px solid transparent;
+  }
+
+  &--red {
+    background-color: transparent;
+    border-color: var(--red-berry);
+    color: var(--red-berry);
+
+    @include mix.breakpoint(767) {
+      border-color: var(--color-black);
+    }
+
+    @include mix.min-breakpoint(1279) {
+      &.hovered, &:focus-visible {
+        color: white;
+        background-color: var(--red-berry);
+      }
+    }
+  }
+
+  &--rounded-red {
+    background-color: var(--red-berry);
+    color: var(--color-white);
+    padding-inline: var(--_btn_inlinepadding);
+    @include mix.breakpoint(767) {
+      min-width: 19.5rem;
+    }
+    .circle {
+      bottom: 0;
+      height: 6px;
+      width: 6px;
+      border-radius: 100%;
+      left: 50%;
+      transform: translate(-50%, 24px) scale(0);
+      background-color: var(--color-white);
+      transition: transform 0.5s ease-out;
+      @include mix.min-breakpoint(1600) {
+        // transition: transform 0.8s ease-out;
+      }
+    }
+
+    @include mix.min-breakpoint(1279) {
+      &.hovered, &:focus-visible {
+        color: var(--red-berry);
+        .circle {
+          transform: translate(-50%, 0) scale(40);
+        }
+      }
+    }
+
+    // @include mix.min-breakpoint(1600) {
+    //   &:hover {
+    //     color: var(--red-berry);
+    //     .circle {
+    //       transform: translate(-50%, 0) scale(85);
+    //     }
+    //   }
+    // }
+  }
+
+  &--white {
+    background-color: white;
+    // border-color: var(--romance);
+    color: var(--red-berry);
+
+    
+
+    @include mix.min-breakpoint(1279) {
+      &.hovered, &:focus-visible {
+        border-color: transparent;
+        color: white;
+        background-color: var(--red-berry);
+      }
+    }
+  }
+
+  @include mix.min-breakpoint(1279) {
+    &.hovered {
+      text-decoration: none;
+    }
+  }
+}
+
+svg.btn_mask {
+  position: absolute;
+  top: -999px;
+  left: -999px;
+  width: 0;
+  height: 0;
+}
+
+.swiper-buttons {
+  gap: 2rem;
+
+  @include mix.breakpoint(767) {
+    gap: 1rem;
+  }
+
+  .swiper-button {
+    width: 6.3rem;
+    height: 6.3rem;
+    overflow: hidden;
+    margin-top: 0;
+    z-index: 2;
+    right: auto;
+    left: auto;
+    border: 1px solid rgba($color: #FFF, $alpha: 1);
+    transition: 0.3s all ease-out;
+    @include mix.breakpoint(767) {
+      width: 5.2rem;
+      height: 5.2rem;
+    }
+    cursor: pointer;
+    
+   svg {
+    path {
+      transition: 0.3s all ease-out;
+    }
+   }
+
+    &.swiper-button-prev {
+      transform: rotate(180deg);
+    }
+    
+
+    &.swiper-button-disabled {
+      opacity: 0.6;
+    }
+  }
+
+  &.white {
+    .swiper-button {
+      @include mix.min-breakpoint(1279) {
+        &:hover, &:focus-visible {
+           background-color: #FFF;
+           border-color: #FFF;
+
+           svg {
+            path {
+              fill: var(--red-berry);
+            }
+           }
+        }
+      }
+    }
+  }
+
+  &.rustic-red {
+    .swiper-button {
+      i {
+        &:before {
+          // color: var(--color-white);
+          transition: none;
+        }
+      }
+      .bg {
+        background-color: var(--rustic-red);
+      }
+    }
+  }
+}

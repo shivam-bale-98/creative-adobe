@@ -1,0 +1,210 @@
+@use "../abstracts/variables" as globVar;
+@use "../mixins" as mix;
+
+.vacancy-list {
+  .title {
+    >div {
+      @include mix.breakpoint(991) {
+        width: 100%;
+      }
+
+      h2 {
+        @include mix.breakpoint(991) {
+          margin-bottom: mix.rem(30);
+        }
+      }
+    }
+  }
+
+  .list {
+    gap: mix.rem(30);
+
+    // margin-bottom: mix.rem(100);
+    @include mix.breakpoint(991) {
+      gap: mix.rem(20);
+      // margin-bottom: mix.rem(80);
+    }
+  }
+}
+
+.vacancy-section {
+  .tab-title {
+    font-size: 1.6rem;
+    line-height: 1.52rem;
+    color: rgba($color: globVar.$color-black, $alpha: 0.5);
+  }
+
+  .title-block {
+    @include mix.breakpoint(767) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+
+
+
+
+  .head {
+    border-bottom: 1px solid rgba($color: globVar.$color-black, $alpha: 0.2);
+    opacity: 0;
+    display: grid;
+    grid-template-columns: 7fr repeat(4, 2fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+    text-transform: uppercase;
+
+    @include mix.breakpoint(991) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .vacancy-dept,
+    .vacancy-type {
+      @include mix.breakpoint(991) {
+        display: none;
+
+      }
+    }
+
+  }
+
+  .vacancy-list-card {
+    // padding-block: clamp(mix.rem(60), mix.vw(50), mix.vw(50));
+    border-bottom: 1px solid rgba($color: globVar.$color-black, $alpha: 0.1);
+    transition: 0.4s background-color ease-out;
+    position: relative;
+    opacity: 0;
+    display: grid;
+    grid-template-columns: 7fr repeat(4, 2fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0px;
+
+    @include mix.breakpoint(991) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+    }
+
+    .first-div {
+      @include mix.breakpoint(991) {
+        flex-direction: column;
+        width: 100%;
+        align-items: self-start;
+        gap: 1.2rem;
+      }
+    }
+
+    .second-div {
+      span {
+        display: none;
+
+        @include mix.breakpoint(991) {
+          display: block;
+        }
+      }
+
+      @include mix.breakpoint(991) {
+        display: flex;
+        gap: 10px;
+      }
+
+    }
+
+    .third-div {
+      @include mix.breakpoint(991) {
+        display: none;
+      }
+    }
+
+    .five-div {
+      @include mix.breakpoint(991) {
+        display: none;
+      }
+    }
+
+    .shape {
+      width: mix.vw(76);
+      height: mix.vw(54);
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 4rem;
+      opacity: 0;
+      transition: 0.4s all ease-out;
+
+      @include mix.breakpoint(991) {
+        display: none;
+      }
+
+      .bg {
+        clip-path: url(#btn_shape);
+        background-color: var(--rustic-red);
+      }
+
+      i {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+
+        &:before {
+          color: var(--color-white);
+        }
+      }
+    }
+
+
+
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transform: scaleY(0);
+      background-color: rgba($color: globVar.$color-red-berry, $alpha: 0.05);
+      transform-origin: top;
+      transition: 0.4s all ease-out;
+    }
+
+    &:hover {
+      @include mix.min-breakpoint(1200) {
+        &:after {
+          transform: scaleY(1);
+        }
+      }
+
+      .shape {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.vacancy-detail-content {
+  .content {
+    .description {
+      h4 {
+        margin-bottom: 3rem;
+      }
+
+      ul {
+        &:last-child{
+          // margin-bottom: 0 !important;
+        }
+      }
+    }
+
+    .ccm-area-block-list {
+      form {
+        h4 {
+          padding-top: 7rem;
+        }
+      }
+    }
+  }
+}

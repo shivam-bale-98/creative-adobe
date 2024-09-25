@@ -1,0 +1,285 @@
+@use "../abstracts/variables" as globVar;
+@use "../mixins" as mix;
+
+.search-banner {}
+
+.search-wrapper {
+    .search-box {
+        box-sizing: border-box;
+        flex: 1 auto;
+        border-radius: 1rem;
+        opacity: 0;
+        max-width: clamp(mix.rem(549), mix.vw(549), mix.vw(549));
+
+        @include mix.breakpoint(639) {
+            max-width: 100%;
+        }
+    }
+
+    input {
+        background-color: #fff;
+        border: none;
+        font-size: 1.6rem;
+        line-height: 1.52rem;
+        font-weight: 300;
+        // text-transform: capitalize;
+        letter-spacing: 0.1px;
+        border-radius: 1rem;
+        width: 100%;
+        padding: 2rem;
+        // min-width: clamp(mix.rem(549), mix.vw(549), mix.vw(549));
+        color: #000;
+        // opacity: 0;
+        cursor: pointer;
+
+        &::placeholder {
+            font-size: 1.6rem;
+            line-height: 1.52rem;
+            font-weight: 300;
+            text-transform: capitalize;
+            letter-spacing: 0.1px;
+            font-style: normal;
+            color: #000;
+            transition: 0.3s all ease-out;
+        }
+
+        @include mix.min-breakpoint(1279) {
+            &:hover {
+                &::placeholder {
+                    color: rgba($color: #000000, $alpha: 1);
+                }
+            }
+        }
+
+        @include mix.breakpoint(767) {
+            width: calc(100% - mix.rem(75));
+            min-width: mix.rem(200);
+
+        }
+    }
+
+    .filters {
+        opacity: 0;
+    }
+
+}
+
+
+.searchSlider {
+    overflow: visible;
+    opacity: 0;
+    .swiper-wrapper {
+
+
+        @include mix.breakpoint(767) {
+            margin-bottom: mix.rem(40);
+
+        }
+
+        .swiper-slide {
+            width: auto;
+            // opacity: 0;
+            // transform: translateY(2rem);
+
+
+            a {
+
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+
+        }
+    }
+
+    .search-result {
+        p {
+
+            color: globVar.$color-black;
+            margin-bottom: 0;
+            display: inline;
+            // opacity: 0;
+        }
+    }
+}
+
+
+.search-page-main {
+
+
+    @include mix.breakpoint(767) {
+        padding-top: 0;
+    }
+
+    .search {
+        &--listing {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+
+            border-top: 1px solid transparent;
+            transition: 0.3s all ease-out;
+
+            &.b {
+              border-color: rgba($color: #000000, $alpha: 0.1);
+            }
+
+
+            // @include mix.min-breakpoint(1279) {
+            //     grid-template-columns: repeat(auto-fit, minmax(481px, 1fr));
+            // }
+
+
+            @include mix.breakpoint(991) {
+                grid-template-columns: repeat(auto-fit, minmax(314px, 1fr));
+            }
+        }
+
+        &_card {
+            border-right: 1px solid rgba($color: #000000, $alpha: 0.1);
+            border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+            padding: 4rem 4rem;
+            z-index: 3;
+            opacity: 0;
+            // transform: translateY(mix.rem(40));
+            &:nth-child(3n) {
+                border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+            }
+
+            a {
+                z-index: 3;
+            }
+
+            p {
+                color: globVar.$color-black;
+            }
+
+            @include mix.breakpoint(767) {
+                padding: 2.5rem;
+            }
+
+            &:hover {
+                .search_details {
+                    .img-wrap {
+                        opacity: 1;
+                    }
+                }
+
+            }
+
+            .search_details {
+                .img-wrap {
+                    z-index: 1;
+                    @include mix.breakpoint(767) {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .search_details {
+                .img-wrap {
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        &_label {
+
+            p {
+                margin-bottom: 0;
+            }
+
+            @include mix.breakpoint(767) {
+                padding-bottom: 6.5rem;
+            }
+
+            .sep {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                font-size: 2rem;
+                line-height: 21px;
+                color: var(--rustic-red);
+                position: relative;
+                top: -2px;
+                font-weight: 400;
+            }
+
+            a {
+                font-size: 2rem;
+                line-height: 2.1rem;
+                color: var(--rustic-red);
+                position: relative;
+                transition: 0.3s all ease;
+
+                &:after {
+                    content: '';
+                    height: 1px;
+                    position: absolute;
+                    width: 100%;
+                    background-color: var(--red-berry);
+                    bottom: -2px;
+                    left: 0;
+                    transform: scaleX(0);
+                    transition: 0.3s scale ease-out;
+                }
+
+                &:hover {
+
+                    @include mix.min-breakpoint(1279) {
+                        color: var(--color-blue);
+
+                        &:after {
+                            transform: scaleX(1);
+                        }
+                    }
+                }
+            }
+        }
+
+        &_details {
+            &:hover {
+                .search_details {
+                    .img-wrap {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            // height: 100%;
+            .img-wrap {
+                width: 205px !important;
+                height: 158px !important;
+                @include mix.aspect-ratio(205, 158);
+                opacity: 0;
+                transition: opacity 1s ease;
+            }
+
+            .content {
+                height: 100%;
+            }
+
+            h4 {
+                color: #222F33;
+
+            }
+
+            p {
+                font-size: 1.6rem;
+                line-height: 1.92rem;
+                font-weight: 300;
+                margin-bottom: 0;
+
+            }
+
+
+        }
+    }
+
+}

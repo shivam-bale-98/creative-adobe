@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as globVar;
+@use "../mixins/" as mix;
+
+
+.certificates-accreditions{
+   .title {
+    @include mix.breakpoint(991) {
+        flex-direction: column;
+    }
+     .left {
+        max-width: clamp(56rem, mix.vw(560), mix.vw(560));
+
+        @include mix.breakpoint(991) {
+            // width: 100%;
+            max-width: 100%;
+        }
+
+        @include mix.breakpoint(767) {
+          // width: 20rem;
+        }
+     }
+
+     .right {
+        width: 30%;
+        
+        @include mix.breakpoint(991) {
+            margin-top: 3rem;
+            width: 100%;
+            justify-content: start;
+        }
+     }
+   } 
+}

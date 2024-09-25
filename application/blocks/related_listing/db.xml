@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btRelatedListing">
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="title" type="C" size="255"></field>
+        <field name="subTitle" type="C" size="255"></field>
+        <field name="bgColor" type="C" size="255"></field>
+        <field name="paddingTop" type="C" size="255"></field>
+        <field name="paddingBottom" type="C" size="255"></field>
+        <field name="itemCount" type="C" size="255"></field>
+        <field name="sortOrder" type="C"></field>
+        <field name="link" type="C" size="12"></field>
+        <field name="link_Title" type="C"></field>
+        <field name="link_Page" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+        <field name="link_URL" type="C"></field>
+        <field name="link_Relative_URL" type="C"></field>
+    </table>
+    <table name="btRelatedListingPageType_MultipleSelectEntries">
+        <field name="msID" type="I">
+            <key/>
+            <unsigned/>
+            <autoincrement/>
+        </field>
+        <field name="bvID" type="I"></field>
+        <field name="value" type="C"></field>
+        <field name="sortOrder" type="I"></field>
+    </table>
+    <table name="btRelatedListingAttributes_MultipleSelectEntries">
+        <field name="msID" type="I">
+            <key/>
+            <unsigned/>
+            <autoincrement/>
+        </field>
+        <field name="bvID" type="I"></field>
+        <field name="value" type="C"></field>
+        <field name="sortOrder" type="I"></field>
+    </table>
+</schema>
