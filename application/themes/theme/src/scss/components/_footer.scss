@@ -181,12 +181,12 @@ footer.footer {
         a {
           height: 3.6rem;
           width: 3.6rem;
-          background-color: #0a66c2;
+          // background-color: #0a66c2;
 
           transition: background-color 0.3s cubic-bezier(0.2, 1, 0.8, 1);
           &:hover {
             @include mix.min-breakpoint(1279) {
-              background-color: var(--rustic-red);
+              // background-color: var(--rustic-red);
             }
           }
         }

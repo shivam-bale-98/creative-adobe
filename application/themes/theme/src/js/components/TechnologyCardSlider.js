@@ -44,20 +44,23 @@ export default class TechnologyCardSlider {
   bindEvents = () => {
     new Swiper(this.technologySlider[0], {
       modules: [Navigation],
-      slidesPerView: 1.05,
-      spaceBetween: 10,
+      slidesPerView: "auto",
+      spaceBetween: 30,
       speed: 1000,
-      // freeMode: true,
+      freeMode: true,
       navigation: {
-        nextEl: this.nextEl[0],
-        prevEl: this.prevEl[0],
+        nextEl: '.techologies-slider  .swiper-button-next ',
+        prevEl: '.techologies-slider  .swiper-button-prev',
       },
       breakpoints: {
-        767: {
-          slidesPerView: "auto",
-          spaceBetween: 30,
+        991: {
+          slidesPerView: 4.5,
+          spaceBetween: 100,
         },
-        
+        767: {
+          // slidesPerView: "auto",
+          spaceBetween: 60,
+        },
       },
       on: {
         beforeInit: () => {

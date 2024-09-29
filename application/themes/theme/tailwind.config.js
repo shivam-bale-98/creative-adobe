@@ -26,7 +26,7 @@ module.exports = {
 			},
 			borderRadius: { sm: "1rem", md: "5.5rem", lg: "8rem" },
 			colors: {
-				"red-berry": "rgba(128, 21, 26, 1)",
+				"red-berry": "rgba(237, 28, 36, 1)",
 				"red-berry-50": "rgba(128, 21, 26, 0.5)",
 				"rustic-red": "rgba(26, 10, 12, 1)",
 				"rustic-red-50": "rgba(26, 10, 12, 0.5)",

@@ -10,142 +10,112 @@ $themePath = $this->getThemePath();
 <footer class="footer  text-rustic-red bg-romance">
     <div class="xl:px-[6rem] md:px-[4rem] px-[2rem] xl:pt-[8rem] pt-[5rem] xl:pb-[4.5rem] md:pb-[4rem] pb-[3rem]">
         <div class="top flex flex-wrap justify-between">
-            <a tabindex="0" role="link" aria-label="Get in touch" class="get-in-touch flex items-end" href="<?php echo View::url('/contact/#talk-to-us'); ?>">
-                <div class="h2">Get in
-                    touch</div>
-
-                <div class="shape relative">
-                    <i class="icon-right_button_arrow absolute z-3"></i>
-                    <span class="bg absolute inset-0 size-full z-1"></span>
-                    <span class="bg-scale absolute  size-full z-2"></span>
-                </div>
-            </a>
+            <div class="logo relative w-[7rem] h-[17rem]">
+                <a role="link" araia-label="Home" tabindex="0" href="<?php echo View::url('/'); ?>">
+                    <img class="white absolute" src="<?php echo $themePath; ?>/assets/images/site-logo-dark.svg" alt="<?php echo $site; ?>" />
+                </a>
+            </div>
 
             <div class="links flex justify-between">
                 <div class="cols page-items">
                     <h4>
-                        <a tabindex="0" role="link" aria-label="Applications" href="<?php echo View::url('/applications'); ?>">
-                            Applications
+                        <a href="<?php echo View::url('/interior-design'); ?>">
+                            Interior Design
                         </a>
                     </h4>
-                    <!-- <ul>
-                        <li>
-                            <a href="/applications/wastewater">Wastewater</a>
-                        </li>
-                    </ul> -->
-                    <? //php $s = Stack::getByName("Footer Application Links");
-                 //   $s->display(); ?>
+
                 </div>
 
                 <div class="cols page-items">
                     <h4>
-                        <a tabindex="0" role="link" aria-label="Products" href="<?php echo View::url('/products'); ?>">Products</a>
-                    </h4>
-                    <!-- <ul>
-                        <li>
-                            <a href="/products/standard">Standard</a>
-                        </li>
-                    </ul> -->
-                    <? //php $s = Stack::getByName("Footer Products Links"); $s->display(); ?>
-                </div>
-
-                <div class="cols">
-                    <h4>
-                        Quick links
+                        <a href="<?php echo View::url('/interior-design'); ?>">Social Media Marketing</a>
                     </h4>
 
-                    <!-- <ul>
+                </div>
+
+                <div class="cols social">
+                    <h4 class="mb-[2rem]">Follow us</h4>
+                    <ul class="flex gap-3">
                         <li>
-                            <a href="<? //php echo View::url('/about-us');
-                                        ?>">About us</a>
+                            <a tabindex="0" role="link" aria-label="linked" class="flex justify-center items-center rounded-[0.5rem]" href="https://in.linkedin.com/company/channeline-international" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <rect width="80" height="80" fill="url(#pattern0_35_298)" />
+                                    <defs>
+                                        <pattern id="pattern0_35_298" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_35_298" transform="scale(0.01)" />
+                                        </pattern>
+                                        <image id="image0_35_298" width="100" height="100" xlink:href="data:image/png;base64,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" />
+                                    </defs>
+                                </svg>
+                            </a>
                         </li>
 
                         <li>
-                            <a href="<? //php echo View::url('/products');
-                                        ?>">Products</a>
+                            <a tabindex="0" role="link" aria-label="linked" class="flex justify-center items-center rounded-[0.5rem]" href="https://in.linkedin.com/company/channeline-international" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <rect width="80" height="80" fill="url(#pattern0_35_302)" />
+                                    <defs>
+                                        <pattern id="pattern0_35_302" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_35_302" transform="scale(0.01)" />
+                                        </pattern>
+                                        <image id="image0_35_302" width="100" height="100" xlink:href="data:image/png;base64,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" />
+                                    </defs>
+                                </svg>
+                            </a>
                         </li>
 
                         <li>
-                            <a href="<? //php echo View::url('/applications');
-                                        ?>">Applications</a>
+                            <a tabindex="0" role="link" aria-label="linked" class="flex justify-center items-center rounded-[0.5rem]" href="https://in.linkedin.com/company/channeline-international" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <rect width="80" height="80" fill="url(#pattern0_35_297)" />
+                                    <defs>
+                                        <pattern id="pattern0_35_297" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_35_297" transform="scale(0.01)" />
+                                        </pattern>
+                                        <image id="image0_35_297" width="100" height="100" xlink:href="data:image/png;base64,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" />
+                                    </defs>
+                                </svg>
+                            </a>
                         </li>
 
                         <li>
-                            <a href="<? //php echo View::url('/case-studies');
-                                        ?>">Case studies</a>
+                            <a tabindex="0" role="link" aria-label="linked" class="flex justify-center items-center rounded-[0.5rem]" href="https://in.linkedin.com/company/channeline-international" target="_blank">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <rect width="80" height="80" fill="url(#pattern0_35_303)" />
+                                    <defs>
+                                        <pattern id="pattern0_35_303" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_35_303" transform="scale(0.01)" />
+                                        </pattern>
+                                        <image id="image0_35_303" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEmElEQVR4nO2dXYhVVRTH/xpNWVlUGBS9KD2UH5UMmM1d69wopXqxzxktpo+3XsQo+oLg9ulTEFo5+RARQ0iQ9pBkA4YUMoUgPZRJ1kMNZYUaBqXigP3jnHvvMD2U3Tnr3r33af3g/zDMB6z9O/vMPufcvQ7gOI7jOI7jOI7jOI7jOI7jOI7jOI4TLazjbAouLFLH5RQsaOVqCvqL1HBDkfbXze81f675O83fvwVnha4nKrgcc1jHFaxBmGGIGR6mYj0Vm6jYQsUOCj6lYD8FP1Fwggoa53jxtxVfUTBOwQcUvE3Ba1S8SME6Ku6ioEbF/PyAQKpwBS5ghqUU3E3BExRspmJna4B/68Lgskf5lYp9FIxRMULFY8xwJwdwLZfhfMRCfgqg4B4q3msddfyf5iAF2yhYE+y0WMwCxUQEg8HIMpHPnt6JGMQZVLwSQeGMOoINBGZ3X4jLYAdSXu+2jAeDH3maWATD3ZExgLkUHAleoCYWwWGuxLn2QprXDOEL1CSz1l6IYncEhTHJCD6xv32hmAxemCabSdMrfmZYEkFRTDoZllhfBIYvShNOhiFLIU8HL0gTj+AZSyFvBS9Ik88WSyG7IiiIieczSyHfBC1m+CpyaH7oAS0Xwc92QhTHghbTGCQnT5LvbiRvnht+cGeWP9mPc8rLuAkXBy+mMcgpDh8k199PZrNCD3DnqePK8kJqWBSVkDb795APXRd+kDtJhpXlhWTQKIXknDpFjo2Sqy5JRci95YUobotWSJvfj5KbnyRv7As/6P8WwbpqPANpnEZIm4mvycdvjVnIC+WFCB5NRkib8e3k6gXVfIJIwfPJCcmJcZks2Goh5KUkhcS5TN5RXohiY9JCYlomC3ZZCBmphJAYlsmC8fJCBG9URkj4ZfJeixkyWjkh4ZbJ+yxmyDuVFdLrZbLgWxcS13XLAT9lxXTKEnxuMUP8n7qaSdltMUN82atmM2TMQohfGKqZkG3lhfitExqeskYthPjNRTUTsslCyCM9W4VoxW+/K54tL0TxQPBCGhV5QGWxLYEZVgUvpFGZR7hrygvJN/mHLqRRkQ85CFZYCPGPAamRkAxLywtZjouimiGHfozpCWCnM2ReaSGFFMEfwYVMRviMvLMcJzDLRojiQNBihivwYWuLO73ThHwUQUFMPDvthPiGHRoIedNSiG9p09JCnrIU4ps+taQQyw5BrGNxBOdgJp0aFlkK8cYBGlHjgEKKt9ZgCSEfm8oohHjzGcbVfKaO87w9E2Yi41BX2jMVUgT3Bf/nqInF4pb7aaRsCF6kJpORrsoohACzXQr+i4yXe9IEc0pMDXdQ8X0ERyGjiuC7fKNsz0T8TcpC9FGxOt+qVTQTDj0YGrSR8taiffpC9CEW8rbbrOEaCm4vNosKXqViOwVfUPBLwkf9kaLVuOLDqFuNz2hG5W8ryHB9a//7Wiqea/UCHqXi/eICVPAlBT906cHYsdZs/udm/M3e9ek34+8G7MeZU6+bUFw67TUUi6e9nqLeSvPrvCVh++cGcJm/rsJxHMdxHMdxHMdxHMdxHMdxHMdxHCTBXxp4UPpplArJAAAAAElFTkSuQmCC" />
+                                    </defs>
+                                </svg>
+                            </a>
                         </li>
 
                         <li>
-                            <a href="<? //php echo View::url('/technology');
-                                        ?>">Technology</a>
+                            <a tabindex="0" role="link" aria-label="linked" class="flex justify-center items-center rounded-[0.5rem]" href="https://in.linkedin.com/company/channeline-international" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <rect width="80" height="80" fill="url(#pattern0_35_304)" />
+                                    <defs>
+                                        <pattern id="pattern0_35_304" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_35_304" transform="scale(0.01)" />
+                                        </pattern>
+                                        <image id="image0_35_304" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEl0lEQVR4nO2dSYxURRjHX9doTEYOamIkxoMxXDwoevAoYfDiARMSiTEsils8yA3QyDaGBKp6IJmARg0xhoskBFcEVDyghoAmk3TVMAvrdE83zAIMywhMd8/ymXoTY5Beanr6varX7/9Lvssk3TP1/fr76lVVZ8rzAAAAAAAAAAAAAACIK1w+y3hqBeNyDeOdHzRmyDV6jF5b6hnPSbbL+5mQm5iQ/UwoilVwlWFCbdA58FygKaleYFwOWk+MsB4DHk8ttCqDcbWKCTXuQDLIieCqyLh8zY4NrhYwIQvWkyAcC66KTclUS7gyWrvmoE2pSlIueq0dzaH5mJ7AHfg0CoeDq/Xh2CBKMCGz1gcsHA+uMjpX4awzbA9WRCM8fnJ+4D5YUq60PVAWlUh2Lg9eCFfrrA9URCS4Whe4kARXH1kfqIhG6FxBiLAvIjJCFu9P05G+Ubo6NkH5iSk6PZKnbceH6aH2LuvJY3ETIk4MUznOXM3Tox93W09gbIS8tD9N1Thw9ob1BMZGyK/pv6sKmSKiJz7rtZ7EWAi5lp8gE179od96EmMhRE/gJrx1OGc9ibEQ0n15zEhIy1fnrCcxFkK2HBuqKiN7o0j3tXVaT2IshDzQ3uU/2pZDN7Ql36StJzA2QnQ89kmPvyj8P7nRYkPKYK4L+Tee3H2KVv6YpTcPZf05o9HaFIuakDhFAkKUdQkQIuwnPnJC3v05ZxRPfXG65Ovnfd5r/B7NO0rPSXquem7PGXr52wy9fThHqw5m/d1n/bOg5jFnhZiy+siFkq9/5fuM8Xs8suvOXWP94PD1qet0e3yy7GtGC5P+5qb+PfckISQQIQ+2d9G+nms0U9SlMVq09zwqpJ5C5u7qNt6uKcX45BS990vpvwUtS8xMiF6A/nnxFtWDjb8PQgibZYV8qUaoXugtnRf39aFC2CyE1Jv09ULNT2F4ygqI5QdqOziDkIDoGLwNIawOLUtv+W89PuwvAt/5KUfJE5eo90r5Y4BK6MUpKkTUJkRPxut/G6R7k3f3/iah6I1DWbpVLL9QLMXrB7MQwmoUsvmPoarJa9l73l9vmLI7NQIhrAYhut/rKjBpL7qFmXIsdxNCWA1Cln6XMU6cXtGbfiOm50oeQlgNQh7/tGdGiTvaX/1LfJqhm+MQwmoQ8vDOmX1xe8dfZm2rMDEFISwEIe8fHTB6X93Y8NgrZn8eUi30DjOEhHhAxSDk7iSYshpCGv8Il6FCIIRht/c/UCFoWVQuBzgPIVQIJnWBCqkI5hDMIYQ5pAKoEFQIoUIqgApBhRAqpAKoEFQIoUIqgAqJSYVQIx3hxjUSEKLiJwT/Jla59W9i/dtzHPj0sWjEssCF6Gt+HBgoRSG8ts6ngxcy3bb6bA+WuR/pUGT4QoTa4MCAye2QH4Z8CZgasD9o5WZwmQv1QhefpHoeVx6pEjJU0drlYPoCLP8iLNufSOFKyIJ/v6FVeGqhvnPJfjKU/TbF1QLPCVo7mvWdS/rJIn4iVJ8/gYc+Z5jCT86fXjzKtQkhRSMGE3Lt9NWrIa0zAAAAAAAAAAAAAADw3OMfz6KuA6wmHaoAAAAASUVORK5CYII=" />
+                                    </defs>
+                                </svg>
+                            </a>
                         </li>
-
-                        <li>
-                            <a href="<? //php echo View::url('/blog');
-                                        ?>">Blog</a>
-                        </li>
-
-                        <li>
-                            <a href="<? //php echo View::url('/careers');
-                                        ?>">Careers</a>
-                        </li>
-
-                        <li>
-                            <a href="<? //php echo View::url('/contact');
-                                        ?>">Contact us</a>
-                        </li>
-                    </ul> -->
-
-                    <? //php $s = Stack::getByName("Footer Quick Links") $s->display(); ?>
+                    </ul>
                 </div>
             </div>
-
-            <div class="social w-full relative">
-                <h5 class="mb-[2rem]">Follow us</h5>
-
-                <ul>
-                    <li>
-                        <a tabindex="0" role="link" aria-label="linked" class="flex justify-center items-center rounded-[0.5rem]" href="https://in.linkedin.com/company/channeline-international" target="_blank">
-                            <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.77475 2.28389C4.77475 3.52898 3.82672 4.5366 2.34415 4.5366C0.919355 4.5366 -0.0286772 3.52898 0.000662254 2.28389C-0.0286772 0.978283 0.919332 0 2.37255 0C3.82669 0 4.74633 0.978283 4.77475 2.28389ZM0.119858 20.8191V6.31621H4.62712V20.8181H0.119858V20.8191Z" fill="#F2F1EF" />
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.2398 10.9446C8.2398 9.13566 8.1802 7.5935 8.12061 6.31816H12.0356L12.2437 8.30499H12.3326C12.9259 7.38538 14.4084 5.99268 16.8106 5.99268C19.7757 5.99268 22 7.95016 22 12.219V20.821H17.4927V12.7838C17.4927 10.9144 16.8408 9.63993 15.2098 9.63993C13.9637 9.63993 13.2229 10.4999 12.9268 11.3297C12.8076 11.6268 12.7489 12.0412 12.7489 12.4574V20.821H8.24162V10.9446H8.2398Z" fill="#F2F1EF" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="flex justify-end w-full mt-[2rem] logo-home ">
-                <a tabindex="0" role="link" aria-label="home" class="logo " id="scroll-to-banner" href="#banner">
-                    <img src="<?php echo $themePath; ?>/assets/images/red-site-logo.svg" alt="channeline">
-                </a>
-            </div>
-
-            <div class="logo-others flex justify-end w-full mt-[2rem]">
-                <a tabindex="0"  role="link" aria-label="home" class="logo " href="<?php echo View::url('/'); ?>">
-                    <img src="<?php echo $themePath; ?>/assets/images/red-site-logo.svg" alt="channeline">
-                </a>
-            </div>
-
         </div>
 
         <div class="bottom pt-[4.4rem] flex justify-between relative mt-[2rem]">
             <div class="line absolute"></div>
-            <div class="flex justify-between items-center flex-wrap w-full">
+            <div class="flex justify-center items-center flex-wrap w-full">
                 <ul>
-                    <li>© Channeline <?php echo date('Y'); ?>. All rights reserved.
-                    </li>
-                </ul>
-
-
-                <? //php $s = Stack::getByName("Terms and conditions"); $s->display(); ?>
-
-                <ul class="made-with">
-                    <li>
-                        <!-- <a role="link" aria-label="tentwenty" href="https://www.tentwenty.me/" target="_blank">
-                            Made with <i class="icon-heart"></i> by tentwenty
-                        </a> -->
+                    <li>© Creative Adobe <?php echo date('Y'); ?>. All rights reserved.
                     </li>
                 </ul>
             </div>

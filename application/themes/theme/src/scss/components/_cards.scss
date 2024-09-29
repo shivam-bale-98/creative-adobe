@@ -6,8 +6,9 @@
   height: clamp(22.5rem, mix.vw(225), 25vh);
   width: 33.33%;
   border: 1px solid transparent;
-  border-color: transparent transparent rgba($color: globVar.$color-borders, $alpha: 0.2) rgba($color: globVar.$color-borders, $alpha: 0.2);
-
+  border-color: transparent transparent
+    rgba($color: globVar.$color-borders, $alpha: 0.2)
+    rgba($color: globVar.$color-borders, $alpha: 0.2);
 
   transition: 0.3s border-color ease-out;
   @include mix.min-breakpoint(991) {
@@ -55,30 +56,12 @@
 }
 
 .product-card {
-  background-color: var(--red-berry);
+  // background-color: var(--red-berry);
   @include mix.aspect-ratio(640, 700);
   transition: 0.4s background-color ease-out;
 
   @include mix.breakpoint(767) {
     @include mix.aspect-ratio(320, 430);
-  }
-  img {
-    max-width: 85%;
-    width: 100%;
-    object-fit: contain;
-    margin-inline: auto;
-    bottom: clamp(7rem, mix.vw(70), mix.vw(70));
-
-    @include mix.breakpoint(1279) {
-      max-width: 80%;
-      bottom: 6rem;
-    }
-
-    @include mix.breakpoint(767) {
-      max-width: 85%;
-      bottom: 7rem;
-    }
-
   }
   .content {
     bottom: 0;
@@ -101,8 +84,8 @@
       }
     }
     .shape {
-      width: mix.vw(76);
-      height: mix.vw(54);
+      width: mix.vw(60);
+      height: mix.vw(60);
       top: 50%;
       transform: translate(0, -50%);
       right: 4rem;
@@ -112,10 +95,7 @@
       @include mix.breakpoint(1279) {
         display: none;
       }
-      .bg {
-        clip-path: url(#btn_shape);
-        background-color: var(--rustic-red);
-      }
+     
 
       i {
         top: 50%;
@@ -123,65 +103,66 @@
         transform: translate(-50%, -50%);
         font-size: 20px;
         &:before {
-          color: var(--color-white);
+          color: var(--red-berry);
         }
       }
     }
   }
-  &:hover, &:focus-visible {
+  &:hover,
+  &:focus-visible {
     @include mix.min-breakpoint(1279) {
       background-color: var(--color-white);
 
-      .content {
-        .h3 {
-          color: var(--rustic-red);
-        }
-
-        .shape {
-          opacity: 1;
-          // transform: translate( 0,-50%);
-        }
+      img {
+        transform: scale(1.2);
+      }
+      .shape {
+        opacity: 1;
       }
     }
   }
 
-  &.resins {
-    img {
-      max-width: 100%;
-      width: 100%;
-      object-fit: cover;
-      bottom: 0;
-      transition: 0.4s transform ease-out;
+  img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    bottom: 0;
+    transition: 0.4s transform ease-out;
+  }
+
+  .content {
+    z-index: 3;
+    .h3 {
+      color: var(--color-white);
+      max-width: clamp(2rem, mix.vw(250), mix.vw(250));
     }
 
-    .content {
-      .h3 {
-        color: var(--color-white);
-        max-width: clamp(25rem, mix.vw(250), mix.vw(250));
-      }
+    p {
+      color: var(--color-white) !important;
+    }
+  }
 
-      p {
-        color: var(--color-white) !important;
-      }
-      .shape {
-        i {
-          &:before {
-            color: var(--rustic-red);
-          }
-        }
-        .bg {
-          background-color: var(--color-white);
-        }
+  @include mix.min-breakpoint(1279) {
+    &:hover {
+      img {
+        transform: scale(1.1);
       }
     }
+  }
 
-    @include mix.min-breakpoint(1279) {
-      &:hover {
-        img {
-          transform: scale(1.1);
-        }
-      }
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      3deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 2;
   }
 }
 
@@ -241,7 +222,7 @@
 
   padding: 5rem 3.7rem;
   width: 40.2rem;
-  // add if we want to show the graphic 
+  // add if we want to show the graphic
   // height: 56rem;
 
   @include mix.breakpoint(767) {
@@ -577,7 +558,8 @@
   }
 
   @include mix.min-breakpoint(1279) {
-    &:hover, &:focus-visible {
+    &:hover,
+    &:focus-visible {
       .image {
         background-color: var(--red-berry);
         .svg {
@@ -599,7 +581,8 @@
 
 .technology-card {
   // height: 50.3rem;
-  width: 38.4rem;
+  // width: 38.4rem;
+  width: auto;
   //add if we are keeping the images
   // min-height: auto;
   // height: auto;
@@ -664,14 +647,12 @@
 
   .content {
     // height: 43%;
-    // add if we are keeping the images 
+    // add if we are keeping the images
     // padding-top: 24rem;
     @include mix.breakpoint(767) {
-      //  padding-top: 20rem; 
+      //  padding-top: 20rem;
     }
     .logo {
-
-      
       @include mix.min-breakpoint(1279) {
         transition: 0.3s all ease-out;
 
@@ -798,7 +779,6 @@
 }
 
 .related-blogs-card {
-  
   .image-wrap {
     //  height: clamp(mix.rem(40), mix.vw(400), mix.vw(400));
     width: 100%;
@@ -810,7 +790,7 @@
     }
   }
 
-  .content{
+  .content {
     h4 {
       max-width: clamp(35rem, mix.vw(330), mix.vw(330));
       // max-width: 60%;
@@ -821,6 +801,3 @@
     }
   }
 }
-
-
-

@@ -80,8 +80,8 @@ export default class Products {
         spaceBetween: 15,
         speed: 1000,
         navigation: {
-          nextEl: ".products-list .swiper-button-next",
-          prevEl: ".products-list .swiper-button-prev",
+          nextEl: ".products-list .swiper-button__next",
+          prevEl: ".products-list .swiper-button__prev",
         },
       });
     }
@@ -141,23 +141,23 @@ export default class Products {
           },
         });
 
-        t2.to($(img), {
-          scale: 1,
-          opacity: 1,
-          duration: 0.5,
-          ease: "sine.out",
-        });
+        // t2.to($(img), {
+        //   scale: 1,
+        //   opacity: 1,
+        //   duration: 0.5,
+        //   ease: "sine.out",
+        // });
         ScrollTrigger.create({
           trigger: $(el),
           start: "top 90%",
           animation: t1,
         });
 
-        ScrollTrigger.create({
-          trigger: $(el),
-          start: "top 90%",
-          animation: t2,
-        });
+        // ScrollTrigger.create({
+        //   trigger: $(el),
+        //   start: "top 90%",
+        //   animation: t2,
+        // });
       });
     } else {
       let card1 = this.productListing.find(".swiper-slide:nth-child(1)");

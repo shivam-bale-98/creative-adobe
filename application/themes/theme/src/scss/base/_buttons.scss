@@ -174,7 +174,7 @@
   }
 
   &--white {
-    background-color: white;
+    background-color: white !important;
     // border-color: var(--romance);
     color: var(--red-berry);
 
@@ -182,9 +182,9 @@
 
     @include mix.min-breakpoint(1279) {
       &.hovered, &:focus-visible {
-        border-color: transparent;
+        border-color: transparent !important;
         color: white;
-        background-color: var(--red-berry);
+        background-color: var(--red-berry) !important;
       }
     }
   }
@@ -212,8 +212,8 @@ svg.btn_mask {
   }
 
   .swiper-button {
-    width: 6.3rem;
-    height: 6.3rem;
+    width: 6rem;
+    height: 6rem;
     overflow: hidden;
     margin-top: 0;
     z-index: 2;
@@ -245,14 +245,20 @@ svg.btn_mask {
 
   &.white {
     .swiper-button {
+      background-color: var(--color-white);
+      svg{
+        path {
+          fill: var(--red-berry);
+        }
+      }
       @include mix.min-breakpoint(1279) {
         &:hover, &:focus-visible {
-           background-color: #FFF;
+           background-color: transparent;
            border-color: #FFF;
 
            svg {
             path {
-              fill: var(--red-berry);
+              fill: var(--color-white);
             }
            }
         }
@@ -262,14 +268,27 @@ svg.btn_mask {
 
   &.rustic-red {
     .swiper-button {
+      border-color: var(--color-black);
+      background-color: var(--color-black);
       i {
         &:before {
-          // color: var(--color-white);
+          color: var(--color-white);
           transition: none;
         }
       }
-      .bg {
-        background-color: var(--rustic-red);
+
+      &:hover {
+        @include mix.min-breakpoint(1279) {
+          background-color: transparent;
+
+          i {
+            &::before{
+              color: var(--color-black);
+            }
+          }
+        }
+
+        
       }
     }
   }

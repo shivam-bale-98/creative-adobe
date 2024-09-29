@@ -259,8 +259,6 @@
         }
       }
     }
-
-    
   }
 
   .invalid-feedback {
@@ -273,6 +271,33 @@
   }
 
   .channeline-btn {
+    min-width: 18.5rem;
+    span {
+      position: relative;
+      left: -10px;
+    }
+    i {
+      top: 50%;
+      right: 24px;
+      font-size: 16px;
+      transform: translateY(-50%);
+      &::before {
+        color: var(--red-berry);
+      }
+    }
+
+    &:hover {
+      @include mix.min-breakpoint(1279) {
+        background-color: var(--red-berry) !important;
+        color: var(--color-white) !important;
+
+        i {
+          &::before{
+            color: var(--color-white) !important;
+          }
+        }
+      }
+    }
     &.loading {
       opacity: 0 !important;
       transition: 0.3s all ease-out;

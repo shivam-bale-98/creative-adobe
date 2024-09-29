@@ -31,7 +31,23 @@ export default class Banner {
   };
 
   animations = () => {
+    let t0 = gsap.timeline({
+      onComplete: () => {
+        this.header.addClass("loaded");
+      },
+    });
+
+    t0.to(this.header.find(".header-wrapper"), {
+      y: "0px",
+      opacity: 1,
+      duration: 0.8,
+      ease: "sine.out",
+    });
+
+
+
     let t1 = gsap.timeline({});
+    
 
     t1.to(this.banner.find(".breadcrumb-wrap"), {
       opacity: 1,

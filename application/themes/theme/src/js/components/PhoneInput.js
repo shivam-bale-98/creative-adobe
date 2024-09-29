@@ -24,11 +24,11 @@ export default class PhoneInput {
 	init = () => {
 		this.$phoneInputs.each((i, el) => {
 			this.globalIti = intlTelInput(el, {
-				initialCountry: "us",
+				initialCountry: "in",
 				nationalMode: false,
 				autoHideDialCode: false,
 				separateDialCode: true, // Separate dial code and number
-				preferredCountries: ["ae"],
+				preferredCountries: ["in"],
 				utilsScript:
 					"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.11/js/utils.min.js",
 			});

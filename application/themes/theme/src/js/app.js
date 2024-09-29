@@ -52,9 +52,10 @@ export default new (class App {
 
 		$(".banner-v1").addClass("active");
 
-		// setTimeout(() => {
-		new Banner();
-		// }, 10==0);
+		if(this.banner.length) {
+			new Banner();
+		}
+		
 		const animationObject = new Animations();
 
 		if (!this.htmlBody.hasClass("visited")) {

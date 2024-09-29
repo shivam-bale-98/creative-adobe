@@ -35,7 +35,7 @@ export default class Testimonials {
 			modules: [Navigation],
 			slidesPerView: 1,
 			spaceBetween: 20,
-			speed: 600,
+			speed: 1000,
 			slidesOffsetAfter: 0,
 			navigation: {
 				nextEl: ".testimonials .swiper-button-next",
@@ -43,14 +43,14 @@ export default class Testimonials {
 			},
 			breakpoints: {
 				1900: {
-					slidesOffsetAfter: 650,
 					slidesPerView: "auto",
 					spaceBetween: 50,
+					slidesOffsetAfter: 150,
 				},
 				991: {
 					slidesPerView: "auto",
 					spaceBetween: 30,
-					slidesOffsetAfter: 500,
+					slidesOffsetAfter: 340,
 				},
 
 				767: {
@@ -98,7 +98,7 @@ export default class Testimonials {
 								ease: "sine.out",
 								delay: 0.2,
 							});
-						}, 2000);
+						}, 1000);
 					}
 					this.animations();
 				},
