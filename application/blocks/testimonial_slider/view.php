@@ -18,15 +18,15 @@
 
         <div class="right flex md:justify-end items-center xl:w-1/4 md:w-1/2 w-full  fade-text" data-duration="1" data-delay="0.2">
             <div class="swiper-buttons | rustic-red flex z-3">
-                <div tabindex="0" aria-label="swiper button previous" role="button" class="swiper-button swiper-button-prev relative">
+                <div tabindex="0" aria-label="swiper button previous" role="button" class="swiper-button swiper-button-prev relative border border-[#171717]">
                     <i class="icon-right_button_arrow absolute z-3"></i>
-                    <span class="bg absolute inset-0 size-full z-1"></span>
-                    <span class="bg-scale absolute  size-full z-2"></span>
+                    <!-- <span class="bg absolute inset-0 size-full z-1"></span> -->
+                    <!-- <span class="bg-scale absolute  size-full z-2"></span> -->
                 </div>
                 <div tabindex="0" aria-label="swiper button next" role="button" class="swiper-button swiper-button-next relative">
                     <i class="icon-right_button_arrow absolute z-3"></i>
-                    <span class="bg absolute inset-0 size-full z-1"></span>
-                    <span class="bg-scale absolute  size-full z-2"></span>
+                    <!-- <span class="bg absolute inset-0 size-full z-1"></span> -->
+                    <!-- <span class="bg-scale absolute  size-full z-2"></span> -->
                 </div>
             </div>
         </div>

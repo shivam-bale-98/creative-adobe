@@ -150,15 +150,15 @@
                 <?php if (!$ff->hasSubmitButton()) { ?>
                     <div class="row mt-2 x:mt-[4rem]">
                         <div class="col-12">
-                            <button id="<?php echo 'btnSubmit_' . $ff->getItemID(); ?>" name="<?php echo 'btnSubmit_' . $ff->getItemID(); ?>" type="submit" class="btn btn-primary  channeline-btn channeline-btn--arrow channeline-btn--border channeline-btn--white relative">
+                            <button id="<?php echo 'btnSubmit_' . $ff->getItemID(); ?>" name="<?php echo 'btnSubmit_' . $ff->getItemID(); ?>" type="submit" class="btn btn-primary  channeline-btn  channeline-btn--border channeline-btn--white relative">
                                 <!-- <? //= t('Make Enquiry'); ?> <i class="fas fa-spinner fa-spin"></i> -->
                                 <span class="text z-2 relative"><?= t('Submit'); ?></span>
-                                <div class="shape absolute">
+                                <!-- <div class="shape absolute"> -->
                                     <i class="icon-right_button_arrow absolute z-2">
 
                                     </i>
-                                    <span class="bg absolute inset-0 size-full"></span>
-                                </div>
+                                    <!-- <span class="bg absolute inset-0 size-full"></span> -->
+                                <!-- </div> -->
                             </button>
                         </div>
                     </div>

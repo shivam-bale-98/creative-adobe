@@ -49,26 +49,40 @@ $thumbnail = "";
                                 </div>
                             <?php } ?>
 
+
                             <!-- <div class="content z-2 h-full" > -->
-                                <?php if ($addCards_item["icon"]) { ?>
-                                    <a target="_blank" href="">
-                                    <!-- <span class="logo h-[6rem] w-[6rem] rounded-full overflow-hidden bg-red-berry relative flex items-center justify-center mb-[3rem]"> -->
+                            <?php if ($addCards_item["icon"]) { ?>
+                                <?php if (isset($addCards_item["externalLogoUrl"]) && trim($addCards_item["externalLogoUrl"]) != "") { ?>
+
+                                    <a class="w-full h-full block relative" target="_blank" href="<?php echo h($addCards_item["externalLogoUrl"]); ?>">
+                                        <!-- <span class="logo h-[6rem] w-[6rem] rounded-full overflow-hidden bg-red-berry relative flex items-center justify-center mb-[3rem]"> -->
+                                        <!-- </span> -->
                                         <img class="max-w-[25rem] w-full" src="<?php echo $addCards_item["icon"]->getURL(); ?>" alt="<?php echo $addCards_item["icon"]->getTitle(); ?>" />
-                                    <!-- </span> -->
+
                                     </a>
+                                <?php } else { ?>
+                                    <img class="max-w-[25rem] w-full" src="<?php echo $addCards_item["icon"]->getURL(); ?>" alt="<?php echo $addCards_item["icon"]->getTitle(); ?>" />
+
                                 <?php } ?>
+                            <?php } ?>
 
-                                <? //php if (isset($addCards_item["title"]) && trim($addCards_item["title"]) != "") { ?>
+                            <? //php if (isset($addCards_item["title"]) && trim($addCards_item["title"]) != "") { 
+                            ?>
 
-                                    <!-- <h4>
-                                        <? //php echo h($addCards_item["title"]); ?>
+                            <!-- <h4>
+                                        <? //php echo h($addCards_item["title"]); 
+                                        ?>
                                     </h4> -->
-                                <? //php } ?>
+                            <? //php } 
+                            ?>
 
-                                <? //php if (isset($addCards_item["desc_1"]) && trim($addCards_item["desc_1"]) != "") { ?>
+                            <? //php if (isset($addCards_item["desc_1"]) && trim($addCards_item["desc_1"]) != "") { 
+                            ?>
 
-                                    <!-- <p class="mt-[1.5rem]"><? //php echo h($addCards_item["desc_1"]); ?></p> -->
-                                <? //php } ?>
+                            <!-- <p class="mt-[1.5rem]"><? //php echo h($addCards_item["desc_1"]); 
+                                                        ?></p> -->
+                            <? //php } 
+                            ?>
 
                             <!-- </div> -->
 

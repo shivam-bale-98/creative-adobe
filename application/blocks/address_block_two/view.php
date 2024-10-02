@@ -29,10 +29,10 @@ if ($Image) {
                 </h2>
             <?php } ?>
 
-            <?php if (isset($description) && trim($description) != "") { ?>
+            <?php if (isset($description_1) && trim($description_1) != "") { ?>
 
                 <p class="mb-[3rem]">
-                    <?php echo h($description); ?>
+                    <?php echo h($description_1); ?>
                 </p>
             <?php } ?>
 

@@ -34,7 +34,7 @@ foreach ($navItems as $ni) {
 //*** Step 2 of 2: Output menu HTML ***/
 ?>
 
-<div class="mobile-nav   fixed  w-screen text-rustic-red md:mt-[20rem] mt-[10rem]  pb-[4rem]">
+<div class="mobile-nav   fixed  w-screen text-rustic-red md:mt-[20rem] mt-[18rem]  pb-[4rem] z-20">
     <div class="nav-items md:px-[6rem] px-[2rem] relative">
         <?php foreach ($navItems as $ni) {
             $megaMenu = $ni->cObj->getAttribute(ConstantHelper::ATTR_MEGA_MENU);
@@ -101,10 +101,6 @@ foreach ($navItems as $ni) {
             echo '</h4>';
         } ?>
     </div>
-    <div class="shape absolute">
-        <img src="<?php echo $themePath; ?>/assets/images/mobile-shape.svg" alt="channeline-shape">
-    </div>
-
     <div class="anim"></div>
 </div>
 

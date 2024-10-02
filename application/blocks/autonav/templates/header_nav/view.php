@@ -38,10 +38,11 @@ foreach ($navItems as $ni) {
 <header class="header fixed w-full">
     <div class="header-wrapper p-[2rem] md:p-[4rem] xl:px-[6rem]  xxl:px-[10rem]">
         <div class="flex justify-between items-center relative">
-            <div class="logo relative">
-                <a  role="link" araia-label="Home" tabindex="0" href="<?php echo View::url('/'); ?>">
-                    <img class="white absolute" src="<?php echo $themePath; ?>/assets/images/site-logo.svg" alt="<?php echo $site; ?>" />
-                    
+            <div class="logo relative z-3">
+                <a class="w-full h-full block absolute inset-0" role="link" araia-label="Home" tabindex="0" href="<?php echo View::url('/'); ?>">
+                    <img class="white absolute z-2" src="<?php echo $themePath; ?>/assets/images/site-logo.svg" alt="<?php echo $site; ?>" />
+                    <img class="red absolute z-2" src="<?php echo $themePath; ?>/assets/images/site-logo-dark.svg" alt="<?php echo $site; ?>" />
+                    <div class="logo-bg | absolute h-full top-4 left-1/2 -translate-x-1/2 w-[9rem] bg-red-berry z-1 opacity-0"></div>
                 </a>
             </div>
             <nav class=" flex items-center">
@@ -102,16 +103,19 @@ foreach ($navItems as $ni) {
                     } ?>
                 </ul>
                 <ul class="accesibility flex items-center ">
-                    <li class="search">
+                    <!-- <li class="search">
                         <a role="button" tabindex="0" aria-label="search products" id="search" class=" flex justify-center items-center z-2 overflow-hidden relative" href="<?php echo View::url("/search"); ?>">
                             <i class="icon-search z-2"></i>
                             <span class="absolute inset-0 size-full z-1"></span>
                         </a>
-                    </li>
+                    </li> -->
 
                     <li role="button" aria-label="open mega menu" class="mobile-menu relative xl:hidden z-2">
-                        <span class="bg absolute inset-0 size-full z-1"></span>
-                        <span class="nav-icon absolute z-2 uppercase">menu</span>
+                        <div class="hamburger flex flex-col items-center justify-center gap-[5px] bg-white h-[6rem] w-[6rem] rounded-full overflow-hidden">
+                           <span class="h-[1px] w-[30px] bg-[#171717] relative block"></span>
+                           <span class="h-[1px] w-[30px] bg-[#171717] relative block"></span>
+                           <span class="h-[1px] w-[30px] bg-[#171717] relative block top-[1px]"></span>
+                        </div>
                         <div class="menu-close absolute h-[6rem] w-[6rem] "></div>
                     </li>
                 </ul>

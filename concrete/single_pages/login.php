@@ -30,9 +30,9 @@ if ($site) {
 }
 ?>
 
-<div class="login-page z-3 relative  xxl:px-[10rem] xl:px-[6rem] md:px-[4rem] px-[2rem] relative  text-romance overflow-hidden">
+<div class="login-page z-3 relative  xxl:px-[10rem] xl:px-[6rem] md:px-[4rem] px-[2rem]   text-[#171717] overflow-hidden">
     <div class="img-wrap z-1  absolute size-full inset-0">
-        <img class="absolute size-full object-cover top-0 left-0" src="https://channeline.1020dev.com/application/files/4317/1352/4923/patricks_banner_image_1.jpg" alt="channeline">
+        <img class="absolute size-full object-cover top-0 left-0" src="https://i.ibb.co/4mpSn3w/d-banner-1.jpg" alt="creative_adobe">
     </div>
     <div class="container z-3 relative flex flex-col flex-nowrap items-center justify-center">
         <div class="login-page-header">

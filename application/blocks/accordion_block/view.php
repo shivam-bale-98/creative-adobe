@@ -16,8 +16,6 @@ $themePath = $view->getThemePath();
         <?php } ?>
 
         <?php if (!empty($accordionsItem_items)) { ?>
-            <?php echo h($accordionsItem_item["accordionTitle"]); ?>
-            <?php echo $accordionsItem_item["accordionContent"]; ?>
             <div class="acc-container lg:w-1/2 w-full">
                 <?php foreach ($accordionsItem_items as $accordionsItem_item_key => $accordionsItem_item) { ?>
                     <div class="acc active:bg-red-berry active:text-white group lg:opacity-0 lg:translate-x-[4rem] bg-white py-[3.5rem] px-[4rem] mb-[2rem] transition-colors duration-1000 ease-out hover:bg-red-berry hover:text-white group">

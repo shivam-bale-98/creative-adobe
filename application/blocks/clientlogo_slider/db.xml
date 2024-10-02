@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btClientlogoSlider">
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="blockTitle" type="X2"></field>
+        <field name="hideBlock" type="C" size="1">
+            <unsigned/>
+        </field>
+        <field name="bgColor" type="C" size="255"></field>
+        <field name="removePaddingTop" type="C" size="1">
+            <unsigned/>
+        </field>
+        <field name="removePaddingBottom" type="C" size="1">
+            <unsigned/>
+        </field>
+    </table>
+    <table name="btClientlogoSliderAddCardsEntries">
+        <field name="id" type="I">
+            <key/>
+            <unsigned/>
+            <autoincrement/>
+        </field>
+        <field name="bID" type="I">
+            <unsigned/>
+        </field>
+        <field name="sortOrder" type="I"></field>
+        <field name="image" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+        <field name="title" type="C" size="255"></field>
+        <field name="desc_1" type="X"></field>
+        <field name="icon" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+        <field name="externalLogoUrl" type="C" size="255"></field>
+    </table>
+</schema>
